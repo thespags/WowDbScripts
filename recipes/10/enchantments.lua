@@ -1,4 +1,5 @@
 local lib = LibStub("LibTradeSkillRecipes")
+
 lib:AddEnchantment(13, "Sharpened II")
 lib:AddEnchantment(14, "Sharpened III")
 lib:AddEnchantment(15, "Reinforced (+$k1 Armor)")

@@ -1,4 +1,5 @@
 local lib = LibStub("LibTradeSkillRecipes")
+
 lib:AddEnchantment(1, "Rockbiter 3")
 lib:AddEnchantment(2, "Frostbrand 1")
 lib:AddEnchantment(3, "Flametongue 3")

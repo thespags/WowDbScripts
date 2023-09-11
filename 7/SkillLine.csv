@@ -1,0 +1,193 @@
+ID,DisplayName_lang,Description_lang,AlternateVerb_lang,Flags,CategoryID,CanLink,SpellIconFileID,ParentSkillLineID
+43,Swords,"Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+44,Axes,"Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+45,Bows,"Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+46,Guns,"Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+54,Maces,"Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+55,"Two-Handed Swords","Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+95,Defense,"Higher defense improves your chance to dodge, parry, and block attacks, makes you harder to hit,  and makes monsters less likely to land a critical strike against you.",,640,6,0,136243,0
+98,"Language: Common",,,128,10,0,136243,0
+101,"Racial - Dwarf","Racial - Dwarf",,33938,9,0,136243,0
+109,"Language: Orcish",,,128,10,0,136243,0
+111,"Language: Dwarven",,,128,10,0,136243,0
+113,"Language: Darnassian",,,128,10,0,136243,0
+115,"Language: Taurahe",,,128,10,0,136243,0
+118,"Dual Wield","Dual Wield",,146,6,0,136243,0
+124,"Racial - Tauren","Racial - Tauren",,33938,9,0,136243,0
+125,"Racial - Orc","Racial - Orc",,32914,9,0,136243,0
+126,"Racial - Night Elf","Racial - Night Elf",,33938,9,0,136243,0
+129,"First Aid","Higher first aid skill allows you to learn higher level first aid abilities.  First aid abilities can be found on trainers around the world as well as from quests and as drops from monsters.",,4224,9,1,135966,0
+136,Staves,"Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+137,"Language: Thalassian",,,128,10,0,136243,0
+138,"Language: Draconic",,,128,10,0,136243,0
+139,"Language: Demon Tongue","The twisted language of demons.",,128,10,0,236293,0
+140,"Language: Titan",,,128,10,0,136243,0
+141,"Language: Old Tongue",,,128,10,0,136243,0
+142,Survival,,,0,9,0,136243,0
+148,"Horse Riding",,,1170,9,0,136243,0
+149,"Wolf Riding",,,1170,9,0,136243,0
+150,"Tiger Riding",,,1170,9,0,136243,0
+152,"Ram Riding",,,1170,9,0,136243,0
+155,Swimming,,,0,9,0,136243,0
+160,"Two-Handed Maces","Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+162,Unarmed,"Higher skill increases your chance to hit.",,128,6,0,136243,0
+164,Blacksmithing,"Higher smithing skill allows you to learn higher level smithing plans.  Blacksmithing plans can be found on trainers around the world as well as from quests and monsters.",Modify,4224,11,1,136241,0
+165,Leatherworking,"Higher leatherworking skill allows you to learn higher level leatherworking patterns.  Leatherworking patterns can be found on trainers around the world as well as from quests and monsters.",Emboss,4224,11,1,136247,0
+171,Alchemy,"Higher alchemy skill allows you to learn higher level alchemy recipes.  Alchemy recipes can be found on trainers around the world as well as from quests and monsters.",Refill,4224,11,1,136240,0
+172,"Two-Handed Axes","Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+173,Daggers,"Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+182,Herbalism,"Higher herbalism skill allows you to harvest more difficult herbs around the world.  If you cannot harvest a specific herb, then increase your skill by harvesting easier to gather herbs in lower level areas.",,4224,11,0,136246,0
+183,"GENERIC (DND)","General skills.",,1170,12,0,136243,0
+185,Cooking,"Higher cooking skill allows you to learn higher level cooking recipes.  Recipes can be found on trainers around the world as well as from quests and as drops from monsters.",,128,9,1,133971,0
+186,Mining,"Higher mining skill allows you to harvest more difficult minerals nodes around the world.  If you cannot harvest a specific mineral, then increase your skill by mining easier to mine minerals in lower level areas.",,4224,11,0,134708,0
+188,"Pet - Imp",,,0,7,0,136243,0
+189,"Pet - Felhunter",,,0,7,0,136243,0
+197,Tailoring,"Higher tailoring skill allows you to learn higher level tailoring patterns.  Tailoring patterns can be found on trainers around the world as well as from quests and monsters.",Embroider,4224,11,1,136249,0
+202,Engineering,"Higher engineering skill allows you to learn higher level engineering schematics.  Schematics can be found on trainers around the world as well as from quests and monsters.",Tinker,4224,11,1,136243,0
+203,"Pet - Spider",,,0,7,0,136243,0
+204,"Pet - Voidwalker",,,0,7,0,136221,0
+205,"Pet - Succubus",,,0,7,0,136243,0
+206,"Pet - Infernal",,,0,7,0,136243,0
+207,"Pet - Doomguard",Doomguard,,0,7,0,136243,0
+208,"Pet - Wolf",,,0,7,0,136243,0
+209,"Pet - Cat",,,0,7,0,136243,0
+210,"Pet - Bear",,,0,7,0,136243,0
+211,"Pet - Boar",,,0,7,0,136243,0
+212,"Pet - Crocolisk",,,0,7,0,136243,0
+213,"Pet - Carrion Bird",,,0,7,0,136243,0
+214,"Pet - Crab",,,0,7,0,136243,0
+215,"Pet - Gorilla",,,0,7,0,136243,0
+217,"Pet - Raptor",,,0,7,0,136243,0
+218,"Pet - Tallstrider",,,0,7,0,136243,0
+220,"Racial - Undead","Racial - Undead",,33938,9,0,136243,0
+226,Crossbows,"Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+228,Wands,"Higher weapon skill increases your chance to hit.",,146,6,0,136243,0
+229,Polearms,"Higher weapon skill increases your chance to hit.",,128,6,0,136243,0
+236,"Pet - Scorpid",,,0,7,0,136243,0
+251,"Pet - Turtle",,,0,7,0,136243,0
+270,"Pet - Generic Hunter",,,0,7,0,136243,0
+293,"Plate Mail","Allows the wearing of plate armor.",,128,8,0,136243,0
+313,"Language: Gnomish",,,128,10,0,136243,0
+315,"Language: Troll",,,128,10,0,136243,0
+333,Enchanting,"Higher enchanting skill allows you to learn more powerful formulae.  Formulae can be found on trainers around the world as well as from quests and monsters.",Enchant,4224,11,1,136244,0
+356,Fishing,"Higher fishing skill increases your chance of catching fish in bodies of water around the world.  If you are having trouble catching fish in a given area, move to a lower level area or purchase a fishing lure and try again.",,16512,9,0,136245,0
+393,Skinning,"Higher skinning skill allows you to skin hides from higher level monsters around the world.",,4224,11,0,134366,0
+413,Mail,"Allows the wearing of mail armor.",,128,8,0,136243,0
+414,Leather,"Allows the wearing of leather armor.",,128,8,0,136243,0
+415,Cloth,"Allows the wearing of cloth armor.",,128,8,0,136243,0
+433,Shield,"Allows the use of shields.",,128,8,0,136243,0
+473,"Fist Weapons","Allows for the use of fist weapons.  Chance to hit is determined by the Unarmed skill.",,130,6,0,136243,0
+533,"Raptor Riding",,,1170,9,0,136243,0
+553,"Mechanostrider Piloting",,,1170,9,0,136243,0
+554,"Undead Horsemanship",,,1170,9,0,136243,0
+653,"Pet - Bat",,,0,7,0,136243,0
+654,"Pet - Hyena",,,0,7,0,136243,0
+655,"Pet - Bird of Prey",,,0,7,0,136243,0
+656,"Pet - Wind Serpent",,,0,7,0,136243,0
+673,"Language: Forsaken",,,128,10,0,136243,0
+713,"Kodo Riding",,,1170,9,0,135997,0
+733,"Racial - Troll","Racial - Troll",,33938,9,0,0,0
+753,"Racial - Gnome","Racial - Gnome",,33938,9,0,0,0
+754,"Racial - Human","Racial - Human",,33938,9,0,0,0
+755,Jewelcrafting,"Higher jewelcrafting skill allows you to learn higher level jewelcrafting plans.  Jewelcrafting plans can be found on trainers around the world as well as from quests and monsters.",Modify,4224,11,1,134071,0
+756,"Racial - Blood Elf","Racial - Blood Elf",,32914,9,0,0,0
+758,"Pet - Event - Remote Control",,,0,12,0,0,0
+759,"Language: Draenei",,,128,10,0,0,0
+760,"Racial - Draenei","Racial - Draenei",,32914,9,0,0,0
+761,"Pet - Felguard",,,0,7,0,0,0
+762,Riding,"Higher riding skill allows you to ride faster and more exotic beasts.",,144,9,0,132164,0
+763,"Pet - Dragonhawk",,,0,7,0,132172,0
+764,"Pet - Nether Ray",,,0,7,0,132182,0
+765,"Pet - Sporebat",,,0,7,0,134523,0
+766,"Pet - Warp Stalker",,,0,7,0,135731,0
+767,"Pet - Ravager",,,0,7,0,132195,0
+768,"Pet - Serpent",,,0,7,0,135461,0
+769,Internal,Hi,,1040,7,0,135724,0
+773,Inscription,"Higher inscription skill allows you to learn more advanced inscriptions.  Inscriptions are acquired from learned scribes throughout the world.",Inscribe,4224,11,1,237171,0
+775,"Pet - Moth",,,0,7,0,0,0
+777,Mounts,"Your mounts.",,2,7,0,132167,0
+778,Companions,"Your companions.",,2,7,0,0,0
+780,"Pet - Exotic Chimaera",,,0,7,0,0,0
+781,"Pet - Exotic Devilsaur",,,0,7,0,0,0
+782,"Pet - Ghoul",,,0,7,0,136119,0
+783,"Pet - Exotic Silithid",,,0,7,0,0,0
+784,"Pet - Exotic Worm",,,0,7,0,0,0
+785,"Pet - Wasp","Pet - Wasp",,0,7,0,0,0
+786,"Pet - Exotic Clefthoof",,,0,7,0,0,0
+787,"Pet - Exotic Core Hound",,,0,7,0,0,0
+788,"Pet - Exotic Spirit Beast",,,0,7,0,0,0
+789,"Racial - Worgen","Racial - Worgen",,42130,9,0,136243,0
+790,"Racial - Goblin","Racial - Goblin",,42130,9,0,0,0
+791,"Language: Gilnean",,,128,10,0,136243,0
+792,"Language: Goblin",,,128,10,0,136243,0
+794,Archaeology,"Higher archaeology skill allows you to complete more valuable artifacts and collect more artifact fragments. Fragments can be found in ruins and dig sites.",,128,9,0,441139,0
+795,Hunter,"Hunter skills.",,1048,7,0,626000,0
+796,"Death Knight","Death Knight skills.",,1048,7,0,625998,0
+798,Druid,"Druid skills.",,1048,7,0,625999,0
+800,Paladin,"Paladin skills.",,1048,7,0,626003,0
+804,Priest,"Priest skills.",,1048,7,0,626004,0
+805,"Pet - Water Elemental",,,0,7,0,0,0
+808,"Pet - Fox",,,0,7,0,0,0
+810,"All - Glyphs","Glyphs go here!",,130,12,0,254290,0
+811,"Pet - Dog",,,0,7,0,0,0
+815,"Pet - Monkey",,,0,5,0,0,0
+817,"Pet - Shale Spider",,,0,7,0,0,0
+818,Beetle,,,0,7,0,0,0
+821,"All - Guild Perks",,,2,5,0,0,0
+824,"Pet - Hydra",,,0,7,0,463493,0
+829,Monk,"Monk skills.",,1048,7,0,626002,0
+840,Warrior,"Warrior skills.",,1048,7,0,626008,0
+849,Warlock,"Warlock skills.",,1052,7,0,626007,0
+899,"Racial - Pandaren","Racial - Pandaren",,32914,5,0,0,0
+904,Mage,"Mage skills.",,1048,7,0,626001,0
+905,"Language: Pandaren Neutral",,,0,10,0,136243,0
+921,Rogue,"Rogue skills.",,1048,7,0,626005,0
+924,Shaman,"Shaman skills.",,1048,7,0,626006,0
+927,"Fel Imp",,,0,7,0,460856,0
+928,Voidlord,,,0,5,0,538447,0
+929,Shivarra,,,0,5,0,574999,0
+930,Observer,,,0,5,0,538445,0
+931,Wrathguard,,,0,5,0,462730,0
+934,"All - Specializations","Misc specialization handling spells go here.",,0,12,0,0,0
+960,Runeforging,,Engrave,128,7,0,237523,0
+962,"Pet - Primal Fire Elemental",,,0,7,0,0,0
+963,"Pet - Primal Earth Elemental",,,0,7,0,0,0
+975,"Way of the Grill",,,0,9,1,0,185
+976,"Way of the Wok",,,0,9,1,0,185
+977,"Way of the Pot",,,0,9,1,0,185
+978,"Way of the Steamer",,,0,9,1,0,185
+979,"Way of the Oven",,,0,9,1,0,185
+980,"Way of the Brew",,,0,9,1,0,185
+981,"Apprentice Cooking",,,0,12,1,0,185
+982,"Journeyman Cookbook",,,0,27,1,0,185
+983,Rodent,"Pet - Rodent",,0,7,0,134172,0
+984,Crane,,,0,7,0,606543,0
+985,"Water Strider",,,0,7,0,132844,0
+986,"Pet - Exotic Quilen",,,0,7,0,132267,0
+987,"Pet - Goat",,,0,7,0,132248,0
+988,Basilisk,,,0,5,0,0,0
+999,"NO PLAYERS",,,0,12,0,0,0
+1305,Direhorn,,,0,7,0,791593,0
+1748,"Pet - Primal Storm Elemental","Pet - Primal Storm Elemental",,0,7,0,0,0
+1777,"Pet - Water Elemental Minor Talent Version","Minor Talent Water Elemental",,0,7,0,0,0
+1818,"Pet - Exotic Rylak",,,0,7,0,1027878,0
+1819,"Pet - Riverbeast",,,0,7,0,294471,0
+1830,Unused,"Enchanting from the garrison.",Enchant,6,12,0,132853,0
+1848,"Demon Hunter","Demon Hunter skills.",,1048,7,0,1260827,0
+1945,Logging,"Higher logging skill allows you to harvest more difficult timber around the Draenor. If you cannot harvest specific timber, then increase your skill by upgrading your Lumber Mill.",,128,9,0,975739,0
+1981,"Pet - Terrorguard",Terrorguard,,0,7,0,136243,0
+1982,"Pet - Abyssal",Abyssal,,0,7,0,136243,0
+1993,"Pet - Stag",,,0,7,0,1044501,0
+2000,"Trading Post","Progress towards having a full set.",,2,12,0,975746,0
+2152,Warglaives,"Allows the use of warglaives.",,128,6,0,135561,0
+2189,"Pet - Mechanical","Mechanical Hunter Pet",,0,7,0,136243,0
+2216,"Pet - Abomination","Death Knight Unholy Talent Pet",,0,7,0,298667,0
+2279,"Pet - Oxen",Oxen,,0,7,0,132248,0
+2280,"Pet - Scalehide",Scalehide,,0,7,0,132248,0
+2361,"Pet - Feathermane","Pet - Feathermane",,0,7,0,929300,0
+2419,"Racial - Nightborne","Racial - Nightborne",,33938,9,0,136243,0
+2420,"Racial - Highmountain Tauren","Racial - Highmountain Tauren",,33938,9,0,136243,0
+2421,"Racial - Lightforged Draenei","Racial - Lightforged Draenei",,32914,9,0,0,0
+2423,"Racial - Void Elf","Racial - Void Elf",,33938,9,0,136243,0
+2464,"Language: Shalassian",,,128,10,0,136243,0
+2465,"Language: Thalassian",,,128,10,0,136243,0

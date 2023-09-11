@@ -1,4 +1,5 @@
 local lib = LibStub("LibTradeSkillRecipes")
+
 lib:AddRecipe(165, nil, 2149, 2302, nil, nil) -- 1353 Handstitched Leather Boots
 lib:AddRecipe(165, nil, 2153, 2303, nil, nil) -- 1355 Handstitched Leather Pants
 lib:AddRecipe(165, nil, 2152, 2304, 2831, 15) -- 1356 Light Armor Kit
@@ -324,6 +325,9 @@ lib:AddRecipe(171, 6053, 7255, 6051, 7245, nil) -- 4211 Holy Protection Potion
 lib:AddRecipe(171, 6057, 7259, 6052, 7254, nil) -- 4212 Nature Protection Potion
 lib:AddRecipe(171, 6054, 7256, 6048, 7242, nil) -- 4213 Shadow Protection Potion
 lib:AddRecipe(164, nil, 7408, 6214, nil, nil) -- 4285 Heavy Copper Maul
+lib:AddEnchantmentRecipe(333, nil, 7411, 3) -- 4286 Enchanting
+lib:AddEnchantmentRecipe(333, nil, 7412, 3) -- 4287 Enchanting
+lib:AddEnchantmentRecipe(333, nil, 7413, 3) -- 4288 Enchanting
 lib:AddEnchantmentRecipe(333, nil, 7418, 41) -- 4289 Enchant Bracer - Minor Health
 lib:AddEnchantmentRecipe(333, nil, 7420, 41) -- 4290 Enchant Chest - Minor Health
 lib:AddRecipe(333, nil, 7421, 6218, nil, nil) -- 4291 Runed Copper Rod
@@ -700,6 +704,7 @@ lib:AddEnchantmentRecipe(333, nil, 13695, 1897) -- 7530 Enchant 2H Weapon - Impa
 lib:AddEnchantmentRecipe(333, 11166, 13698, 865) -- 7531 Enchant Gloves - Skinning
 lib:AddEnchantmentRecipe(333, nil, 13700, 866) -- 7532 Enchant Chest - Lesser Stats
 lib:AddRecipe(333, nil, 13702, 11145, nil, nil) -- 7533 Runed Truesilver Rod
+lib:AddEnchantmentRecipe(333, nil, 13920, 3) -- 7656 Enchanting
 lib:AddEnchantmentRecipe(333, nil, 13746, 884) -- 7657 Enchant Cloak - Greater Defense
 lib:AddEnchantmentRecipe(333, nil, 13794, 903) -- 7658 Enchant Cloak - Resistance
 lib:AddEnchantmentRecipe(333, nil, 13815, 904) -- 7659 Enchant Gloves - Agility
@@ -758,6 +763,7 @@ lib:AddRecipe(185, 16111, 15915, 12216, 10256, nil) -- 8625 Spiced Chili Crab
 lib:AddRecipe(185, 16110, 15933, 12218, 10256, nil) -- 8626 Monster Omelet
 lib:AddRecipe(164, nil, 15972, 12259, nil, nil) -- 8636 Glinting Steel Dagger
 lib:AddRecipe(164, 12261, 15973, 12260, nil, nil) -- 8637 Searing Golden Blade
+lib:AddEnchantmentRecipe(185, nil, 818, 29784) -- 8676 Basic Campfire
 lib:AddRecipe(164, nil, 16641, 12404, 16138, 1643) -- 9156 Dense Sharpening Stone
 lib:AddRecipe(164, nil, 16640, 12643, 16622, 1703) -- 9157 Dense Weightstone
 lib:AddRecipe(164, nil, 16639, 12644, nil, nil) -- 9158 Dense Grinding Stone
@@ -1337,6 +1343,7 @@ lib:AddRecipe(164, 22390, 27830, 22384, nil, nil) -- 13842 Persuader
 lib:AddRecipe(164, 22388, 27829, 22385, nil, nil) -- 13843 Titanic Leggings
 lib:AddRecipe(164, 22389, 27832, 22383, nil, nil) -- 13844 Sageblade
 lib:AddEnchantmentRecipe(333, 22392, 27837, 2646) -- 13845 Enchant 2H Weapon - Agility
+lib:AddEnchantmentRecipe(333, nil, 28029, 3) -- 13859 Enchanting
 lib:AddEnchantmentRecipe(333, nil, 27899, 2647) -- 13860 Enchant Bracer - Brawn
 lib:AddEnchantmentRecipe(333, nil, 27905, 1891) -- 13861 Enchant Bracer - Stats
 lib:AddEnchantmentRecipe(333, 22530, 27906, 2648) -- 13862 Enchant Bracer - Major Defense
@@ -2167,6 +2174,7 @@ lib:AddRecipe(165, nil, 44344, 34100, nil, nil) -- 16023 Knothide Quiver
 lib:AddRecipe(165, nil, 44343, 34099, nil, nil) -- 16024 Knothide Ammo Pouch
 lib:AddEnchantmentRecipe(333, nil, 44383, 3229) -- 16033 Enchant Shield - Resilience
 lib:AddRecipe(202, 34114, 44391, 34113, 44389, nil) -- 16034 Field Repair Bot 110G
+lib:AddRecipe(165, nil, 44359, 34105, nil, nil) -- 16143 Quiver of a Thousand Feathers
 lib:AddRecipe(165, 34201, 44768, 34106, nil, nil) -- 16144 Netherscale Ammo Pouch
 lib:AddRecipe(165, 34218, 44768, 34106, nil, nil) -- 16144 Netherscale Ammo Pouch
 lib:AddRecipe(165, nil, 44770, 34207, 44769, 3260) -- 16145 Glove Reinforcements

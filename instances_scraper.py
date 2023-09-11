@@ -127,8 +127,8 @@ def read_group_finder_activity():
             activities[max_players].append(int(row[value_index]))
 
 
-update_files(1, "DungeonEncounter")
-update_files(3, "DungeonEncounter", "GroupFinderActivity", "LFGDungeons", "MapDifficulty")
+update_files(1, True, "DungeonEncounter")
+update_files(3, True, "DungeonEncounter", "GroupFinderActivity", "LFGDungeons", "MapDifficulty")
 name_to_difficulty = {}
 infos = {}
 read_dungeons()
