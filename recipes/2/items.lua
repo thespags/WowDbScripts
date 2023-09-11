@@ -35,6 +35,8 @@ lib:AddRecipe(185, nil, 2546, 2687, 5005, nil) -- 1545 Dry Pork Ribs
 lib:AddRecipe(185, 2699, 2547, 1082, 5006, nil) -- 1546 Redridge Goulash
 lib:AddRecipe(185, 2700, 2548, 2685, 435, nil) -- 1547 Succulent Pork Ribs
 lib:AddRecipe(185, 2701, 2549, 1017, 5006, nil) -- 1548 Seasoned Wolf Kabob
+lib:AddRecipe(186, nil, 2658, 2842, nil, nil) -- 1599 Smelt Silver
+lib:AddRecipe(186, nil, 2659, 2841, nil, nil) -- 1600 Smelt Bronze
 lib:AddRecipe(164, nil, 2660, 2862, 2828, 40) -- 1631 Rough Sharpening Stone
 lib:AddRecipe(164, nil, 2661, 2851, nil, nil) -- 1632 Copper Chain Belt
 lib:AddRecipe(164, nil, 2662, 2852, nil, nil) -- 1633 Copper Chain Pants
@@ -73,6 +75,9 @@ lib:AddRecipe(129, nil, 3275, 1251, 746, nil) -- 1838 Linen Bandage
 lib:AddRecipe(129, nil, 3276, 2581, 1159, nil) -- 1839 Heavy Linen Bandage
 lib:AddRecipe(129, nil, 3277, 3530, 3267, nil) -- 1840 Wool Bandage
 lib:AddRecipe(129, nil, 3278, 3531, 3268, nil) -- 1841 Heavy Wool Bandage
+lib:AddRecipe(186, nil, 3308, 3577, nil, nil) -- 1846 Smelt Gold
+lib:AddRecipe(186, nil, 3307, 3575, nil, nil) -- 1847 Smelt Iron
+lib:AddRecipe(186, nil, 3304, 3576, nil, nil) -- 1848 Smelt Tin
 lib:AddRecipe(164, nil, 3292, 3487, nil, nil) -- 1849 Heavy Copper Broadsword
 lib:AddRecipe(164, nil, 3293, 3488, nil, nil) -- 1850 Copper Battle Axe
 lib:AddRecipe(164, nil, 3294, 3489, nil, nil) -- 1851 Thick War Axe
@@ -131,6 +136,7 @@ lib:AddRecipe(164, nil, 3508, 3844, nil, nil) -- 2000 Green Iron Hauberk
 lib:AddRecipe(164, 3873, 3511, 3845, nil, nil) -- 2001 Golden Scale Cuirass
 lib:AddRecipe(164, 3874, 3513, 3846, nil, nil) -- 2002 Polished Steel Boots
 lib:AddRecipe(164, 3875, 3515, 3847, nil, nil) -- 2003 Golden Scale Boots
+lib:AddRecipe(186, nil, 3569, 3859, nil, nil) -- 2037 Smelt Steel
 lib:AddRecipe(165, nil, 3753, 4237, nil, nil) -- 2162 Handstitched Leather Belt
 lib:AddRecipe(165, nil, 3756, 4239, nil, nil) -- 2164 Embossed Leather Gloves
 lib:AddRecipe(165, nil, 3759, 4242, nil, nil) -- 2167 Embossed Leather Pants
@@ -265,6 +271,7 @@ lib:AddRecipe(165, 13288, 4097, 4456, nil, nil) -- 2500 Raptor Hide Belt
 lib:AddRecipe(165, 13287, 4096, 4455, nil, nil) -- 2502 Raptor Hide Harness
 lib:AddRecipe(171, 4597, 4508, 4596, 440, nil) -- 2907 Discolored Healing Potion
 lib:AddRecipe(171, 4624, 4942, 4623, 4941, nil) -- 2909 Lesser Stoneshield Potion
+lib:AddRecipe(186, nil, 2657, 2840, nil, nil) -- 3324 Smelt Copper
 lib:AddRecipe(165, 5083, 5244, 5081, nil, nil) -- 3343 Kodo Hide Bag
 lib:AddRecipe(185, 5482, 6412, 5472, 5004, nil) -- 3926 Kaldorei Spider Kabob
 lib:AddRecipe(185, 5483, 6413, 5473, 6410, nil) -- 3927 Scorpid Surprise
@@ -501,6 +508,8 @@ lib:AddRecipe(164, 8028, 10009, 7946, nil, nil) -- 5349 Runed Mithril Hammer
 lib:AddRecipe(164, nil, 10011, 7959, nil, nil) -- 5350 Blight
 lib:AddRecipe(164, 8030, 10013, 7947, nil, nil) -- 5351 Ebon Shiv
 lib:AddRecipe(164, nil, 10015, 7960, nil, nil) -- 5352 Truesilver Champion
+lib:AddRecipe(186, nil, 10098, 6037, nil, nil) -- 5386 Smelt Truesilver
+lib:AddRecipe(186, nil, 10097, 3860, nil, nil) -- 5387 Smelt Mithril
 lib:AddRecipe(165, nil, 10482, 8172, nil, nil) -- 5666 Cured Thick Hide
 lib:AddRecipe(165, nil, 10487, 8173, 10344, 18) -- 5667 Thick Armor Kit
 lib:AddRecipe(165, 8384, 10490, 8174, nil, nil) -- 5668 Comfortable Leather Hat
@@ -738,6 +747,7 @@ lib:AddRecipe(333, nil, 14293, 11287, nil, nil) -- 7999 Lesser Magic Wand
 lib:AddRecipe(333, nil, 14807, 11288, nil, nil) -- 8000 Greater Magic Wand
 lib:AddRecipe(333, nil, 14809, 11289, nil, nil) -- 8001 Lesser Mystic Wand
 lib:AddRecipe(333, nil, 14810, 11290, nil, nil) -- 8002 Greater Mystic Wand
+lib:AddRecipe(186, nil, 14891, 11371, nil, nil) -- 8016 Smelt Dark Iron
 lib:AddRecipe(165, nil, 14930, 8217, nil, nil) -- 8056 Quickdraw Quiver
 lib:AddRecipe(165, nil, 14932, 8218, nil, nil) -- 8057 Thick Leather Ammo Pouch
 lib:AddRecipe(202, nil, 15255, 11590, 15057, nil) -- 8196 Mechanical Repair Kit
@@ -764,6 +774,7 @@ lib:AddRecipe(185, 16110, 15933, 12218, 10256, nil) -- 8626 Monster Omelet
 lib:AddRecipe(164, nil, 15972, 12259, nil, nil) -- 8636 Glinting Steel Dagger
 lib:AddRecipe(164, 12261, 15973, 12260, nil, nil) -- 8637 Searing Golden Blade
 lib:AddEnchantmentRecipe(185, nil, 818, 29784) -- 8676 Basic Campfire
+lib:AddRecipe(186, nil, 16153, 12359, nil, nil) -- 8796 Smelt Thorium
 lib:AddRecipe(164, nil, 16641, 12404, 16138, 1643) -- 9156 Dense Sharpening Stone
 lib:AddRecipe(164, nil, 16640, 12643, 16622, 1703) -- 9157 Dense Weightstone
 lib:AddRecipe(164, nil, 16639, 12644, nil, nil) -- 9158 Dense Grinding Stone
@@ -1090,6 +1101,7 @@ lib:AddRecipe(165, 18516, 22923, 18508, nil, nil) -- 12353 Swift Flight Bracers
 lib:AddRecipe(165, 18517, 22926, 18509, nil, nil) -- 12354 Chromatic Cloak
 lib:AddRecipe(165, 18518, 22927, 18510, nil, nil) -- 12355 Hide of the Wild
 lib:AddRecipe(165, 18519, 22928, 18511, nil, nil) -- 12356 Shifting Cloak
+lib:AddRecipe(186, nil, 22967, 17771, nil, nil) -- 12382 Smelt Elementium
 lib:AddRecipe(202, 18647, 23066, 9318, 6668, nil) -- 12420 Red Firework
 lib:AddRecipe(202, 18648, 23068, 9313, 11541, nil) -- 12421 Green Firework
 lib:AddRecipe(202, 18649, 23067, 9312, 11540, nil) -- 12422 Blue Firework
@@ -1484,6 +1496,12 @@ lib:AddRecipe(755, 23152, 28950, 23118, nil, nil) -- 14046 Solid Azure Moonstone
 lib:AddRecipe(755, 23153, 28953, 23119, nil, nil) -- 14047 Sparkling Azure Moonstone
 lib:AddRecipe(755, 23154, 28955, 23120, nil, nil) -- 14048 Stormy Azure Moonstone
 lib:AddRecipe(755, 23155, 28957, 23121, nil, nil) -- 14049 Lustrous Azure Moonstone
+lib:AddRecipe(186, nil, 29356, 23445, nil, nil) -- 14113 Smelt Fel Iron
+lib:AddRecipe(186, nil, 29358, 23446, nil, nil) -- 14114 Smelt Adamantite
+lib:AddRecipe(186, nil, 29359, 23447, nil, nil) -- 14115 Smelt Eternium
+lib:AddRecipe(186, nil, 29360, 23448, nil, nil) -- 14116 Smelt Felsteel
+lib:AddRecipe(186, nil, 29361, 23449, nil, nil) -- 14117 Smelt Khorium
+lib:AddRecipe(186, nil, 29686, 23573, nil, nil) -- 14156 Smelt Hardened Adamantite
 lib:AddRecipe(171, 23574, 29688, 23571, nil, nil) -- 14157 Transmute: Primal Might
 lib:AddRecipe(164, nil, 29545, 23482, nil, nil) -- 14181 Fel Iron Plate Gloves
 lib:AddRecipe(164, nil, 29547, 23484, nil, nil) -- 14182 Fel Iron Plate Belt
@@ -1740,6 +1758,8 @@ lib:AddRecipe(165, 25742, 32502, 25692, nil, nil) -- 14886 Netherfury Leggings
 lib:AddRecipe(165, 29219, 32502, 25692, nil, nil) -- 14886 Netherfury Leggings
 lib:AddRecipe(165, 25743, 32503, 25693, nil, nil) -- 14887 Netherfury Boots
 lib:AddRecipe(165, 29218, 32503, 25693, nil, nil) -- 14887 Netherfury Boots
+lib:AddEnchantmentRecipe(182, nil, 32605, 1) -- 14898 Herb Gathering
+lib:AddEnchantmentRecipe(186, nil, 32606, 2) -- 14899 Mining
 lib:AddRecipe(164, nil, 32655, 25843, nil, nil) -- 14900 Fel Iron Rod
 lib:AddRecipe(164, 25846, 32656, 25844, nil, nil) -- 14901 Adamantite Rod
 lib:AddRecipe(164, 25847, 32657, 25845, nil, nil) -- 14902 Eternium Rod
@@ -1899,6 +1919,8 @@ lib:AddRecipe(165, nil, 35589, 29525, nil, nil) -- 15571 Primalstrike Vest
 lib:AddRecipe(165, nil, 35587, 29524, nil, nil) -- 15572 Windhawk Belt
 lib:AddRecipe(165, nil, 35588, 29523, nil, nil) -- 15573 Windhawk Bracers
 lib:AddRecipe(165, nil, 35585, 29522, nil, nil) -- 15574 Windhawk Hauberk
+lib:AddRecipe(186, nil, 35750, 22573, 28101, nil) -- 15609 Earth Shatter
+lib:AddRecipe(186, nil, 35751, 22574, 28102, nil) -- 15610 Fire Sunder
 lib:AddRecipe(165, nil, 36074, 29964, nil, nil) -- 15612 Blackstorm Leggings
 lib:AddRecipe(165, nil, 36076, 29971, nil, nil) -- 15613 Dragonstrike Leggings
 lib:AddRecipe(165, nil, 36075, 29970, nil, nil) -- 15614 Wildfeather Leggings
@@ -2247,6 +2269,7 @@ lib:AddRecipe(197, 35204, 46128, 34366, nil, nil) -- 16280 Sunfire Handwraps
 lib:AddRecipe(197, 35551, 46128, 34366, nil, nil) -- 16280 Sunfire Handwraps
 lib:AddRecipe(197, 35206, 46130, 34364, nil, nil) -- 16281 Sunfire Robe
 lib:AddRecipe(197, 35552, 46130, 34364, nil, nil) -- 16281 Sunfire Robe
+lib:AddRecipe(186, 35273, 46353, 35128, nil, nil) -- 16283 Smelt Hardened Khorium
 lib:AddRecipe(755, 35322, 46403, 35315, nil, nil) -- 16284 Quick Dawnstone
 lib:AddRecipe(755, 35323, 46404, 35316, nil, nil) -- 16285 Reckless Noble Topaz
 lib:AddRecipe(755, 35325, 46405, 35318, nil, nil) -- 16286 Forceful Talasite

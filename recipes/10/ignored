@@ -1,84 +1,115 @@
-2018 -- 1283 Blacksmithing 
-2108 -- 1328 Leatherworking 
-2259 -- 1374 Alchemy 
-2550 -- 1532 Cooking 
-3100 -- 1792 Blacksmithing 
-3101 -- 1793 Alchemy 
-3102 -- 1794 Cooking 
-3104 -- 1795 Leatherworking 
-3413 -- 1906 Cooking 
-3464 -- 1938 Alchemy 
-3538 -- 2005 Blacksmithing 
-3811 -- 2161 Leatherworking 
-3908 -- 2356 Tailoring 
-3909 -- 2357 Tailoring 
-3910 -- 2358 Tailoring 
-4036 -- 2410 Engineering 
-4037 -- 2411 Engineering 
-4038 -- 2412 Engineering 
-7411 -- 4286 Enchanting 
-7412 -- 4287 Enchanting 
-7413 -- 4288 Enchanting 
-9785 -- 5226 Blacksmithing 
-10662 -- 5706 Leatherworking 
-11611 -- 6056 Alchemy 
-12180 -- 6625 Tailoring 
-12656 -- 6882 Engineering 
-13262 -- 7316 Disenchant 
-13920 -- 7656 Enchanting 
-18260 -- 10253 Cooking 
-20222 -- 11491 Goblin Engineer 
-20219 -- 11492 Gnomish Engineer 
-25229 -- 13166 Jewelcrafting 
-25230 -- 13167 Jewelcrafting 
-26790 -- 13541 Tailoring 
-28029 -- 13859 Enchanting 
-28596 -- 13960 Alchemy 
-28677 -- 14007 Elixir Master 
-28675 -- 14008 Potion Master 
-28672 -- 14009 Transmutation Master 
-28894 -- 14016 Jewelcrafting 
-28895 -- 14017 Jewelcrafting 
-28897 -- 14018 Jewelcrafting 
-29844 -- 14248 Blacksmithing 
-30350 -- 14347 Engineering 
-32549 -- 14888 Leatherworking 
-33359 -- 15021 Cooking 
-45357 -- 16187 Inscription 
-45358 -- 16188 Inscription 
-45359 -- 16189 Inscription 
-45360 -- 16190 Inscription 
-45361 -- 16191 Inscription 
-45363 -- 16192 Inscription 
-51296 -- 17590 Cooking 
-51304 -- 17592 Alchemy 
-51300 -- 17593 Blacksmithing 
-51313 -- 17594 Enchanting 
-51306 -- 17595 Engineering 
-51311 -- 17596 Jewelcrafting 
-51302 -- 17597 Leatherworking 
-51309 -- 17598 Tailoring 
-59390 -- 20150 Cloth Scavenging 
-73318 -- 21437 Jewelcrafting 
-74258 -- 21612 Enchanting 
-75156 -- 21650 Tailoring 
-76666 -- 21832 Blacksmithing 
-80731 -- 22022 Alchemy 
-81199 -- 22073 Leatherworking 
-82774 -- 22172 Engineering 
-86008 -- 22540 Inscription 
-88053 -- 22946 Cooking 
-82207 -- 24065 Explosive Bolts 
-104115 -- 24786 Release Fire Spirit 
-104381 -- 24813 Cooking 
-105206 -- 24824 Alchemy 
-110396 -- 25376 Blacksmithing 
-110400 -- 25377 Enchanting 
-110403 -- 25378 Engineering 
-110417 -- 25391 Inscription 
-110420 -- 25395 Jewelcrafting 
-110423 -- 25396 Leatherworking 
-110426 -- 25397 Tailoring 
+
+2018 -- 1283 Blacksmithing
+2108 -- 1328 Leatherworking
+2259 -- 1374 Alchemy
+2366 -- 1418 Herb Gathering
+2368 -- 1419 Herb Gathering
+2383 -- 1442 Find Herbs
+2550 -- 1532 Cooking
+2580 -- 1568 Find Minerals
+2575 -- 1569 Mining
+2576 -- 1570 Mining
+2656 -- 1597 Mining Journal
+3100 -- 1792 Blacksmithing
+3101 -- 1793 Alchemy
+3102 -- 1794 Cooking
+3104 -- 1795 Leatherworking
+3413 -- 1906 Cooking
+3464 -- 1938 Alchemy
+3538 -- 2005 Blacksmithing
+3564 -- 2036 Mining
+3570 -- 2041 Herb Gathering
+3811 -- 2161 Leatherworking
+3908 -- 2356 Tailoring
+3909 -- 2357 Tailoring
+3910 -- 2358 Tailoring
+4036 -- 2410 Engineering
+4037 -- 2411 Engineering
+4038 -- 2412 Engineering
+7411 -- 4286 Enchanting
+7412 -- 4287 Enchanting
+7413 -- 4288 Enchanting
+8388 -- 4682 Find Minerals
+8613 -- 4766 Skinning
+8617 -- 4767 Skinning
+8618 -- 4768 Skinning
+9785 -- 5226 Blacksmithing
+10248 -- 5487 Mining
+10662 -- 5706 Leatherworking
+10768 -- 5746 Skinning
+11611 -- 6056 Alchemy
+11993 -- 6216 Herb Gathering
+12180 -- 6625 Tailoring
+12656 -- 6882 Engineering
+13262 -- 7316 Disenchant
+13920 -- 7656 Enchanting
+18260 -- 10253 Cooking
+20222 -- 11491 Goblin Engineer
+20219 -- 11492 Gnomish Engineer
+25229 -- 13166 Jewelcrafting
+25230 -- 13167 Jewelcrafting
+26790 -- 13541 Tailoring
+28029 -- 13859 Enchanting
+28596 -- 13960 Alchemy
+28677 -- 14007 Elixir Master
+28675 -- 14008 Potion Master
+28672 -- 14009 Transmutation Master
+28695 -- 14010 Herb Gathering
+28894 -- 14016 Jewelcrafting
+28895 -- 14017 Jewelcrafting
+28897 -- 14018 Jewelcrafting
+29354 -- 14112 Mining
+29844 -- 14248 Blacksmithing
+30350 -- 14347 Engineering
+32549 -- 14888 Leatherworking
+32605 -- 14898 Herb Gathering
+32606 -- 14899 Mining
+32678 -- 14907 Skinning
+33359 -- 15021 Cooking
+45357 -- 16187 Inscription
+45358 -- 16188 Inscription
+45359 -- 16189 Inscription
+45360 -- 16190 Inscription
+45361 -- 16191 Inscription
+45363 -- 16192 Inscription
+50300 -- 17443 Herb Gathering
+50305 -- 17444 Skinning
+50310 -- 17446 Mining
+51296 -- 17590 Cooking
+51304 -- 17592 Alchemy
+51300 -- 17593 Blacksmithing
+51313 -- 17594 Enchanting
+51306 -- 17595 Engineering
+51311 -- 17596 Jewelcrafting
+51302 -- 17597 Leatherworking
+51309 -- 17598 Tailoring
+59390 -- 20150 Cloth Scavenging
+73318 -- 21437 Jewelcrafting
+74258 -- 21612 Enchanting
+74519 -- 21620 Herb Gathering
+74517 -- 21621 Mining
+74522 -- 21622 Skinning
+75156 -- 21650 Tailoring
+76666 -- 21832 Blacksmithing
+80731 -- 22022 Alchemy
+81199 -- 22073 Leatherworking
+82774 -- 22172 Engineering
+86008 -- 22540 Inscription
+88053 -- 22946 Cooking
+82207 -- 24065 Explosive Bolts
+102161 -- 24587 Mining
+102216 -- 24602 Skinning
+104115 -- 24786 Release Fire Spirit
+104381 -- 24813 Cooking
+105206 -- 24824 Alchemy
+110396 -- 25376 Blacksmithing
+110400 -- 25377 Enchanting
+110403 -- 25378 Engineering
+110413 -- 25389 Herb Gathering
+110417 -- 25391 Inscription
+110420 -- 25395 Jewelcrafting
+110423 -- 25396 Leatherworking
+110426 -- 25397 Tailoring
 122605 -- 26409 Spells removed
 122603 -- 26418 Spells removed
 122606 -- 26419 Spells removed
@@ -87,12 +118,12 @@
 122601 -- 26436 Spells removed
 122600 -- 26452 Spells removed
 122602 -- 26453 Spells removed
-125589 -- 27085 Way of the Brew 
-124694 -- 27086 Way of the Grill 
-125588 -- 27087 Way of the Oven 
-125586 -- 27088 Way of the Pot 
-125587 -- 27089 Way of the Steamer 
-125584 -- 27090 Way of the Wok 
+125589 -- 27085 Way of the Brew
+124694 -- 27086 Way of the Grill
+125588 -- 27087 Way of the Oven
+125586 -- 27088 Way of the Pot
+125587 -- 27089 Way of the Steamer
+125584 -- 27090 Way of the Wok
 153605 -- 32213 Spells removed
 153606 -- 32214 Spells removed
 153607 -- 32215 Spells removed
@@ -131,131 +162,297 @@
 153666 -- 32253 Spells removed
 153667 -- 32254 Spells removed
 153668 -- 32255 Spells removed
-156606 -- 32341 Alchemy 
-158737 -- 32416 Blacksmithing 
-158716 -- 32418 Enchanting 
-158739 -- 32419 Engineering 
-158748 -- 32423 Inscription 
-158750 -- 32424 Jewelcrafting 
-158752 -- 32425 Leatherworking 
-158758 -- 32428 Tailoring 
-158765 -- 32647 Cooking 
+156606 -- 32341 Alchemy
+158737 -- 32416 Blacksmithing
+158716 -- 32418 Enchanting
+158739 -- 32419 Engineering
+158745 -- 32422 Herb Gathering
+158748 -- 32423 Inscription
+158750 -- 32424 Jewelcrafting
+158752 -- 32425 Leatherworking
+158754 -- 32426 Mining
+158756 -- 32427 Skinning
+158758 -- 32428 Tailoring
+158765 -- 32647 Cooking
 169696 -- 33224 Spells removed
 169693 -- 33225 Spells removed
 169699 -- 33226 Spells removed
 173415 -- 33574 Spells removed
-177355 -- 33741 Remove Illusion 
-195095 -- 35034 Alchemy 
-195097 -- 35036 Blacksmithing 
-195096 -- 35037 Enchanting 
-195112 -- 35038 Engineering 
-195115 -- 35041 Inscription 
-195116 -- 35042 Jewelcrafting 
-195119 -- 35043 Leatherworking 
-195126 -- 35046 Tailoring 
-195128 -- 35047 Cooking 
-264255 -- 39122 Kul Tiran Alchemy 
-264243 -- 39123 Cataclysm Alchemy 
-264211 -- 39124 Alchemy 
-264247 -- 39125 Draenor Alchemy 
-264250 -- 39126 Legion Alchemy 
-264220 -- 39127 Northrend Alchemy 
-264213 -- 39128 Outland Alchemy 
-264245 -- 39129 Pandaria Alchemy 
-264434 -- 39157 Blacksmithing 
-264436 -- 39158 Outland Blacksmithing 
-264438 -- 39159 Northrend Blacksmithing 
-264440 -- 39160 Cataclysm Blacksmithing 
-264442 -- 39161 Pandaria Blacksmithing 
-264444 -- 39162 Draenor Blacksmithing 
-264446 -- 39163 Legion Blacksmithing 
-264448 -- 39164 Kul Tiran Blacksmithing 
-264455 -- 39165 Enchanting 
-264460 -- 39166 Outland Enchanting 
-264462 -- 39167 Northrend Enchanting 
-264464 -- 39168 Cataclysm Enchanting 
-264467 -- 39169 Pandaria Enchanting 
-264469 -- 39170 Draenor Enchanting 
-264471 -- 39171 Legion Enchanting 
-264473 -- 39172 Kul Tiran Enchanting 
-264475 -- 39173 Engineering 
-264479 -- 39174 Outland Engineering 
-264481 -- 39175 Northrend Engineering 
-264483 -- 39176 Cataclysm Engineering 
-264485 -- 39177 Pandaria Engineering 
-264487 -- 39178 Draenor Engineering 
-264490 -- 39179 Legion Engineering 
-264492 -- 39180 Kul Tiran Engineering 
-264494 -- 39181 Inscription 
-264496 -- 39182 Outland Inscription 
-264498 -- 39183 Northrend Inscription 
-264500 -- 39184 Cataclysm Inscription 
-264502 -- 39185 Pandaria Inscription 
-264504 -- 39186 Draenor Inscription 
-264506 -- 39187 Legion Inscription 
-264508 -- 39188 Kul Tiran Inscription 
-264532 -- 39189 Jewelcrafting 
-264534 -- 39190 Outland Jewelcrafting 
-264537 -- 39191 Northrend Jewelcrafting 
-264539 -- 39192 Cataclysm Jewelcrafting 
-264542 -- 39193 Pandaria Jewelcrafting 
-264544 -- 39194 Draenor Jewelcrafting 
-264546 -- 39195 Legion Jewelcrafting 
-264548 -- 39196 Kul Tiran Jewelcrafting 
-264577 -- 39197 Leatherworking 
-264579 -- 39198 Outland Leatherworking 
-264581 -- 39199 Northrend Leatherworking 
-264583 -- 39200 Cataclysm Leatherworking 
-264585 -- 39201 Pandaria Leatherworking 
-264588 -- 39202 Draenor Leatherworking 
-264590 -- 39203 Legion Leatherworking 
-264592 -- 39204 Kul Tiran Leatherworking 
-264616 -- 39205 Tailoring 
-264618 -- 39206 Outland Tailoring 
-264620 -- 39207 Northrend Tailoring 
-264622 -- 39208 Cataclysm Tailoring 
-264624 -- 39209 Pandaria Tailoring 
-264626 -- 39210 Draenor Tailoring 
-264628 -- 39211 Legion Tailoring 
-264630 -- 39212 Kul Tiran Tailoring 
-264632 -- 39213 Classic Cooking 
-264634 -- 39214 Outland Cooking 
-264636 -- 39215 Northrend Cooking 
-264638 -- 39216 Cataclysm Cooking 
-264640 -- 39217 Pandaria Cooking 
-264642 -- 39218 Draenor Cooking 
-264644 -- 39219 Legion Cooking 
-264646 -- 39220 Kul Tiran Cooking 
-265787 -- 39292 Zandalari Alchemy 
-265803 -- 39293 Zandalari Blacksmithing 
-265805 -- 39294 Zandalari Enchanting 
-265807 -- 39295 Zandalari Engineering 
-265809 -- 39296 Zandalari Inscription 
-265811 -- 39297 Zandalari Jewelcrafting 
-265813 -- 39298 Zandalari Leatherworking 
-265815 -- 39299 Zandalari Tailoring 
-265817 -- 39300 Zandalari Cooking 
-259665 -- 40353 Blood Contract: Sacrifice 
-292320 -- 40377 Blood Contract: Bloodguard 
-292012 -- 40378 Blood Contract: Bloodshed 
-292322 -- 40379 Blood Contract: Oblivion 
-300381 -- 40837 Disenchant 
-300382 -- 40838 Disenchant 
-302690 -- 40938 Disenchant 
-302691 -- 40939 Disenchant 
-302692 -- 40940 Disenchant 
-302693 -- 40941 Disenchant 
-302694 -- 40942 Disenchant 
-302695 -- 40943 Disenchant 
-309038 -- 42475 Shadowlands Leatherworking 
-309822 -- 42685 Shadowlands Alchemy 
-309827 -- 42686 Shadowlands Blacksmithing 
-309830 -- 42687 Shadowlands Cooking 
-309832 -- 42688 Shadowlands Enchanting 
-310542 -- 42768 Shadowlands Engineering 
-310949 -- 42791 Shadowlands Tailoring 
-309805 -- 42870 Shadowlands Inscription 
-311967 -- 42964 Shadowlands Jewelcrafting 
+177355 -- 33741 Remove Illusion
+184454 -- 34150 Leystone Deposit
+184456 -- 34151 Leystone Deposit
+184457 -- 34152 Leystone Deposit
+184484 -- 34155 Leystone Seam
+184485 -- 34156 Leystone Seam
+184486 -- 34157 Leystone Seam
+184488 -- 34159 Living Leystone
+184489 -- 34160 Living Leystone
+184490 -- 34161 Living Leystone
+184492 -- 34163 Felslate Deposit
+184493 -- 34164 Felslate Deposit
+184494 -- 34165 Felslate Deposit
+184496 -- 34167 Felslate Seam
+184497 -- 34168 Felslate Seam
+184498 -- 34169 Felslate Seam
+184500 -- 34171 Living Felslate
+184501 -- 34172 Living Felslate
+184502 -- 34173 Living Felslate
+184504 -- 34175 Infernal Brimstone
+184505 -- 34176 Infernal Brimstone
+191970 -- 34646 Infernal Brimstone
+193292 -- 34768 Aethril
+193293 -- 34769 Aethril
+193294 -- 34770 Aethril
+193295 -- 34771 Dreamleaf
+193296 -- 34772 Dreamleaf
+193297 -- 34773 Dreamleaf
+193298 -- 34774 Foxflower
+193299 -- 34775 Foxflower
+193300 -- 34776 Foxflower
+193301 -- 34777 Fjarnskaggl
+193302 -- 34778 Fjarnskaggl
+193303 -- 34779 Fjarnskaggl
+193304 -- 34780 Starlight Rose
+193305 -- 34781 Starlight Rose
+193306 -- 34782 Starlight Rose
+193307 -- 34783 Felwort
+193308 -- 34784 Felwort
+193309 -- 34785 Felwort
+193290 -- 34786 Herbalism Journal
+194161 -- 34818 Stonehide Leather
+194162 -- 34819 Stonehide Leather
+194163 -- 34820 Stonehide Leather
+194164 -- 34821 Stormscale
+194165 -- 34822 Stormscale
+194166 -- 34823 Stormscale
+194167 -- 34824 Felhide
+194168 -- 34825 Felhide
+194169 -- 34826 Felhide
+194170 -- 34827 Unbroken Tooth
+194171 -- 34828 Unbroken Claw
+194173 -- 34829 Legion Butchery
+194174 -- 34830 Skinning Journal
+194203 -- 34831 Legion Gutting
+195095 -- 35034 Alchemy
+195097 -- 35036 Blacksmithing
+195096 -- 35037 Enchanting
+195112 -- 35038 Engineering
+195114 -- 35040 Herb Gathering
+195115 -- 35041 Inscription
+195116 -- 35042 Jewelcrafting
+195119 -- 35043 Leatherworking
+195122 -- 35044 Mining
+195125 -- 35045 Skinning
+195126 -- 35046 Tailoring
+195128 -- 35047 Cooking
+205243 -- 35274 Skinning
+247812 -- 36651 Astral Glory
+247813 -- 36652 Astral Glory
+247814 -- 36653 Astral Glory
+247848 -- 36678 Empyrium Deposit
+247849 -- 36679 Empyrium Deposit
+247850 -- 36680 Empyrium Deposit
+247851 -- 36681 Empyrium Seam
+247852 -- 36682 Empyrium Seam
+247853 -- 36683 Empyrium Seam
+247842 -- 36684 Fiendish Leather
+247843 -- 36685 Fiendish Leather
+247844 -- 36686 Fiendish Leather
+258965 -- 39112 (TEST) Legion Blacksmithing
+264160 -- 39114 (TEST) Legion Engineering
+264191 -- 39115 (TEST) Pandaria Engineering
+264255 -- 39122 Kul Tiran Alchemy
+264243 -- 39123 Cataclysm Alchemy
+264211 -- 39124 Alchemy
+264247 -- 39125 Draenor Alchemy
+264250 -- 39126 Legion Alchemy
+264220 -- 39127 Northrend Alchemy
+264213 -- 39128 Outland Alchemy
+264245 -- 39129 Pandaria Alchemy
+264434 -- 39157 Blacksmithing
+264436 -- 39158 Outland Blacksmithing
+264438 -- 39159 Northrend Blacksmithing
+264440 -- 39160 Cataclysm Blacksmithing
+264442 -- 39161 Pandaria Blacksmithing
+264444 -- 39162 Draenor Blacksmithing
+264446 -- 39163 Legion Blacksmithing
+264448 -- 39164 Kul Tiran Blacksmithing
+264455 -- 39165 Enchanting
+264460 -- 39166 Outland Enchanting
+264462 -- 39167 Northrend Enchanting
+264464 -- 39168 Cataclysm Enchanting
+264467 -- 39169 Pandaria Enchanting
+264469 -- 39170 Draenor Enchanting
+264471 -- 39171 Legion Enchanting
+264473 -- 39172 Kul Tiran Enchanting
+264475 -- 39173 Engineering
+264479 -- 39174 Outland Engineering
+264481 -- 39175 Northrend Engineering
+264483 -- 39176 Cataclysm Engineering
+264485 -- 39177 Pandaria Engineering
+264487 -- 39178 Draenor Engineering
+264490 -- 39179 Legion Engineering
+264492 -- 39180 Kul Tiran Engineering
+264494 -- 39181 Inscription
+264496 -- 39182 Outland Inscription
+264498 -- 39183 Northrend Inscription
+264500 -- 39184 Cataclysm Inscription
+264502 -- 39185 Pandaria Inscription
+264504 -- 39186 Draenor Inscription
+264506 -- 39187 Legion Inscription
+264508 -- 39188 Kul Tiran Inscription
+264532 -- 39189 Jewelcrafting
+264534 -- 39190 Outland Jewelcrafting
+264537 -- 39191 Northrend Jewelcrafting
+264539 -- 39192 Cataclysm Jewelcrafting
+264542 -- 39193 Pandaria Jewelcrafting
+264544 -- 39194 Draenor Jewelcrafting
+264546 -- 39195 Legion Jewelcrafting
+264548 -- 39196 Kul Tiran Jewelcrafting
+264577 -- 39197 Leatherworking
+264579 -- 39198 Outland Leatherworking
+264581 -- 39199 Northrend Leatherworking
+264583 -- 39200 Cataclysm Leatherworking
+264585 -- 39201 Pandaria Leatherworking
+264588 -- 39202 Draenor Leatherworking
+264590 -- 39203 Legion Leatherworking
+264592 -- 39204 Kul Tiran Leatherworking
+264616 -- 39205 Tailoring
+264618 -- 39206 Outland Tailoring
+264620 -- 39207 Northrend Tailoring
+264622 -- 39208 Cataclysm Tailoring
+264624 -- 39209 Pandaria Tailoring
+264626 -- 39210 Draenor Tailoring
+264628 -- 39211 Legion Tailoring
+264630 -- 39212 Kul Tiran Tailoring
+264632 -- 39213 Classic Cooking
+264634 -- 39214 Outland Cooking
+264636 -- 39215 Northrend Cooking
+264638 -- 39216 Cataclysm Cooking
+264640 -- 39217 Pandaria Cooking
+264642 -- 39218 Draenor Cooking
+264644 -- 39219 Legion Cooking
+264646 -- 39220 Kul Tiran Cooking
+252405 -- 39247 Riverbud
+252406 -- 39248 Riverbud
+252407 -- 39249 Riverbud
+252408 -- 39250 Star Moss
+252409 -- 39251 Star Moss
+252410 -- 39252 Star Moss
+252411 -- 39253 Akunda's Bite
+252412 -- 39254 Akunda's Bite
+252413 -- 39255 Akunda's Bite
+252415 -- 39256 Winter's Kiss
+252416 -- 39257 Winter's Kiss
+252417 -- 39258 Winter's Kiss
+252418 -- 39259 Siren's Pollen
+252419 -- 39260 Siren's Pollen
+252420 -- 39261 Siren's Pollen
+252421 -- 39262 Sea Stalk
+252422 -- 39263 Sea Stalk
+252423 -- 39264 Sea Stalk
+252424 -- 39265 Anchor Weed
+252425 -- 39266 Anchor Weed
+252426 -- 39267 Anchor Weed
+257146 -- 39268 Leather Gathering
+257147 -- 39269 Leather Gathering
+257148 -- 39270 Leather Gathering
+257149 -- 39271 Scale Gathering
+257150 -- 39272 Scale Gathering
+257151 -- 39273 Scale Gathering
+257152 -- 39274 Bone Gathering
+257153 -- 39275 Bone Gathering
+257154 -- 39276 Bone Gathering
+253333 -- 39277 Monelite Deposit
+253334 -- 39278 Monelite Deposit
+253335 -- 39279 Monelite Deposit
+253342 -- 39280 Monelite Seam
+253343 -- 39281 Monelite Seam
+253344 -- 39282 Monelite Seam
+253339 -- 39283 Platinum Deposit
+253340 -- 39284 Platinum Deposit
+253341 -- 39285 Platinum Deposit
+253336 -- 39286 Storm Silver Deposit
+253337 -- 39287 Storm Silver Deposit
+253338 -- 39288 Storm Silver Deposit
+253345 -- 39289 Storm Silver Seam
+253346 -- 39290 Storm Silver Seam
+253347 -- 39291 Storm Silver Seam
+265787 -- 39292 Zandalari Alchemy
+265803 -- 39293 Zandalari Blacksmithing
+265805 -- 39294 Zandalari Enchanting
+265807 -- 39295 Zandalari Engineering
+265809 -- 39296 Zandalari Inscription
+265811 -- 39297 Zandalari Jewelcrafting
+265813 -- 39298 Zandalari Leatherworking
+265815 -- 39299 Zandalari Tailoring
+265817 -- 39300 Zandalari Cooking
+265819 -- 39301 Herb Gathering
+265821 -- 39302 Herb Gathering
+265823 -- 39303 Herb Gathering
+265825 -- 39304 Herb Gathering
+265827 -- 39305 Herb Gathering
+265829 -- 39306 Herb Gathering
+265831 -- 39307 Herb Gathering
+265834 -- 39308 Herb Gathering
+265835 -- 39309 Herb Gathering
+265837 -- 39310 Mining
+265839 -- 39311 Mining
+265841 -- 39312 Mining
+265843 -- 39313 Mining
+265845 -- 39314 Mining
+265847 -- 39315 Mining
+265849 -- 39316 Mining
+265851 -- 39317 Mining
+265853 -- 39318 Mining
+265855 -- 39319 Skinning
+265857 -- 39320 Skinning
+265859 -- 39321 Skinning
+265861 -- 39322 Skinning
+265863 -- 39323 Skinning
+265865 -- 39324 Skinning
+265867 -- 39325 Skinning
+265869 -- 39326 Skinning
+265871 -- 39327 Skinning
+259665 -- 40353 Blood Contract: Sacrifice
+292320 -- 40377 Blood Contract: Bloodguard
+292012 -- 40378 Blood Contract: Bloodshed
+292322 -- 40379 Blood Contract: Oblivion
+296149 -- 40567 Osmenite Deposit
+296148 -- 40568 Osmenite Deposit
+296147 -- 40569 Osmenite Deposit
+296145 -- 40570 Osmenite Seam
+296144 -- 40571 Osmenite Seam
+296143 -- 40572 Osmenite Seam
+298142 -- 40622 Zin'anthid
+298143 -- 40623 Zin'anthid
+298144 -- 40624 Zin'anthid
+300381 -- 40837 Disenchant
+300382 -- 40838 Disenchant
+302007 -- 40918 Dredged Leather
+302010 -- 40919 Dredged Leather
+302011 -- 40920 Dredged Leather
+302014 -- 40921 Cragscale
+302015 -- 40922 Cragscale
+302016 -- 40923 Cragscale
+302690 -- 40938 Disenchant
+302691 -- 40939 Disenchant
+302692 -- 40940 Disenchant
+302693 -- 40941 Disenchant
+302694 -- 40942 Disenchant
+302695 -- 40943 Disenchant
+308569 -- 42468 Skinning
+309038 -- 42475 Shadowlands Leatherworking
+309780 -- 42635 Herb Gathering
+309822 -- 42685 Shadowlands Alchemy
+309827 -- 42686 Shadowlands Blacksmithing
+309830 -- 42687 Shadowlands Cooking
+309832 -- 42688 Shadowlands Enchanting
+309835 -- 42689 Mining
+310542 -- 42768 Shadowlands Engineering
+310949 -- 42791 Shadowlands Tailoring
+309805 -- 42870 Shadowlands Inscription
+311967 -- 42964 Shadowlands Jewelcrafting
 317398 -- 43344 Spells removed
 317427 -- 43345 Spells removed
 317708 -- 43367 Spells removed
@@ -276,44 +473,197 @@
 317900 -- 43395 Spells removed
 317902 -- 43396 Spells removed
 319235 -- 43429 Spells removed
-324750 -- 44657 Disenchant 
+324750 -- 44657 Disenchant
+325284 -- 44723 Construct Body: "Chordy"
+325451 -- 44725 Construct Body: "Roseboil"
+325453 -- 44726 Construct Body: "Flytrap"
+325452 -- 44727 Construct Body: "Marz"
+325454 -- 44728 Construct Body: "Atticus"
+325458 -- 44729 Construct Body: "Miru"
+326379 -- 44773 Construct Body: "Neena"
+326406 -- 44775 Construct Body: "Professor"
+326380 -- 44776 Construct Body: "Gas Bag"
+326408 -- 44777 Construct Body: "Mama Tomalin"
+326407 -- 44778 Construct Body: "Toothpick"
+326379 -- 44853 Construct Body: "Neena"
+325451 -- 44854 Construct Body: "Roseboil"
+325453 -- 44855 Construct Body: "Flytrap"
+325452 -- 44856 Construct Body: "Marz"
+325454 -- 44857 Construct Body: "Atticus"
+325458 -- 44858 Construct Body: "Miru"
+325284 -- 44859 Construct Body: "Chordy"
+326406 -- 44860 Construct Body: "Professor"
+326380 -- 44861 Construct Body: "Gas Bag"
+326408 -- 44862 Construct Body: "Mama Tomalin"
+326407 -- 44863 Construct Body: "Toothpick"
 335287 -- 45422 Spells removed
 335286 -- 45423 Spells removed
 335284 -- 45424 Spells removed
 335279 -- 45425 Spells removed
 335278 -- 45426 Spells removed
-340534 -- 45654 Interact 
-343634 -- 45766 Shadowlands Cloth Scavenging 
+337535 -- 45463 Dapper Top Hat
+337540 -- 45464 Outlaw Flag
+337554 -- 45465 Trustworthy Doll
+338037 -- 45477 Construct Body: "Iron Phillip"
+338040 -- 45479 Construct Body: "Sabrina"
+338043 -- 45480 Construct Body: "Naxx"
+338039 -- 45481 Construct Body: "Guillotine"
+338383 -- 45580 Holiday Hat
+340534 -- 45654 Interact
+342417 -- 45699 Vestigial Wings
+342418 -- 45700 Engineering Pack
+342421 -- 45701 Operational Instructions
+342447 -- 45702 Flower Crown
+342448 -- 45703 Halo of Purity
+342455 -- 45704 Red Eye Lens
+342454 -- 45705 Skull Protector
+342468 -- 45706 Happiness Bird
+342483 -- 45707 Six-League Pack
+342851 -- 45720 Magician's Hat
+342850 -- 45721 Plague Pack
+342849 -- 45722 Armor Plating
+342846 -- 45723 Butterflies
+342845 -- 45724 Sticky Cat
+342843 -- 45725 Faction Flag
+342842 -- 45726 Safe Fall Pack
+342841 -- 45727 Collector Kash's Pack
+342895 -- 45730 Intellectuals Monocle
+342899 -- 45731 Spare Weapon
+343634 -- 45766 Shadowlands Cloth Scavenging
+344100 -- 45830 Chef Hat
+344095 -- 45831 Dundae's Hat
+344101 -- 45832 Egg Hat
+344766 -- 45833 Skull Fungus
+344765 -- 45834 Pumpkin Head
+344769 -- 45835 Pirate Hat
+344770 -- 45836 Unworthy Crown
+344796 -- 45838 Back Mushrooms
+344110 -- 45839 Barrel O' Fish
+344797 -- 45840 Underpowered Gravity Pack
+344798 -- 45841 Shoulder Sprouts
+342902 -- 45842 Hitchhiker
+344097 -- 45843 Trained Corpselice
+344096 -- 45844 Lovely Candle Display
+345894 -- 45890 Medallion of Service
 343681 -- 46088 Spells removed
 343687 -- 46090 Spells removed
-365677 -- 46620 Dragon Isles Blacksmithing 
-366261 -- 46631 Dragon Isles Alchemy 
-366256 -- 46633 Dragon Isles Cooking 
-366255 -- 46634 Dragon Isles Enchanting 
-366254 -- 46635 Dragon Isles Engineering 
-366251 -- 46637 Dragon Isles Inscription 
-366250 -- 46638 Dragon Isles Jewelcrafting 
-366249 -- 46639 Dragon Isles Leatherworking 
-366258 -- 46640 Dragon Isles Tailoring 
+365677 -- 46620 Dragon Isles Blacksmithing
+366261 -- 46631 Dragon Isles Alchemy
+366256 -- 46633 Dragon Isles Cooking
+366255 -- 46634 Dragon Isles Enchanting
+366254 -- 46635 Dragon Isles Engineering
+366251 -- 46637 Dragon Isles Inscription
+366250 -- 46638 Dragon Isles Jewelcrafting
+366249 -- 46639 Dragon Isles Leatherworking
+366258 -- 46640 Dragon Isles Tailoring
+366252 -- 46641 Herb Gathering
+366260 -- 46642 Mining
+366259 -- 46643 Skinning
 371635 -- 46870 Spells removed
-382571 -- 47469 Opening 
-382579 -- 47472 Opening 
-382580 -- 47473 Opening 
-382581 -- 47474 Opening 
-382583 -- 47476 Opening 
-382584 -- 47477 Opening 
-382585 -- 47478 Opening 
-382588 -- 47481 Opening 
-385304 -- 47653 Recraft Equipment 
-389190 -- 47734 Recraft Equipment 
-389191 -- 47735 Recraft Equipment 
-389192 -- 47736 Recraft Equipment 
-389193 -- 47737 Recraft Equipment 
-389194 -- 47738 Recraft Equipment 
-389195 -- 47739 Recraft Equipment 
-389196 -- 47740 Recraft Equipment 
-392396 -- 47888 Dragon Isles Cloth Scavenging 
-392888 -- 47903 Disenchant 
+382571 -- 47469 Opening
+382579 -- 47472 Opening
+382580 -- 47473 Opening
+382581 -- 47474 Opening
+382582 -- 47475 Opening
+382583 -- 47476 Opening
+382584 -- 47477 Opening
+382585 -- 47478 Opening
+382586 -- 47479 Opening
+382587 -- 47480 Opening
+382588 -- 47481 Opening
+375731 -- 47534 Refine Hides -
+375763 -- 47535 Refine Hides -
+376611 -- 47536 Refine Leather -
+376612 -- 47537 Refine Leather -
+376613 -- 47538 Refine Scales -
+376614 -- 47539 Refine Scales -
+384688 -- 47630 Draconium Deposit
+384690 -- 47632 Molten Draconium Deposit
+384692 -- 47633 Serevite Deposit
+384693 -- 47634 Rich Draconium Deposit
+385304 -- 47653 Recraft Equipment
+389190 -- 47734 Recraft Equipment
+389191 -- 47735 Recraft Equipment
+389192 -- 47736 Recraft Equipment
+389193 -- 47737 Recraft Equipment
+389194 -- 47738 Recraft Equipment
+389195 -- 47739 Recraft Equipment
+389196 -- 47740 Recraft Equipment
+389458 -- 47766 Draconium Seam
+389406 -- 47767 Titan-Touched Draconium Deposit
+389409 -- 47768 Primal Draconium Deposit
+389413 -- 47769 Hardened Draconium Deposit
+389420 -- 47770 Infurious Draconium Deposit
+389459 -- 47771 Molten Serevite Deposit
+389460 -- 47772 Rich Serevite Deposit
+389461 -- 47773 Titan-Touched Serevite Deposit
+389462 -- 47774 Primal Serevite Deposit
+389463 -- 47775 Hardened Serevite Deposit
+389464 -- 47776 Infurious Serevite Deposit
+389465 -- 47777 Serevite Seam
+389700 -- 47797 Overload Molten Deposit
+389701 -- 47798 Overload Hardened Deposit
+389702 -- 47799 Overload Primal Deposit
+389703 -- 47800 Overload Titan Deposit
+389704 -- 47801 Overload Infurious Deposit
+391088 -- 47820 Refine Herbs -
+391089 -- 47821 Refine Herbs -
+391406 -- 47836 Hochenblume
+391441 -- 47837 Saxifrage
+391447 -- 47838 Writhebark
+391444 -- 47839 Bubble Poppy
+391505 -- 47840 Infurious Bubble Poppy
+391498 -- 47841 Infurious Hochenblume
+391499 -- 47842 Infurious Saxifrage
+391506 -- 47843 Infurious Writhebark
+391507 -- 47844 Decayed Bubble Poppy
+391509 -- 47845 Frigid Bubble Poppy
+391511 -- 47846 Lush Bubble Poppy
+391513 -- 47847 Titan-Touched Bubble Poppy
+391515 -- 47848 Windswept Bubble Poppy
+391492 -- 47849 Decayed Hochenblume
+391460 -- 47850 Frigid Hochenblume
+391415 -- 47851 Lush Hochenblume
+391496 -- 47852 Titan-Touched Hochenblume
+391431 -- 47853 Windswept Hochenblume
+391500 -- 47855 Decayed Saxifrage
+391501 -- 47856 Frigid Saxifrage
+391502 -- 47857 Lush Saxifrage
+391503 -- 47858 Titan-Touched Saxifrage
+391504 -- 47859 Windswept Saxifrage
+391508 -- 47861 Decayed Writhebark
+391510 -- 47862 Frigid Writhebark
+391512 -- 47863 Lush Writhebark
+391514 -- 47864 Titan-Touched Writhebark
+391516 -- 47865 Windswept Writhebark
+391558 -- 47866 Overload Infurious Herb
+391564 -- 47867 Overload Decayed Herb
+391562 -- 47868 Overload Frigid Herb
+391557 -- 47869 Overload Titan-Touched Herb
+391560 -- 47870 Overload Windswept Herb
+392396 -- 47888 Dragon Isles Cloth Scavenging
+392440 -- 47891 Leather Skinning
+392445 -- 47892 Scale Skinning
+392888 -- 47903 Disenchant
+395269 -- 47961 Iridescent Ore
+395275 -- 47962 Dreambloom
+395282 -- 47963 Curious Hide
+395706 -- 47969 Dense Hide
+395700 -- 47970 Lustrous Scaled Hide
+396162 -- 47992 Khaz'gorite
+396169 -- 47993 Elementally-Charged Stone
+396171 -- 47994 Infused Pollen
+396173 -- 47995 Saturated Bone
+388213 -- 48172 Overload Elemental Deposit
+390392 -- 48173 Overload Elemental Herb
+405131 -- 48450 Overload Metamorphic Deposit
+405120 -- 48451 Metamorphic Serevite Deposit
+405121 -- 48452 Metamorphic Draconium Deposit
+405134 -- 48453 Overload Lambent Herb
+405123 -- 48454 Lambent Hochenblume
+405124 -- 48455 Lambent Bubble Poppy
+405126 -- 48456 Lambent Saxifrage
+405127 -- 48457 Lambent Writhebark
 414946 -- 48799 Spells ptr
 414985 -- 48801 Spells ptr
 414988 -- 48802 Spells ptr
@@ -367,6 +717,24 @@
 419023 -- 49011 Spells ptr
 419022 -- 49012 Spells ptr
 420740 -- 49020 Spells ptr
+421176 -- 49081 Spells ptr
+421224 -- 49082 Spells ptr
+421226 -- 49083 Spells ptr
+421227 -- 49084 Spells ptr
+421247 -- 49085 Spells ptr
+421244 -- 49086 Spells ptr
+422293 -- 49089 Spells ptr
+422809 -- 49094 Spells ptr
+424529 -- 49147 Spells ptr
+424538 -- 49150 Spells ptr
+424694 -- 49162 Spells ptr
+424695 -- 49163 Spells ptr
+424736 -- 49164 Spells ptr
+424810 -- 49165 Spells ptr
+424823 -- 49166 Spells ptr
+424881 -- 49167 Spells ptr
+424876 -- 49168 Spells ptr
+424899 -- 49169 Spells ptr
 425263 -- 49191 Spells ptr
 425954 -- 49223 Spells ptr
 425958 -- 49224 Spells ptr

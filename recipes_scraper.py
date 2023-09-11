@@ -45,9 +45,9 @@ def get_recipes_and_item(tree):
 
 
 def get_effect(tree):
-    effects = tree.xpath('//th[text()[contains(.,"Effect")]]/../td/text()')
+    effects = tree.xpath('//td[text()[contains(.,"Enchant Item")]]/text()')
     for effect in effects:
-        match = re.search("\\((\\d+)\\)", effect)
+        match = re.search(r"\((\d+)\)", effect)
         if match:
             return match.group(1)
     return "nil"
@@ -64,6 +64,7 @@ def read_skill_lines(version, download):
         header = next(csvreader)
         category_index = get_key(header, "CategoryID")
         skill_index = get_key(header, "ID")
+        # name_index = get_key(header, "DisplayName_lang")
         can_link_index = get_key(header, "CanLink")
 
         categories = {9, 11}
@@ -71,17 +72,19 @@ def read_skill_lines(version, download):
             category = int(row[category_index])
             can_link = int(row[can_link_index])
             skill_id = int(row[skill_index])
-            if category not in categories or can_link != 1 or skill_id == 2870:
+            if category not in categories or skill_id == 2870:
                 continue
+            # Secondary Professions must be linable.
+            if category == 9 and can_link != 1:
+                continue
+            # name = row[name_index]
             skills.add(skill_id)
     return skills
 
 
-def read_spells(args, file_name, regex):
+def read_spells(version, file_name, regex):
     spell_ids = set()
-    if not args.update:
-        return spell_ids
-    with open("recipes/{0}/{1}".format(args.version, file_name)) as file:
+    with open("recipes/{0}/{1}".format(version, file_name)) as file:
         for line in file.readlines():
             match = re.search(regex, line)
             if match:
@@ -95,11 +98,11 @@ def read_skills(args):
     ignored_file = open("recipes/{0}/ignored".format(args.version), "a")
     i = 0
     start_time = time.time()
-    spell_ids = read_spells(args, "items.lua", r'lib:\w+\(\d+, (?:\d+|nil), (\d+)')
-    ignored_ids = read_spells(args, "ignored", r'(\d+) --')
-    skill_ids = read_spells(args, "items.lua", r'lib:\w+\([\w, ]+\) -- (\d+) [\w: ]+')
+    spell_ids = read_spells(args.version, "items.lua", r'lib:\w+\(\d+, (?:\d+|nil), (\d+)')
+    ignored_ids = read_spells(args.version, "ignored", r'(\d+) --')
+    skill_ids = read_spells(args.version, "items.lua", r'lib:\w+\([\w, ]+\) -- (\d+) [\w: ]+')
     last_skill_id = max(skill_ids, default=0)
-    print("Updating." if args.update else "Appending from {0}".format(last_skill_id))
+    print("Updating...")
     if last_skill_id == 0:
         f.write('local lib = LibStub("LibTradeSkillRecipes")\n')
 
@@ -118,10 +121,7 @@ def read_skills(args):
             spell_id = int(row[spell_id_index])
             skill_id = int(row[id_index])
             i += 1
-            if args.update:
-                if spell_id in spell_ids or spell_id in ignored_ids:
-                    continue
-            elif last_skill_id >= skill_id:
+            if spell_id in spell_ids or spell_id in ignored_ids:
                 continue
             if i % 10 == 0:
                 print("{0} {1}".format(i, time.time() - start_time))
@@ -159,33 +159,38 @@ def read_skills(args):
     print(i)
 
 
-def scrape(args):
-    version = args.version
-    try:
-        print("Scraping {0}".format(version))
-        update_files(version, args.download, "SkillLine", "SkillLineAbility", "SpellItemEnchantment")
-        Path("recipes/{0}".format(version)).mkdir(parents=True, exist_ok=True)
-        read_spell_item_enchantment(version)
-        read_skills(args)
-        resort("recipes/{0}/items.lua".format(args.version), r'lib:\w+\([\w, ]+\) -- (\w+) .*', LIB_LINE)
-    except KeyboardInterrupt:
-        print("Keyboard Interrupt")
-    except ConnectionError:
-        print("Connection Error")
-    print("Exiting..")
-    sys.exit(0)
+def scrape():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-v", "--version", type=int)
+    parser.add_argument("-d", "--download", default=False, action=argparse.BooleanOptionalAction)
+    args = parser.parse_args()
+
+    # Create one massive expansion map every scrape.
+    scrape_expansions(args)
+
+    # For the specific expansions get spells and enchantments.
+    print("Scraping {0}".format(args.version))
+    update_files(args.version, args.download, "SkillLine", "SkillLineAbility", "SpellItemEnchantment")
+    Path("recipes/{0}".format(args.version)).mkdir(parents=True, exist_ok=True)
+    read_spell_item_enchantment(args.version)
+    read_skills(args)
+
+    # Post scrape, fix sorting by db id.
+    resort("recipes/{0}/ignored".format(args.version), r'\w+ -- (\w+) .*', "")
+    resort("recipes/{0}/items.lua".format(args.version), r'lib:\w+\([\w, ]+\) -- (\w+) .*', LIB_LINE)
 
 
 def scrape_expansions(args):
     i = 0
     f = open("recipes/expansions.lua", "w")
+    f.write(LIB_LINE)
+    known = {}
 
     for expansion in range(1, 11):
         if 3 < expansion < 7:
             continue
         skills = read_skill_lines(expansion, args.download)
         update_files(expansion, args.download, "SkillLineAbility")
-        known = {}
 
         with open("{0}/SkillLineAbility.csv".format(expansion)) as file:
             csvreader = csv.reader(file)
@@ -204,22 +209,15 @@ def scrape_expansions(args):
                 old_spell_id = known.get(skill_id, False)
 
                 if old_spell_id:
-                    if old_spell_id != spell_id:
-                        print("changed spell id {0}: {1} != {2}".format(skill_id, old_spell_id, spell_id))
+                    # if old_spell_id != spell_id:
+                    #     print("changed spell id {0}: {1} != {2}".format(skill_id, old_spell_id, spell_id))
                     continue
                 known[skill_id] = spell_id
                 comment = "-- {0}".format(skill_id)
-                f.write("lib:AddExpansion({0}, {1}) {2}\n".format(spell_id, expansion, comment))
+                f.write("\nlib:AddExpansion({0}, {1}) {2}".format(spell_id, expansion - 1, comment))
                 i += 1
     print(i)
 
 
 LIB_LINE = 'local lib = LibStub("LibTradeSkillRecipes")\n'
-parser = argparse.ArgumentParser()
-parser.add_argument("-v", "--version", type=int)
-parser.add_argument("-d", "--download", default=False, action=argparse.BooleanOptionalAction)
-parser.add_argument("-u", "--update", action=argparse.BooleanOptionalAction)
-args = parser.parse_args()
-
-scrape_expansions(args)
-scrape(args)
+scrape()
