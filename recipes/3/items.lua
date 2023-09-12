@@ -3299,7 +3299,7 @@ lib:AddRecipe(165, 44542, 60749, 43454, nil, nil) -- 20377 Stormhide Grips
 lib:AddRecipe(165, 44543, 60750, 43450, nil, nil) -- 20378 Stormhide Belt
 lib:AddRecipe(165, 44544, 60751, 43456, nil, nil) -- 20379 Stormhide Legguards
 lib:AddRecipe(165, 44545, 60752, 43451, nil, nil) -- 20380 Stormhide Stompers
-lib:AddRecipe(171, nil, 60893, 115460, nil, nil) -- 20381 Northrend Alchemy Research
+lib:AddRecipe(171, nil, 60893, nil, nil, nil) -- 20381 Northrend Alchemy Research
 lib:AddRecipe(165, 44546, 60754, 43458, nil, nil) -- 20382 Giantmaim Legguards
 lib:AddRecipe(165, 44547, 60755, 43459, nil, nil) -- 20383 Giantmaim Bracers
 lib:AddRecipe(165, 44548, 60756, 43461, nil, nil) -- 20384 Revenant's Breastplate
@@ -3346,6 +3346,8 @@ lib:AddEnchantmentRecipe(333, 44492, 59621, 3789) -- 20442 Enchant Weapon - Bers
 lib:AddEnchantmentRecipe(333, 44495, 59625, 3790) -- 20443 Enchant Weapon - Black Magic
 lib:AddEnchantmentRecipe(333, 44496, 59619, 3788) -- 20444 Enchant Weapon - Accuracy
 lib:AddEnchantmentRecipe(333, 44498, 60767, 2332) -- 20445 Enchant Bracers - Superior Spellpower
+lib:AddRecipe(773, nil, 61177, nil, nil, nil) -- 20463 Northrend Inscription Research
+lib:AddRecipe(773, nil, 61288, nil, nil, nil) -- 20506 Minor Inscription Research
 lib:AddRecipe(773, nil, 58296, 43335, 58159, nil) -- 20514 Glyph of the Wild
 lib:AddRecipe(773, nil, 58289, 43332, 58163, nil) -- 20515 Glyph of Thorns
 lib:AddRecipe(773, nil, 58299, 43338, 58186, nil) -- 20516 Glyph of Revive Pet

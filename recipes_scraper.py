@@ -2,7 +2,6 @@ import csv
 from util import *
 import re
 import time
-import sys
 import argparse
 
 
@@ -49,8 +48,9 @@ def get_effect(tree):
     for effect in effects:
         match = re.search(r"\((\d+)\)", effect)
         if match:
-            return match.group(1)
-    return "nil"
+            return match.group(1), False
+    effects = tree.xpath('//td[text()[contains(.,"Create Tradeskill Item")]]/text()')
+    return "nil", len(effects) > 0
 
 
 def read_skill_lines(version, download):
@@ -132,11 +132,15 @@ def read_skills(args):
             if len(recipes) >= 2:
                 print("Double recipe: {0} {1}".format(spell_id, comment))
             if not item_id:
-                effect_id = get_effect(tree)
+                effect_id, creates_item = get_effect(tree)
                 if effect_id != "nil":
                     for recipe_id in recipes:
-                        f.write("\nlib:AddEnchantmentRecipe({0}, {1}, {2}, {3}) {4}\n"
+                        f.write("\nlib:AddEnchantmentRecipe({0}, {1}, {2}, {3}) {4}"
                                 .format(skill_line, recipe_id, spell_id, effect_id, comment))
+                elif creates_item:
+                    for recipe_id in recipes:
+                        f.write("\nlib:AddRecipe({0}, {1}, {2}, nil, nil, nil) {3}"
+                                .format(skill_line, recipe_id, spell_id, comment))
                 else:
                     does_not_exist = get_or_none(tree.xpath('//script[@id="data.listPage.notFoundPath"]')) is not None
                     on_ptr = get_or_none(tree.xpath('//*[text()[contains(.,"Did You Mean...")]]')) is not None
@@ -151,7 +155,7 @@ def read_skills(args):
                 if match:
                     item_spell_id = match.group(1)
                     effect_tree = get_wow_head_spell_as_tree(args.version, item_spell_id)
-                    effect_id = get_effect(effect_tree)
+                    effect_id, _ = get_effect(effect_tree)
                     break
             for recipe_id in recipes:
                 f.write("\nlib:AddRecipe({0}, {1}, {2}, {3}, {4}, {5}) {6}"
