@@ -1,6 +1,6 @@
 infos = {
     [33] = {
-        activities = { [5] = { 800, 1084 }, },
+        activities = { [5] = { 800 }, },
         encounters = { "Rethilgore", "Razorclaw the Butcher", "Baron Silverlaine", "Commander Springvale", "Odo the Blindwatcher", "Fenrus the Devourer", "Wolf Master Nandos", "Archmage Arugal" },
         expansion = 0,
         lastBossIndex = 8,
@@ -80,7 +80,7 @@ infos = {
         sizes = {},
     },
     [189] = {
-        activities = { [5] = { 805, 827, 828, 829, 1081 }, },
+        activities = { [5] = { 805, 827, 828, 829 }, },
         encounters = { "Interrogator Vishas", "Bloodmage Thalnos", "Houndmaster Loksey", "Arcanist Doan", "Herod", "High Inquisitor Fairbanks", "High Inquisitor Whitemane" },
         expansion = 0,
         lastBossIndex = 7,
@@ -104,7 +104,7 @@ infos = {
         sizes = {},
     },
     [230] = {
-        activities = { [5] = { 811, 1083 }, },
+        activities = { [5] = { 811 }, },
         encounters = { "High Interrogator Gerstahn", "Lord Roccor", "Houndmaster Grebmar", "Ring of Law", "Pyromancer Loregrain", "Lord Incendius", "Warder Stilgiss", "Fineous Darkvire", "Bael'Gar", "General Angerforge", "Golem Lord Argelmach", "Hurley Blackbreath", "Phalanx", "Ribbly Screwspigot", "Plugger Spazzring", "Ambassador Flamelash", "The Seven", "Magmus", "Emperor Dagran Thaurissan" },
         expansion = 0,
         lastBossIndex = 19,
@@ -281,7 +281,7 @@ infos = {
         sizes = { 5 },
     },
     [547] = {
-        activities = { [5] = { 820, 909, 1082 }, },
+        activities = { [5] = { 820, 909 }, },
         encounters = { "Mennu the Betrayer", "Quagmirran", "Rokmar the Crackler" },
         expansion = 1,
         lastBossIndex = 3,
@@ -545,7 +545,7 @@ infos = {
         --sizes = { 10, 25 },
     --},
     --[632] = {
-        --activities = { [5] = { 1078, 1134, 1240 }, },
+        --activities = { [5] = { 1078, 1134, nil, nil, 1240 }, },
         --encounters = { "Bronjahm", "Devourer of Souls" },
         --expansion = 2,
         --lastBossIndex = 2,
@@ -561,7 +561,7 @@ infos = {
         sizes = { 10, 25 },
     },
     [650] = {
-        activities = { [5] = { 1076, 1133, 1238, 1239 }, },
+        activities = { [5] = { 1076, 1133, nil, 1238, 1239 }, },
         encounters = { "Grand Champions", "Argent Champion", "The Black Knight" },
         expansion = 2,
         lastBossIndex = 3,
@@ -569,7 +569,7 @@ infos = {
         sizes = { 5 },
     },
     --[658] = {
-        --activities = { [5] = { 1079, 1135, 1241 }, },
+        --activities = { [5] = { 1079, 1135, nil, nil, 1241 }, },
         --encounters = { "Forgemaster Garfrost", "Krick", "Overlrod Tyrannus" },
         --expansion = 2,
         --lastBossIndex = 3,
@@ -577,7 +577,7 @@ infos = {
         --sizes = { 5 },
     --},
     --[668] = {
-        --activities = { [5] = { 1080, 1136, 1242 }, },
+        --activities = { [5] = { 1080, 1136, nil, nil, 1242 }, },
         --encounters = { "Falric", "Marwyn", "Escaped from Arthas" },
         --expansion = 2,
         --lastBossIndex = 3,

@@ -8,7 +8,7 @@ from os.path import exists
 from pathlib import Path
 
 ignored_zones = {631, 632, 658, 668, 724}
-ignored_sort = {"encounters"}
+ignored_sort = {"encounters", "activities"}
 expansions = {1: "classic", 2: "tbc", 3: "wotlk"}
 
 
@@ -41,7 +41,7 @@ def write_file_value(file_name, value):
     f.close()
 
 
-def update_files(expansion: object, download, *table_names: object):
+def update_files(expansion: object, download: bool, force: bool, *table_names: object):
     version_file = "{0}/versions".format(expansion)
     if not download:
         print("Skipping Update " + version_file)
@@ -57,9 +57,13 @@ def update_files(expansion: object, download, *table_names: object):
     for table_name in table_names:
         file_name = "{0}/{1}.csv".format(expansion, table_name)
         if new_version == old_version and exists(file_name):
-            print("Versions matched and file exists, skipping download: " + file_name)
-            continue
-        print("Downloading table: " + file_name)
+            if force:
+                print("Versions matched and file exists, forcing download: " + file_name)
+            else:
+                print("Versions matched and file exists, skipping download: " + file_name)
+                continue
+        else:
+            print("Missing or out of date file, downloading table: " + file_name)
         url = "https://wago.tools/db2/{0}/csv?build={1}".format(table_name, new_version)
         response = requests.get(url)
         with open(file_name, "wb") as f:
@@ -96,13 +100,13 @@ def to_string(v, level=0, ignore=False, sort=True):
         output = "{"
         for key in keys:
             ignored = key in ignored_zones
-            sort = key not in ignored_sort
+            key_sort = sort and key not in ignored_sort
             comment = "--" if ignore or ignored else ""
             output += "{0}{1}{2} = {3},".format(
                 indent,
                 comment,
                 key_string(v=key),
-                to_string(v=v[key], level=level+1, ignore=ignored, sort=sort),
+                to_string(v=v[key], level=level+1, ignore=ignored, sort=key_sort),
             )
         comment = "--" if ignore else ""
         output += "\n" + "    " * level + comment + "}" if newline else " }"
@@ -116,7 +120,7 @@ def to_string(v, level=0, ignore=False, sort=True):
             v.sort()
         return "{ " + ", ".join(map(lambda x: to_string(x, sort=sort), v)) + " }"
     elif type(v) is str:
-        return "\"{0}\"".format(v)
+        return "nil" if v == "nil" else "\"{0}\"".format(v)
     elif type(v) is bool:
         return "true" if v else "false"
     else:

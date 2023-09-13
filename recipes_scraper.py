@@ -53,12 +53,12 @@ def get_effect(tree):
     return "nil", len(effects) > 0
 
 
-def read_skill_lines(version, download):
+def read_skill_lines(version, download, force):
     skills = set()
     # We use the "can link" column which isn't available until Wotlk.
     # Wotlk skills are a superset of Vanilla and TBC so this should be okay.
     version = version if version >= 3 else 3
-    update_files(version, download, "SkillLine")
+    update_files(version, download, force, "SkillLine")
     with open("{0}/SkillLine.csv".format(version)) as file:
         csvreader = csv.reader(file)
         header = next(csvreader)
@@ -93,7 +93,7 @@ def read_spells(version, file_name, regex):
 
 
 def read_skills(args):
-    skills = read_skill_lines(args.version, args.download)
+    skills = read_skill_lines(args.version, args.download, args.force)
     f = open("recipes/{0}/items.lua".format(args.version), "a")
     ignored_file = open("recipes/{0}/ignored".format(args.version), "a")
     i = 0
@@ -145,7 +145,7 @@ def read_skills(args):
                     does_not_exist = get_or_none(tree.xpath('//script[@id="data.listPage.notFoundPath"]')) is not None
                     on_ptr = get_or_none(tree.xpath('//*[text()[contains(.,"Did You Mean...")]]')) is not None
                     extra = "ptr" if on_ptr else "removed" if does_not_exist else ""
-                    ignored_file.write("{0} {1} {2}\n".format(spell_id, comment, extra))
+                    ignored_file.write("\n{0} {1} {2}".format(spell_id, comment, extra))
                 continue
             effects = tree.xpath('//span[text()[contains(.,"Use:")]]/a/@href')
             item_spell_id = "nil"
@@ -167,14 +167,17 @@ def scrape():
     parser = argparse.ArgumentParser()
     parser.add_argument("-v", "--version", type=int)
     parser.add_argument("-d", "--download", default=False, action=argparse.BooleanOptionalAction)
+    parser.add_argument("-f", "--force", default=False, action=argparse.BooleanOptionalAction)
+    parser.add_argument("-e", "--expansions", default=False, action=argparse.BooleanOptionalAction)
     args = parser.parse_args()
 
     # Create one massive expansion map every scrape.
-    scrape_expansions(args)
+    if args.expansions:
+        scrape_expansions(args)
 
     # For the specific expansions get spells and enchantments.
     print("Scraping {0}".format(args.version))
-    update_files(args.version, args.download, "SkillLine", "SkillLineAbility", "SpellItemEnchantment")
+    update_files(args.version, args.download, args.force, "SkillLine", "SkillLineAbility", "SpellItemEnchantment")
     Path("recipes/{0}".format(args.version)).mkdir(parents=True, exist_ok=True)
     read_spell_item_enchantment(args.version)
     read_skills(args)
@@ -193,8 +196,8 @@ def scrape_expansions(args):
     for expansion in range(1, 11):
         if 3 < expansion < 7:
             continue
-        skills = read_skill_lines(expansion, args.download)
-        update_files(expansion, args.download, "SkillLineAbility")
+        skills = read_skill_lines(expansion, args.download, args.force)
+        update_files(expansion, args.download, args.force, "SkillLineAbility")
 
         with open("{0}/SkillLineAbility.csv".format(expansion)) as file:
             csvreader = csv.reader(file)

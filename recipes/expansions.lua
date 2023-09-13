@@ -10802,3 +10802,5 @@ lib:AddExpansion(425961, 9) -- 49225
 lib:AddExpansion(425959, 9) -- 49226
 lib:AddExpansion(426332, 9) -- 49240
 lib:AddExpansion(426434, 9) -- 49244
+lib:AddExpansion(427109, 9) -- 49268
+lib:AddExpansion(427111, 9) -- 49269
