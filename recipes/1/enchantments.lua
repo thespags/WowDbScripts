@@ -1,4 +1,4 @@
-local lib = LibStub("LibTradeSkillRecipes")
+local lib = LibStub("LibTradeSkillRecipes-1")
 
 lib:AddEnchantment(1, "Rockbiter 3")
 lib:AddEnchantment(2, "Frostbrand 1")

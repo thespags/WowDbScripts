@@ -9,7 +9,7 @@ from operator import countOf
 
 def read_spell_item_enchantment(version):
     f = open("recipes/{0}/enchantments.lua".format(version), "w")
-    f.write('local lib = LibStub("LibTradeSkillRecipes")\n')
+    f.write(LIB_LINE)
     with open("{0}/SpellItemEnchantment.csv".format(version)) as file:
         csvreader = csv.reader(file)
         _ = next(csvreader)
@@ -215,7 +215,7 @@ def read_skills(args):
     last_skill_id = max(skill_ids, default=0)
     print("Updating {0:.2f}...".format(time.time() - start_time))
     if last_skill_id == 0:
-        f.write('local lib = LibStub("LibTradeSkillRecipes")\n')
+        f.write(LIB_LINE)
 
     with open("{0}/SkillLineAbility.csv".format(args.version)) as file:
         csvreader = csv.reader(file)
@@ -311,5 +311,5 @@ def scrape_expansions(args):
 lock = Lock()
 start_time = time.time()
 counter = 0
-LIB_LINE = 'local lib = LibStub("LibTradeSkillRecipes")\n'
+LIB_LINE = 'local lib = LibStub("LibTradeSkillRecipes-1")\n'
 scrape()

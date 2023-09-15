@@ -1,4 +1,4 @@
-local lib = LibStub("LibTradeSkillRecipes")
+local lib = LibStub("LibTradeSkillRecipes-1")
 
 lib:AddRecipe(165, nil, 2149, 2302, nil, nil) -- 1353 Handstitched Leather Boots
 lib:AddRecipe(165, nil, 2153, 2303, nil, nil) -- 1355 Handstitched Leather Pants

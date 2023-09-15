@@ -1,4 +1,4 @@
-local lib = LibStub("LibTradeSkillRecipes")
+local lib = LibStub("LibTradeSkillRecipes-1")
 
 lib:AddExpansion(2018, 0) -- 1283
 lib:AddExpansion(2108, 0) -- 1328
