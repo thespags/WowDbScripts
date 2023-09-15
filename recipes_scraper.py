@@ -6,6 +6,7 @@ from threading import *
 from concurrent.futures import ThreadPoolExecutor
 from operator import countOf
 
+
 def read_spell_item_enchantment(version):
     f = open("recipes/{0}/enchantments.lua".format(version), "w")
     f.write('local lib = LibStub("LibTradeSkillRecipes")\n')
@@ -114,7 +115,7 @@ def read_skill_lines(version, download, force):
             skill_id = int(row[skill_index])
             if category not in categories or skill_id == 2870:
                 continue
-            # Secondary Professions must be linable.
+            # Secondary Professions must be linkable.
             if category == 9 and can_link != 1:
                 continue
             # name = row[name_index]
