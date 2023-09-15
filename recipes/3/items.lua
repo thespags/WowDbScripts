@@ -773,7 +773,6 @@ lib:AddRecipe(185, 16111, 15915, 12216, 10256, nil) -- 8625 Spiced Chili Crab
 lib:AddRecipe(185, 16110, 15933, 12218, 10256, nil) -- 8626 Monster Omelet
 lib:AddRecipe(164, nil, 15972, 12259, nil, nil) -- 8636 Glinting Steel Dagger
 lib:AddRecipe(164, 12261, 15973, 12260, nil, nil) -- 8637 Searing Golden Blade
-lib:AddEnchantmentRecipe(185, nil, 818, 29784) -- 8676 Basic Campfire
 lib:AddRecipe(186, nil, 16153, 12359, nil, nil) -- 8796 Smelt Thorium
 lib:AddRecipe(164, nil, 16641, 12404, 16138, 1643) -- 9156 Dense Sharpening Stone
 lib:AddRecipe(164, nil, 16640, 12643, 16622, 1703) -- 9157 Dense Weightstone
@@ -1762,8 +1761,6 @@ lib:AddRecipe(165, 25742, 32502, 25692, nil, nil) -- 14886 Netherfury Leggings
 lib:AddRecipe(165, 29219, 32502, 25692, nil, nil) -- 14886 Netherfury Leggings
 lib:AddRecipe(165, 25743, 32503, 25693, nil, nil) -- 14887 Netherfury Boots
 lib:AddRecipe(165, 29218, 32503, 25693, nil, nil) -- 14887 Netherfury Boots
-lib:AddEnchantmentRecipe(182, nil, 32605, 1) -- 14898 Herb Gathering
-lib:AddEnchantmentRecipe(186, nil, 32606, 2) -- 14899 Mining
 lib:AddRecipe(164, nil, 32655, 25843, nil, nil) -- 14900 Fel Iron Rod
 lib:AddRecipe(164, 25846, 32656, 25844, nil, nil) -- 14901 Adamantite Rod
 lib:AddRecipe(164, 25847, 32657, 25845, nil, nil) -- 14902 Eternium Rod
@@ -2241,7 +2238,7 @@ lib:AddEnchantmentRecipe(333, 37343, 44633, 1103) -- 16132 Enchant Weapon - Exce
 lib:AddEnchantmentRecipe(333, nil, 44635, 2326) -- 16135 Enchant Bracers - Greater Spellpower
 lib:AddEnchantmentRecipe(333, nil, 44645, 3839) -- 16136 Enchant Ring - Assault
 lib:AddEnchantmentRecipe(333, nil, 44636, 3840) -- 16138 Enchant Ring - Greater Spellpower
-lib:AddRecipe(165, nil, 44359, 34105, nil, nil) -- 16143 Quiver of a Thousand Feathers
+lib:AddRecipe(165, 34200, 44359, 34105, nil, nil) -- 16143 Quiver of a Thousand Feathers
 lib:AddRecipe(165, 34201, 44768, 34106, nil, nil) -- 16144 Netherscale Ammo Pouch
 lib:AddRecipe(165, 34218, 44768, 34106, nil, nil) -- 16144 Netherscale Ammo Pouch
 lib:AddRecipe(165, nil, 44770, 34207, 44769, 3260) -- 16145 Glove Reinforcements
@@ -2363,7 +2360,6 @@ lib:AddRecipe(773, nil, 48247, 37168, nil, nil) -- 16602 Mysterious Tarot
 lib:AddRecipe(755, 37504, 48789, 37503, nil, nil) -- 16704 Purified Shadowsong Amethyst
 lib:AddRecipe(186, nil, 49252, 36916, nil, nil) -- 16973 Smelt Cobalt
 lib:AddRecipe(186, nil, 49258, 36913, nil, nil) -- 16976 Smelt Saronite
-lib:AddEnchantmentRecipe(202, nil, 49383, 3) -- 17018 Engineering
 lib:AddRecipe(197, 37915, 49677, 6836, nil, nil) -- 17153 Dress Shoes
 lib:AddRecipe(197, 38229, 50194, 38225, nil, nil) -- 17420 Mycah's Botanical Bag
 lib:AddRecipe(773, nil, 50612, 1711, 8100, nil) -- 17486 Scroll of Stamina II
@@ -2620,7 +2616,6 @@ lib:AddRecipe(164, nil, 54554, 40674, nil, nil) -- 18900 Tempered Saronite Legpl
 lib:AddRecipe(164, nil, 54555, 40673, nil, nil) -- 18901 Tempered Saronite Helm
 lib:AddRecipe(164, nil, 54556, 40675, nil, nil) -- 18902 Tempered Saronite Shoulders
 lib:AddRecipe(164, nil, 54557, 40670, nil, nil) -- 18903 Saronite Defender
-lib:AddEnchantmentRecipe(171, nil, 53042, 126) -- 19162 Mixology
 lib:AddRecipe(164, nil, 54917, 40942, nil, nil) -- 19163 Spiked Cobalt Helm
 lib:AddRecipe(164, nil, 54918, 40949, nil, nil) -- 19164 Spiked Cobalt Boots
 lib:AddRecipe(164, nil, 54941, 40950, nil, nil) -- 19165 Spiked Cobalt Shoulders
@@ -3299,7 +3294,6 @@ lib:AddRecipe(165, 44542, 60749, 43454, nil, nil) -- 20377 Stormhide Grips
 lib:AddRecipe(165, 44543, 60750, 43450, nil, nil) -- 20378 Stormhide Belt
 lib:AddRecipe(165, 44544, 60751, 43456, nil, nil) -- 20379 Stormhide Legguards
 lib:AddRecipe(165, 44545, 60752, 43451, nil, nil) -- 20380 Stormhide Stompers
-lib:AddRecipe(171, nil, 60893, nil, nil, nil) -- 20381 Northrend Alchemy Research
 lib:AddRecipe(165, 44546, 60754, 43458, nil, nil) -- 20382 Giantmaim Legguards
 lib:AddRecipe(165, 44547, 60755, 43459, nil, nil) -- 20383 Giantmaim Bracers
 lib:AddRecipe(165, 44548, 60756, 43461, nil, nil) -- 20384 Revenant's Breastplate
@@ -3346,8 +3340,6 @@ lib:AddEnchantmentRecipe(333, 44492, 59621, 3789) -- 20442 Enchant Weapon - Bers
 lib:AddEnchantmentRecipe(333, 44495, 59625, 3790) -- 20443 Enchant Weapon - Black Magic
 lib:AddEnchantmentRecipe(333, 44496, 59619, 3788) -- 20444 Enchant Weapon - Accuracy
 lib:AddEnchantmentRecipe(333, 44498, 60767, 2332) -- 20445 Enchant Bracers - Superior Spellpower
-lib:AddRecipe(773, nil, 61177, nil, nil, nil) -- 20463 Northrend Inscription Research
-lib:AddRecipe(773, nil, 61288, nil, nil, nil) -- 20506 Minor Inscription Research
 lib:AddRecipe(773, nil, 58296, 43335, 58159, nil) -- 20514 Glyph of the Wild
 lib:AddRecipe(773, nil, 58289, 43332, 58163, nil) -- 20515 Glyph of Thorns
 lib:AddRecipe(773, nil, 58299, 43338, 58186, nil) -- 20516 Glyph of Revive Pet

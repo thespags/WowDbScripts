@@ -43,6 +43,7 @@
 12656 -- 6882 Engineering
 13262 -- 7316 Disenchant
 13920 -- 7656 Enchanting
+818 -- 8676 Cooking Fire
 18260 -- 10253 Cooking
 20222 -- 11491 Goblin Engineer
 20219 -- 11492 Gnomish Engineer
@@ -72,6 +73,7 @@
 45360 -- 16190 Inscription
 45361 -- 16191 Inscription
 45363 -- 16192 Inscription
+49383 -- 17018 Engineering
 50300 -- 17443 Herb Gathering
 50305 -- 17444 Skinning
 50310 -- 17446 Mining
@@ -162,6 +164,11 @@
 153666 -- 32253 Spells removed
 153667 -- 32254 Spells removed
 153668 -- 32255 Spells removed
+156588 -- 32309 Alchemical Catalyst - Fireweed
+156589 -- 32310 Alchemical Catalyst - Flytrap
+156590 -- 32311 Alchemical Catalyst - Starflower
+156592 -- 32313 Alchemical Catalyst - Orchid
+156593 -- 32314 Alchemical Catalyst - Lotus
 156606 -- 32341 Alchemy
 158737 -- 32416 Blacksmithing
 158716 -- 32418 Enchanting
@@ -571,12 +578,6 @@
 382586 -- 47479 Opening
 382587 -- 47480 Opening
 382588 -- 47481 Opening
-375731 -- 47534 Refine Hides -
-375763 -- 47535 Refine Hides -
-376611 -- 47536 Refine Leather -
-376612 -- 47537 Refine Leather -
-376613 -- 47538 Refine Scales -
-376614 -- 47539 Refine Scales -
 384688 -- 47630 Draconium Deposit
 384690 -- 47632 Molten Draconium Deposit
 384692 -- 47633 Serevite Deposit
@@ -606,8 +607,6 @@
 389702 -- 47799 Overload Primal Deposit
 389703 -- 47800 Overload Titan Deposit
 389704 -- 47801 Overload Infurious Deposit
-391088 -- 47820 Refine Herbs -
-391089 -- 47821 Refine Herbs -
 391406 -- 47836 Hochenblume
 391441 -- 47837 Saxifrage
 391447 -- 47838 Writhebark

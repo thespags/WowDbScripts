@@ -131,8 +131,7 @@ def get_wow_head_spell_as_tree(expansion, spell_id):
     name = expansions.get(expansion, "")
     url = "https://www.wowhead.com/{0}/spell={1}".format(name, spell_id)
     response = requests.get(url)
-    # print(url)
-    return html.fromstring(response.content)
+    return url, html.fromstring(response.content)
 
 
 # If we did an update and the ids are out of order, fix them.

@@ -332,9 +332,6 @@ lib:AddRecipe(171, 6053, 7255, 6051, 7245, nil) -- 4211 Holy Protection Potion
 lib:AddRecipe(171, 6057, 7259, 6052, 7254, nil) -- 4212 Nature Protection Potion
 lib:AddRecipe(171, 6054, 7256, 6048, 7242, nil) -- 4213 Shadow Protection Potion
 lib:AddRecipe(164, nil, 7408, 6214, nil, nil) -- 4285 Heavy Copper Maul
-lib:AddEnchantmentRecipe(333, nil, 7411, 3) -- 4286 Enchanting
-lib:AddEnchantmentRecipe(333, nil, 7412, 3) -- 4287 Enchanting
-lib:AddEnchantmentRecipe(333, nil, 7413, 3) -- 4288 Enchanting
 lib:AddEnchantmentRecipe(333, nil, 7418, 41) -- 4289 Enchant Bracer - Minor Health
 lib:AddEnchantmentRecipe(333, nil, 7420, 41) -- 4290 Enchant Chest - Minor Health
 lib:AddRecipe(333, nil, 7421, 6218, nil, nil) -- 4291 Runed Copper Rod
@@ -714,7 +711,6 @@ lib:AddEnchantmentRecipe(333, nil, 13695, 1897) -- 7530 Enchant 2H Weapon - Impa
 lib:AddEnchantmentRecipe(333, 11166, 13698, 865) -- 7531 Enchant Gloves - Skinning
 lib:AddEnchantmentRecipe(333, nil, 13700, 866) -- 7532 Enchant Chest - Lesser Stats
 lib:AddRecipe(333, nil, 13702, 11145, nil, nil) -- 7533 Runed Truesilver Rod
-lib:AddEnchantmentRecipe(333, nil, 13920, 3) -- 7656 Enchanting
 lib:AddEnchantmentRecipe(333, nil, 13746, 884) -- 7657 Enchant Cloak - Greater Defense
 lib:AddEnchantmentRecipe(333, nil, 13794, 903) -- 7658 Enchant Cloak - Resistance
 lib:AddEnchantmentRecipe(333, nil, 13815, 904) -- 7659 Enchant Gloves - Agility
@@ -774,7 +770,6 @@ lib:AddRecipe(185, 16111, 15915, 12216, 10256, nil) -- 8625 Spiced Chili Crab
 lib:AddRecipe(185, 16110, 15933, 12218, 10256, nil) -- 8626 Monster Omelet
 lib:AddRecipe(164, nil, 15972, 12259, nil, nil) -- 8636 Glinting Steel Dagger
 lib:AddRecipe(164, 12261, 15973, 12260, nil, nil) -- 8637 Searing Golden Blade
-lib:AddEnchantmentRecipe(185, nil, 818, 29784) -- 8676 Basic Campfire
 lib:AddRecipe(186, nil, 16153, 12359, nil, nil) -- 8796 Smelt Thorium
 lib:AddRecipe(164, nil, 16641, 12404, 16138, 1643) -- 9156 Dense Sharpening Stone
 lib:AddRecipe(164, nil, 16640, 12643, 16622, 1703) -- 9157 Dense Weightstone

@@ -55,6 +55,7 @@
 12656 -- 6882 Engineering
 13262 -- 7316 Disenchant
 13920 -- 7656 Enchanting
+818 -- 8676 Basic Campfire
 17039 -- 9576 Master Swordsmith
 17040 -- 9577 Master Hammersmith
 17041 -- 9578 Master Axesmith
@@ -87,6 +88,8 @@
 30350 -- 14347 Engineering
 31252 -- 14606 Prospecting
 32549 -- 14888 Leatherworking
+32605 -- 14898 Herb Gathering
+32606 -- 14899 Mining
 32678 -- 14907 Skinning
 33359 -- 15021 Cooking
 45357 -- 16187 Inscription
@@ -95,6 +98,7 @@
 45360 -- 16190 Inscription
 45361 -- 16191 Inscription
 45363 -- 16192 Inscription
+49383 -- 17018 Engineering
 45542 -- 17155 First Aid
 50300 -- 17443 Herb Gathering
 50305 -- 17444 Skinning
@@ -121,6 +125,7 @@
 53664 -- 18279 Master of Anatomy
 53665 -- 18280 Master of Anatomy
 53666 -- 18281 Master of Anatomy
+53042 -- 19162 Mixology
 10846 -- 19181 First Aid
 55428 -- 19355 Lifeblood
 55480 -- 19356 Lifeblood
@@ -131,3 +136,6 @@
 55534 -- 19364 Gem Perfection
 56273 -- 19535 Wormhole: Gadgetzan
 59390 -- 20150 Northern Cloth Scavenging
+60893 -- 20381 Northrend Alchemy Research
+61177 -- 20463 Northrend Inscription Research
+61288 -- 20506 Minor Inscription Research
