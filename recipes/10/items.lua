@@ -3948,8 +3948,28 @@ lib:AddRecipe(171, nil, 114761, 87872, 127563, nil) -- 26031 Desecrated Oil
 lib:AddRecipe(171, nil, 114762, 76080, 105686, nil) -- 26032 Elixir of Perfection
 lib:AddRecipe(171, nil, 114763, 76081, 105687, nil) -- 26033 Elixir of Mirrors
 lib:AddRecipe(171, nil, 114751, 76094, 105704, nil) -- 26034 Alchemist's Rejuvenation
+lib:AddRecipe(794, nil, 113968, nil, nil, nil) -- 26063 Pandaren Tea Set
+lib:AddRecipe(794, nil, 113971, nil, nil, nil) -- 26064 Pandaren Game Board
+lib:AddRecipe(794, nil, 113972, nil, nil, nil) -- 26065 Twin Stein Set of Brewfather Quan Tou Kuo
+lib:AddRecipe(794, nil, 113973, nil, nil, nil) -- 26066 Walking Cane of Brewfather Ren Yun
+lib:AddRecipe(794, nil, 113974, nil, nil, nil) -- 26067 Empty Keg of Brewfather Xin Wo Yin
+lib:AddRecipe(794, nil, 113975, nil, nil, nil) -- 26068 Carved Bronze Mirror
+lib:AddRecipe(794, nil, 113976, nil, nil, nil) -- 26069 Gold-Inlaid Porcelain Funerary Figurine
+lib:AddRecipe(794, nil, 113977, nil, nil, nil) -- 26070 Apothecary Tins
+lib:AddRecipe(794, nil, 113978, nil, nil, nil) -- 26071 Pearl of Yu'lon
+lib:AddRecipe(794, nil, 113979, nil, nil, nil) -- 26072 Standard of Niuzao
 lib:AddRecipe(794, nil, 113980, 89684, nil, nil) -- 26073 Umbrella of Chi-Ji
 lib:AddRecipe(794, nil, 113981, 89685, nil, nil) -- 26074 Spear of Xuen
+lib:AddRecipe(794, nil, 113982, nil, nil, nil) -- 26075 Manacles of Rebellion
+lib:AddRecipe(794, nil, 113983, nil, nil, nil) -- 26076 Cracked Mogu Runestone
+lib:AddRecipe(794, nil, 113984, nil, nil, nil) -- 26077 Terracotta Arm
+lib:AddRecipe(794, nil, 113985, nil, nil, nil) -- 26078 Petrified Bone Whip
+lib:AddRecipe(794, nil, 113986, nil, nil, nil) -- 26079 Thunder King Insignia
+lib:AddRecipe(794, nil, 113987, nil, nil, nil) -- 26080 Edicts of the Thunder King
+lib:AddRecipe(794, nil, 113988, nil, nil, nil) -- 26081 Iron Amulet
+lib:AddRecipe(794, nil, 113989, nil, nil, nil) -- 26082 Warlord's Branding Iron
+lib:AddRecipe(794, nil, 113990, nil, nil, nil) -- 26083 Mogu Coin
+lib:AddRecipe(794, nil, 113991, nil, nil, nil) -- 26084 Worn Monument Ledger
 lib:AddRecipe(794, nil, 113992, 89611, nil, nil) -- 26085 Quilen Statuette
 lib:AddRecipe(794, nil, 113993, 89614, nil, nil) -- 26086 Anatomical Dummy
 lib:AddRecipe(333, nil, 116497, 74250, nil, nil) -- 26137 Mysterious Essence
@@ -5204,6 +5224,52 @@ lib:AddRecipe(333, 122711, 182129, 115504, 170443, nil) -- 33785 Temporal Bindin
 lib:AddRecipe(333, nil, 169091, 111245, nil, nil) -- 33786 Luminous Shard
 lib:AddSalvageRecipe(773, nil, 178550, 48) -- 33795 Borrow Draenic Mortar
 lib:AddRecipe(773, nil, 178497, 113111, nil, nil) -- 33796 Warbinder's Ink
+lib:AddRecipe(794, nil, 168290, nil, nil, nil) -- 33798 Fang-Scarred Frostwolf Axe
+lib:AddRecipe(794, nil, 168291, nil, nil, nil) -- 33799 Frostwolf Ancestry Scrimshaw
+lib:AddRecipe(794, nil, 168292, nil, nil, nil) -- 33800 Wolfskin Snowshoes
+lib:AddRecipe(794, nil, 168293, nil, nil, nil) -- 33801 Warsinger's Drums
+lib:AddRecipe(794, nil, 168294, nil, nil, nil) -- 33802 Screaming Bullroarer
+lib:AddRecipe(794, nil, 168295, nil, nil, nil) -- 33803 Warsong Ceremonial Pike
+lib:AddRecipe(794, nil, 168296, nil, nil, nil) -- 33804 Metalworker's Hammer
+lib:AddRecipe(794, nil, 168297, nil, nil, nil) -- 33805 Elemental Bellows
+lib:AddRecipe(794, nil, 168298, nil, nil, nil) -- 33806 Blackrock Razor
+lib:AddRecipe(794, nil, 168299, nil, nil, nil) -- 33807 Weighted Chopping Axe
+lib:AddRecipe(794, nil, 168300, nil, nil, nil) -- 33808 Hooked Dagger
+lib:AddRecipe(794, nil, 168301, nil, nil, nil) -- 33809 Barbed Fishing Hook
+lib:AddRecipe(794, nil, 168302, nil, nil, nil) -- 33810 Calcified Eye In a Jar
+lib:AddRecipe(794, nil, 168303, nil, nil, nil) -- 33811 Ceremonial Tattoo Needles
+lib:AddRecipe(794, nil, 168304, nil, nil, nil) -- 33812 Cracked Ivory Idol
+lib:AddRecipe(794, nil, 168305, nil, nil, nil) -- 33813 Ancestral Talisman
+lib:AddRecipe(794, nil, 168306, nil, nil, nil) -- 33814 Flask of Blazegrease
+lib:AddRecipe(794, nil, 168307, nil, nil, nil) -- 33815 Gronn-Tooth Necklace
+lib:AddRecipe(794, nil, 168308, nil, nil, nil) -- 33816 Doomsday Prophecy
+lib:AddRecipe(794, nil, 168309, nil, nil, nil) -- 33817 Stonemaul Succession Stone
+lib:AddRecipe(794, nil, 168310, nil, nil, nil) -- 33818 Stone Manacles
+lib:AddRecipe(794, nil, 168311, nil, nil, nil) -- 33819 Ogre Figurine
+lib:AddRecipe(794, nil, 168312, nil, nil, nil) -- 33820 Pictogram Carving
+lib:AddRecipe(794, nil, 168313, nil, nil, nil) -- 33821 Gladiator's Shield
+lib:AddRecipe(794, nil, 168314, nil, nil, nil) -- 33822 Mortar and Pestle
+lib:AddRecipe(794, nil, 168315, nil, nil, nil) -- 33823 Eye of Har'gunn the Blind
+lib:AddRecipe(794, nil, 168316, nil, nil, nil) -- 33824 Stone Dentures
+lib:AddRecipe(794, nil, 168317, nil, nil, nil) -- 33825 Rylak Riding Harness
+lib:AddRecipe(794, nil, 168318, nil, nil, nil) -- 33826 Imperial Decree Stele
+lib:AddRecipe(794, nil, 168321, nil, nil, nil) -- 33827 Dreamcatcher
+lib:AddRecipe(794, nil, 168322, nil, nil, nil) -- 33828 Burial Urn
+lib:AddRecipe(794, nil, 168323, nil, nil, nil) -- 33829 Decree Scrolls
+lib:AddRecipe(794, nil, 168324, nil, nil, nil) -- 33830 Solar Orb
+lib:AddRecipe(794, nil, 168325, nil, nil, nil) -- 33831 Sundial
+lib:AddRecipe(794, nil, 168326, nil, nil, nil) -- 33832 Talonpriest Mask
+lib:AddRecipe(794, nil, 168327, nil, nil, nil) -- 33833 Outcast Dreamcatcher
+lib:AddRecipe(794, nil, 168328, nil, nil, nil) -- 33834 Apexis Crystal
+lib:AddRecipe(794, nil, 168329, nil, nil, nil) -- 33835 Apexis Hieroglyph
+lib:AddRecipe(794, nil, 168330, nil, nil, nil) -- 33836 Apexis Scroll
+lib:AddRecipe(794, nil, 168302, nil, nil, nil) -- 33837 Calcified Eye In a Jar
+lib:AddRecipe(794, nil, 168319, nil, nil, nil) -- 33838 Sorcerer-King Toe Ring
+lib:AddRecipe(794, nil, 168320, nil, nil, nil) -- 33839 Warmaul of the Warmaul Chieftain
+lib:AddRecipe(794, nil, 168331, nil, nil, nil) -- 33840 Beakbreaker of Terokk
+lib:AddRecipe(794, nil, 172459, nil, nil, nil) -- 33841 Headdress of the First Shaman
+lib:AddRecipe(794, nil, 172460, nil, nil, nil) -- 33842 Ancient Nest Guardian
+lib:AddRecipe(794, nil, 172466, nil, nil, nil) -- 33843 Ancient Frostwolf Fang
 lib:AddRecipe(185, 122559, 180757, 122344, 180753, nil) -- 33975 Salty Squid Roll
 lib:AddRecipe(185, 122560, 180760, 122347, 180755, nil) -- 33976 Whiptail Fillet
 lib:AddRecipe(185, 122555, 180762, 122343, 180752, nil) -- 33977 Sleeper Sushi
@@ -5805,6 +5871,21 @@ lib:AddRecipe(165, nil, 196467, 130894, nil, nil) -- 35064 Stonehide Champron
 lib:AddRecipe(165, nil, 196468, 130895, nil, nil) -- 35065 Stonehide Crinet
 lib:AddRecipe(165, nil, 196469, 130896, nil, nil) -- 35066 Stonehide Caparison
 lib:AddRecipe(165, 137952, 196648, 131746, 208705, nil) -- 35070 Stonehide Leather Barding
+lib:AddRecipe(794, nil, 196470, nil, nil, nil) -- 35073 Violetglass Vessel
+lib:AddRecipe(794, nil, 196471, nil, nil, nil) -- 35074 Inert Leystone Charm
+lib:AddRecipe(794, nil, 196472, nil, nil, nil) -- 35075 Quietwine Vial
+lib:AddRecipe(794, nil, 196473, nil, nil, nil) -- 35076 Pre-War Highborne Tapestry
+lib:AddRecipe(794, nil, 196474, nil, nil, nil) -- 35077 Nobleman's Letter Opener
+lib:AddRecipe(794, nil, 196475, nil, nil, nil) -- 35078 Trailhead Drum
+lib:AddRecipe(794, nil, 196476, nil, nil, nil) -- 35079 Moosebone Fish-Hook
+lib:AddRecipe(794, nil, 196477, nil, nil, nil) -- 35080 Hand-Smoothed Pyrestone
+lib:AddRecipe(794, nil, 196478, nil, nil, nil) -- 35081 Drogbar Gem-Roller
+lib:AddRecipe(794, nil, 196479, nil, nil, nil) -- 35082 Stonewood Bow
+lib:AddRecipe(794, nil, 196480, nil, nil, nil) -- 35083 Imp's Cup
+lib:AddRecipe(794, nil, 196481, nil, nil, nil) -- 35084 Flayed-Skin Chronicle
+lib:AddRecipe(794, nil, 196482, nil, nil, nil) -- 35085 Malformed Abyssal
+lib:AddRecipe(794, nil, 196483, nil, nil, nil) -- 35086 Orb of Inner Chaos
+lib:AddRecipe(794, nil, 196484, nil, nil, nil) -- 35087 Houndstooth Hauberk
 lib:AddRecipe(202, nil, 198939, 132500, 201360, nil) -- 35096 Blink-Trigger Headgun
 lib:AddRecipe(202, nil, 198965, 132501, 201360, nil) -- 35097 Tactical Headgun
 lib:AddRecipe(202, nil, 198966, 132502, 201360, nil) -- 35098 Bolt-Action Headgun

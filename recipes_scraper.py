@@ -1,6 +1,6 @@
 import csv
 import time
-import math
+
 import argparse
 from util import *
 from threading import *
@@ -78,6 +78,9 @@ def get_effect(url, tree):
             match = re.search(r'item=(\d+)', items)
             if match:
                 values["item_id"] = match.group(1)
+            else:
+                # Cheat to say this creates something but not an item.
+                values["item_id"] = "nil"
         # if effect.startswith("Summon Object"):
         #     print(url)
         if effect.startswith("Craft Crafting Data"):
