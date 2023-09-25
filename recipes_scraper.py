@@ -1,5 +1,6 @@
 import csv
 import time
+import math
 import argparse
 from util import *
 from threading import *
@@ -8,14 +9,12 @@ from operator import countOf
 
 
 def read_spell_item_enchantment(version):
-    f = open("recipes/{0}/enchantments.lua".format(version), "w")
+    f = open(f'recipes/{version}/enchantments.lua', "w")
     f.write(LIB_LINE)
-    with open("{0}/SpellItemEnchantment.csv".format(version)) as file:
-        csvreader = csv.reader(file)
-        _ = next(csvreader)
-
-        for row in csvreader:
-            f.write("\nlib:AddEnchantment({0}, \"{1}\")".format(int(row[0]), row[1]))
+    with open(f'{version}/SpellItemEnchantment.csv') as file:
+        row: dict[str, str]
+        for row in csv.DictReader(file, delimiter=','):
+            f.write(f'\nlib:AddEnchantment({int(row["ID"])}, "{row["Name_lang"]}")')
     f.close()
 
 
@@ -35,12 +34,12 @@ def get_recipes_and_item(tree):
             # [\w.:, "\-\\\'], too many characters to match so just match all within quotes
             recipes = re.findall(r'"classs":\d+,(?:"\w+":(?:\w+|".+?"),)*?"id":(\d+)', line)
             if not recipes:
-                print("Recipes expected but regex not working:\n{0}".format(line))
+                logging.error('Recipes expected but regex not working:\n%s', line)
         creates = line.startswith("new Listview({template: 'spell', id: 'recipes'")
         if creates:
             match = re.search(r'"creates":\[(\d+),', line)
             if match:
-                item_id = match.group(1)
+                item_id = int(match.group(1))
     return recipes, item_id
 
 
@@ -94,38 +93,47 @@ def get_effect(url, tree):
     return values
 
 
-def read_skill_lines(version, download, force):
-    skills = set()
-    # We use the "can link" column which isn't available until Wotlk.
-    # Wotlk skills are a superset of Vanilla and TBC so this should be okay.
-    version = version if version >= 3 else 3
-    update_files(version, download, force, "SkillLine")
-    with open("{0}/SkillLine.csv".format(version)) as file:
-        csvreader = csv.reader(file)
-        header = next(csvreader)
-        category_index = get_key(header, "CategoryID")
-        skill_index = get_key(header, "ID")
-        # name_index = get_key(header, "DisplayName_lang")
-        can_link_index = get_key(header, "CanLink")
-
+def read_skill_lines(args):
+    skill_lines = {}
+    update_files(args, table_names=["SkillLine"])
+    with open(f'{args.version}/SkillLine.csv') as file:
         categories = {9, 11}
-        for row in csvreader:
-            category = int(row[category_index])
-            can_link = int(row[can_link_index])
-            skill_id = int(row[skill_index])
-            if category not in categories or skill_id == 2870:
-                continue
-            # Secondary Professions must be linkable.
-            if category == 9 and can_link != 1:
-                continue
-            # name = row[name_index]
-            skills.add(skill_id)
-    return skills
+        row: dict[str, str]
+        for row in csv.DictReader(file, delimiter=','):
+            category = int(row["CategoryID"])
+            skill_id = int(row["ID"])
+            flags = int(row["Flags"])
+            # If secondary or primary profession, that appears in the spell book (128), is shown in the ui (not 2),
+            # and not automatic (not 16). In case of Jewelcrafting in TBC (755), include because its incorrectly flagged.
+            # Ignore logging as well (1945)
+            include_skill_line = category in categories and flags & 128 and flags & 18 == 0
+            if (include_skill_line or skill_id == 755) and skill_id != 1945:
+                name = row["DisplayName_lang"]
+                logging.debug("%s %s %s", skill_id, name, str(flags))
+                skill_lines[skill_id] = {"name": name, "category": category}
+
+    with open(f'{args.version}/SkillLineAbility.csv') as f:
+        for row in csv.DictReader(f, delimiter=','):
+            skill_line = int(row['SkillLine'])
+            supercedes_spell_id = int(row['SupercedesSpell'])
+            min_skill_line_rank = int(row['MinSkillLineRank'])
+            if skill_line in skill_lines and min_skill_line_rank == 1 and supercedes_spell_id != 0:
+                prev_spell_id: int | float = skill_lines[skill_line].get("spell", math.inf)
+                skill_lines[skill_line]["spell"] = int(min(supercedes_spell_id, prev_spell_id))
+    return skill_lines
+
+
+def write_skill_lines(version, skill_lines):
+    with open(f'recipes/{version}/skill_lines.lua', 'w') as file:
+        file.write(LIB_LINE)
+        for k, v in skill_lines.items():
+            file.write(f'\nlib:AddSkillLine({k}, "{v["name"]}", {v["category"]}, {v["spell"]})')
+    resort(f'recipes/{version}/skill_lines.lua', r'lib:\w+\((\d+), .*', LIB_LINE)
 
 
 def read_spells(version, file_name, regex):
     spell_ids = set()
-    with open("recipes/{0}/{1}".format(version, file_name)) as file:
+    with open(f'recipes/{version}/{file_name}') as file:
         for line in file.readlines():
             match = re.search(regex, line)
             if match:
@@ -137,11 +145,14 @@ def increment():
     global counter
     counter += 1
     if counter % 100 == 0:
-        print("{0} {1:.2f}".format(counter, time.time() - start_time))
+        print(f'{counter} {time.time() - start_time:.2f}')
 
 
-def read_skill(args, skills, skill_line, skill_id, spell_ids, spell_id, ignored_ids, f, ignored_file):
-    if skill_line not in skills:
+def read_skill(args, row, skill_lines, spell_ids, ignored_ids, f, ignored_file):
+    skill_line = int(row["SkillLine"])
+    spell_id = int(row["Spell"])
+    skill_id = int(row["ID"])
+    if skill_line not in skill_lines:
         return
     if spell_id in spell_ids or spell_id in ignored_ids:
         with lock:
@@ -149,43 +160,44 @@ def read_skill(args, skills, skill_line, skill_id, spell_ids, spell_id, ignored_
         return
     url, tree = get_wow_head_spell_as_tree(args.version, spell_id)
     name = get_or_none(tree.xpath('//head/meta[@property="twitter:title"]/@content'))
-    comment = "-- {0} {1}".format(skill_id, name)
+    comment = f'-- {skill_id} {name}'
     recipes, item_id = get_recipes_and_item(tree)
-    # if len(recipes) >= 2:
-    #     print("Double recipe: {0} {1}".format(spell_id, comment))
+    # expectedId = spell_to_items.get(spell_id, None)
+    # # if expectedId != item_id:
+    # #     print("hmm ... {0} {1} {2}".format(spell_id, expectedId, item_id))
+    # # else:
+    # #     spell_to_items.pop(spell_id, "")
+    # # if len(recipes) >= 2:
+    # #     print("Double recipe_tables: {0} {1}".format(spell_id, comment))
     if not item_id:
         values = get_effect(url, tree)
         if values["enchant_id"]:
             with lock:
                 increment()
                 for recipe_id in recipes:
-                    f.write("\nlib:AddEnchantmentRecipe({0}, {1}, {2}, {3}) {4}"
-                            .format(skill_line, recipe_id, spell_id, values["enchant_id"], comment))
+                    f.write(f'\nlib:AddEnchantmentRecipe({skill_line}, {recipe_id}, {spell_id}, {values["enchant_id"]}) {comment}')
         elif values["item_id"]:
             with lock:
                 increment()
                 for recipe_id in recipes:
-                    f.write("\nlib:AddRecipe({0}, {1}, {2}, {3}, nil, nil) {4}"
-                            .format(skill_line, recipe_id, spell_id, values["item_id"], comment))
+                    f.write(f'\nlib:AddRecipe({skill_line}, {recipe_id}, {spell_id}, {values["item_id"]}, nil, nil) {comment}')
         elif values["salvage_id"]:
             with lock:
                 increment()
                 for recipe_id in recipes:
-                    f.write("\nlib:AddSalvageRecipe({0}, {1}, {2}, {3}) {4}"
-                            .format(skill_line, recipe_id, spell_id, values["salvage_id"], comment))
+                    f.write(f'\nlib:AddSalvageRecipe({skill_line}, {recipe_id}, {spell_id}, {values["salvage_id"]}) {comment}')
         elif values["crafting_data"]:
             with lock:
                 increment()
                 for recipe_id in recipes:
-                    f.write("\nlib:AddCraftingDataRecipe({0}, {1}, {2}, {3}) {4}"
-                            .format(skill_line, recipe_id, spell_id, values["crafting_data"], comment))
+                    f.write(f'\nlib:AddCraftingDataRecipe({skill_line}, {recipe_id}, {spell_id}, {values["crafting_data"]}) {comment}')
         else:
             with lock:
                 increment()
                 does_not_exist = get_or_none(tree.xpath('//script[@id="data.listPage.notFoundPath"]')) is not None
                 on_ptr = get_or_none(tree.xpath('//*[text()[contains(.,"Did You Mean...")]]')) is not None
                 extra = "ptr" if on_ptr else "removed" if does_not_exist else ""
-                ignored_file.write("\n{0} {1} {2}".format(spell_id, comment, extra))
+                ignored_file.write(f'\n{spell_id} {comment} {extra}')
         return
     effects = tree.xpath('//span[text()[contains(.,"Use:")]]/a/@href')
     item_spell_id = "nil"
@@ -201,41 +213,67 @@ def read_skill(args, skills, skill_line, skill_id, spell_ids, spell_id, ignored_
     with lock:
         increment()
         for recipe_id in recipes:
-            f.write("\nlib:AddRecipe({0}, {1}, {2}, {3}, {4}, {5}) {6}"
-                    .format(skill_line, recipe_id, spell_id, item_id, item_spell_id, enchant_id, comment))
+            f.write(f'\nlib:AddRecipe({skill_line}, {recipe_id}, {spell_id}, {item_id}, {item_spell_id}, {enchant_id}) {comment}')
 
 
 def read_skills(args):
-    skills = read_skill_lines(args.version, args.download, args.force_download)
-    f = open("recipes/{0}/items.lua".format(args.version), "a")
-    ignored_file = open("recipes/{0}/ignored".format(args.version), "a")
+    skill_lines = read_skill_lines(args)
+    write_skill_lines(args.version, skill_lines)
+    f = open(f'recipes/{args.version}/items.lua', "a")
+    ignored_file = open(f'recipes/{args.version}/ignored', "a")
     spell_ids = read_spells(args.version, "items.lua", r'lib:\w+\(\d+, (?:\d+|nil), (\d+)')
     ignored_ids = read_spells(args.version, "ignored", r'(\d+) --')
     skill_ids = read_spells(args.version, "items.lua", r'lib:\w+\([\w, ]+\) -- (\d+) [\w: ]+')
-    last_skill_id = max(skill_ids, default=0)
-    print("Updating {0:.2f}...".format(time.time() - start_time))
-    if last_skill_id == 0:
+    if len(skill_ids) == 0:
         f.write(LIB_LINE)
+    #
+    # print(f'Scraping Effects: {time.time() - start_time:.2f}')
+    # # Update spell_ids.
+    # spell_to_items = {}
+    # spell_to_quantity = {}
+    # effect_count = 0
+    # with open(f'{args.version}/SpellEffect.csv') as file:
+    #     for row in csv.DictReader(file, delimiter=','):
+    #         effect = int(row['Effect'])
+    #         spell_id = int(row['SpellID'])
+    #         item_id = int(row['EffectItemType'])
+    #         if (effect == 24 or effect == 157) and item_id != 0:
+    #             spell_to_items[spell_id] = item_id
+    #             base_points = int(row['EffectBasePoints'])
+    #             bonus_coefficient = int(row['EffectBonusCoefficient'])
+    #             group_coefficient = int(row['GroupSizeBasePointsCoefficient'])
+    #             spell_to_quantity[spell_id] = base_points + bonus_coefficient + group_coefficient
+    #             effect_count += 1
+    #         # elif effect == 53:
+    #         #     print("spellId {0} {1}".format(spell_id, effect))
+    # print(f'Finished Effects: {effect_count} {time.time() - start_time:.2f}')
 
-    with open("{0}/SkillLineAbility.csv".format(args.version)) as file:
-        csvreader = csv.reader(file)
-        header = next(csvreader)
-        skill_line_index = get_key(header, "SkillLine")
-        id_index = get_key(header, "ID")
-        spell_id_index = get_key(header, "Spell")
+    print(f'Scraping Spells: {time.time() - start_time:.2f}')
+    with open(f'{args.version}/SkillLineAbility.csv') as file:
         threads = []
         with ThreadPoolExecutor(max_workers=100) as executor:
-            for row in csvreader:
-                skill_line = int(row[skill_line_index])
-                spell_id = int(row[spell_id_index])
-                skill_id = int(row[id_index])
-                future = executor.submit(read_skill, args, skills, skill_line, skill_id, spell_ids, spell_id, ignored_ids, f, ignored_file)
+            row: dict[str, str]
+            for row in csv.DictReader(file, delimiter=','):
+                future = executor.submit(read_skill, args, row, skill_lines, spell_ids, ignored_ids, f, ignored_file)
                 threads.append(future)
         for thread in threads:
             thread.result()
         f.close()
         ignored_file.close()
-    print("{0} {1:.2f}".format(counter, time.time() - start_time))
+    print(f'Finished Spells: {counter} {time.time() - start_time:.2f}')
+
+    # spell_to_reagents = {}
+    # with open(f'{args.version}/SpellReagents.csv') as file:
+    #     for row in csv.DictReader(file, delimiter=','):
+    #         spell_id = int(row['SpellID'])
+    #         if spell_id in spell_ids:
+    #             reagents = {}
+    #             for i in range(0, 8):
+    #                 reagent_item_id = int(row['Reagent_' + str(i)])
+    #                 reagent_quantity = int(row['ReagentCount_' + str(i)])
+    #                 if reagent_item_id != 0 and reagent_quantity != 0:
+    #                     reagents[reagent_item_id] = reagent_quantity
+    #             spell_to_reagents[spell_id] = reagents
 
 
 def scrape():
@@ -252,62 +290,62 @@ def scrape():
 
     # For the specific expansions get spells and enchantments.
     if args.version:
-        print("Scraping {0}".format(args.version))
+        print(f'Scraping {args.version}')
         if args.force:
             print("Force selected, deleting old files.")
-            Path("recipes/{0}/ignored".format(args.version)).unlink()
-            Path("recipes/{0}/items.lua".format(args.version)).unlink()
+            Path(f'recipes/{args.version}/ignored').unlink()
+            Path(f'recipes/{args.version}/items.lua').unlink()
 
-        update_files(args.version, args.download, args.force_download, "SkillLine", "SkillLineAbility", "SpellItemEnchantment")
-        Path("recipes/{0}".format(args.version)).mkdir(parents=True, exist_ok=True)
+        update_files(args, file_name="recipe_tables")
+        Path(f'recipes/{args.version}').mkdir(parents=True, exist_ok=True)
         read_spell_item_enchantment(args.version)
         read_skills(args)
 
         # Post scrape, fix sorting by db id.
-        resort("recipes/{0}/ignored".format(args.version), r'\w+ -- (\w+) .*', "")
-        resort("recipes/{0}/items.lua".format(args.version), r'lib:\w+\([\w, ]+\) -- (\w+) .*', LIB_LINE)
-        print("Finished sorting {0:.2f}...".format(time.time() - start_time))
+        resort(f'recipes/{args.version}/ignored', r'\w+ -- (\w+) .*', "")
+        resort(f'recipes/{args.version}/items.lua', r'lib:\w+\([\w, ]+\) -- (\w+) .*', LIB_LINE)
+        print(f'Finished sorting {time.time() - start_time:.2f}...')
 
 
 def scrape_expansions(args):
     i = 0
     f = open("recipes/expansions.lua", "w")
     f.write(LIB_LINE)
-    known = {}
-
+    known_skills = {}
+    known_spells = set()
+    prev_version = args.version
     for expansion in range(1, 11):
         if 3 < expansion < 7:
             continue
-        skills = read_skill_lines(expansion, args.download, args.force_download)
-        update_files(expansion, args.download, args.force_download, "SkillLineAbility")
+        args.version = expansion
+        skills = read_skill_lines(args)
+        update_files(args, table_names=["SkillLineAbility"])
 
-        with open("{0}/SkillLineAbility.csv".format(expansion)) as file:
-            csvreader = csv.reader(file)
-            header = next(csvreader)
-            skill_line_index = get_key(header, "SkillLine")
-            id_index = get_key(header, "ID")
-            spell_id_index = get_key(header, "Spell")
-
-            for row in csvreader:
-                skill_line = int(row[skill_line_index])
+        with open(f'{expansion}/SkillLineAbility.csv') as file:
+            row: dict[str, str]
+            for row in csv.DictReader(file, delimiter=','):
+                skill_line = int(row["SkillLine"])
                 if skill_line not in skills:
                     continue
 
-                spell_id = int(row[spell_id_index])
-                skill_id = int(row[id_index])
-                old_spell_id = known.get(skill_id, False)
-
-                if old_spell_id:
-                    # if old_spell_id != spell_id:
-                    #     print("changed spell id {0}: {1} != {2}".format(skill_id, old_spell_id, spell_id))
+                spell_id = int(row["Spell"])
+                skill_id = int(row["ID"])
+                old_spell_id = known_skills.get(skill_id, False)
+                if old_spell_id or spell_id in known_spells:
+                    # Double check blizzard didn't reuse a skill id.
+                    if old_spell_id != spell_id:
+                        logging.debug("Change spell id %s: %s != %s", skill_id, old_spell_id, spell_id)
                     continue
-                known[skill_id] = spell_id
-                comment = "-- {0}".format(skill_id)
-                f.write("\nlib:AddExpansion({0}, {1}) {2}".format(spell_id, expansion - 1, comment))
+                known_skills[skill_id] = spell_id
+                known_spells.add(spell_id)
+                comment = f'-- {skill_id}'
+                f.write(f'\nlib:AddExpansion({spell_id}, {expansion - 1}) {comment}')
                 i += 1
-    print(i)
+    args.version = prev_version
+    logging.info(f'Scraped {i} over all expansions...')
 
 
+logging.basicConfig(format='%(message)s', level=logging.INFO)
 lock = Lock()
 start_time = time.time()
 counter = 0

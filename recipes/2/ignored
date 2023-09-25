@@ -33,6 +33,10 @@
 7411 -- 4286 Enchanting
 7412 -- 4287 Enchanting
 7413 -- 4288 Enchanting
+7620 -- 4344 Fishing
+7731 -- 4345 Fishing
+7732 -- 4346 Fishing
+7738 -- 4348 Fishing Poles
 7924 -- 4416 First Aid
 8387 -- 4648 Find Herbs
 8388 -- 4682 Find Minerals
@@ -60,6 +64,7 @@
 17039 -- 9576 Master Swordsmith
 17040 -- 9577 Master Hammersmith
 17041 -- 9578 Master Axesmith
+18248 -- 10242 Fishing
 18260 -- 10253 Cooking
 20222 -- 11491 Goblin Engineer
 20219 -- 11492 Gnomish Engineer
@@ -92,4 +97,6 @@
 32605 -- 14898 Herb Gathering
 32606 -- 14899 Mining
 32678 -- 14907 Skinning
+33095 -- 14943 Fishing
 33359 -- 15021 Cooking
+43308 -- 16032 Find Fish

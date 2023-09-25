@@ -1,6 +1,7 @@
 import requests
 import json
 import re
+import logging
 from lxml import html
 from collections import OrderedDict
 from packaging.version import parse as parse_version
@@ -26,62 +27,57 @@ def get_latest_version(major):
 
 def read_file_value(file_name, default):
     try:
-        f = open(file_name, "r")
-        value = f.read()
-        f.close()
-        return value
+        with open(file_name) as file:
+            return file.read()
     except FileNotFoundError:
-        print("No {0} using default.".format(file_name))
+        print(f'No {file_name} using default.')
         return default
 
 
 def write_file_value(file_name, value):
-    f = open(file_name, "w")
-    f.write(value)
-    f.close()
+    with open(file_name, "w") as file:
+        file.write(value)
 
 
-def update_files(expansion: object, download: bool, force: bool, *table_names: object):
-    version_file = "{0}/versions".format(expansion)
-    if not download:
-        print("Skipping Update " + version_file)
+def update_files(args, file_name: str = None, table_names: [str] = None):
+    if file_name:
+        with open(file_name) as file:
+            table_names = file.read().splitlines()
+
+    version_file = f'{args.version}/versions'
+    if not args.download:
+        logging.info("Download set to false, skipping: %s", table_names)
         return
-    new_version = get_latest_version(expansion)
-    Path(str(expansion)).mkdir(parents=True, exist_ok=True)
+    new_version = get_latest_version(args.version)
+    Path(str(args.version)).mkdir(parents=True, exist_ok=True)
 
     old_version = read_file_value(version_file, "")
     write_file_value(version_file, new_version)
 
-    print("Version new: {0}, old: {1}".format(new_version, old_version))
+    logging.info(f'Version new: {new_version}, old: {old_version}')
 
     for table_name in table_names:
-        file_name = "{0}/{1}.csv".format(expansion, table_name)
+        file_name = f'{args.version}/{table_name}.csv'
         if new_version == old_version and exists(file_name):
-            if force:
-                print("Versions matched and file exists, forcing download: " + file_name)
+            if args.force_download:
+                logging.info(f'Versions matched and file exists, forcing download: {file_name}')
             else:
-                print("Versions matched and file exists, skipping download: " + file_name)
+                logging.info(f'Versions matched and file exists, skipping download: {file_name}')
                 continue
         else:
-            print("Missing or out of date file, downloading table: " + file_name)
-        url = "https://wago.tools/db2/{0}/csv?build={1}".format(table_name, new_version)
+            logging.info("Missing or out of date file, downloading table: " + file_name)
+        url = f'https://wago.tools/db2/{table_name}/csv?build={new_version}'
         response = requests.get(url)
-        with open(file_name, "wb") as f:
-            f.write(response.content)
-
-
-def get_key(header, value):
-    for i, x in enumerate(header):
-        if x == value:
-            return i
-    raise Exception("value doesn't exist")
+        if response.status_code == 200:
+            with open(file_name, "wb") as f:
+                f.write(response.content)
 
 
 def key_string(v):
     if type(v) is str:
         return str(v)
     elif type(v) is int:
-        return "[{0}]".format(v)
+        return f'[{v}]'
     else:
         raise Exception("unknown key type")
 
@@ -120,7 +116,7 @@ def to_string(v, level=0, ignore=False, sort=True):
             v.sort()
         return "{ " + ", ".join(map(lambda x: to_string(x, sort=sort), v)) + " }"
     elif type(v) is str:
-        return "nil" if v == "nil" else "\"{0}\"".format(v)
+        return "nil" if v == "nil" else f'"{v}"'
     elif type(v) is bool:
         return "true" if v else "false"
     else:
@@ -129,7 +125,7 @@ def to_string(v, level=0, ignore=False, sort=True):
 
 def get_wow_head_spell_as_tree(expansion, spell_id):
     name = expansions.get(expansion, "")
-    url = "https://www.wowhead.com/{0}/spell={1}".format(name, spell_id)
+    url = f'https://www.wowhead.com/{name}/spell={spell_id}'
     response = requests.get(url)
     return url, html.fromstring(response.content)
 

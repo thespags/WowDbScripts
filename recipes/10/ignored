@@ -29,6 +29,10 @@
 7411 -- 4286 Enchanting
 7412 -- 4287 Enchanting
 7413 -- 4288 Enchanting
+7620 -- 4344 Fishing
+7731 -- 4345 Fishing
+7732 -- 4346 Fishing
+7738 -- 4348 Fishing Poles
 8388 -- 4682 Find Minerals
 8613 -- 4766 Skinning
 8617 -- 4767 Skinning
@@ -44,6 +48,7 @@
 13262 -- 7316 Disenchant
 13920 -- 7656 Enchanting
 818 -- 8676 Cooking Fire
+18248 -- 10242 Fishing
 18260 -- 10253 Cooking
 20222 -- 11491 Goblin Engineer
 20219 -- 11492 Gnomish Engineer
@@ -66,7 +71,9 @@
 32605 -- 14898 Herb Gathering
 32606 -- 14899 Mining
 32678 -- 14907 Skinning
+33095 -- 14943 Fishing
 33359 -- 15021 Cooking
+43308 -- 16032 Find Fish
 45357 -- 16187 Inscription
 45358 -- 16188 Inscription
 45359 -- 16189 Inscription
@@ -78,6 +85,7 @@
 50305 -- 17444 Skinning
 50310 -- 17446 Mining
 51296 -- 17590 Cooking
+51294 -- 17591 Fishing
 51304 -- 17592 Alchemy
 51300 -- 17593 Blacksmithing
 51313 -- 17594 Enchanting
@@ -87,31 +95,71 @@
 51309 -- 17598 Tailoring
 59390 -- 20150 Cloth Scavenging
 73318 -- 21437 Jewelcrafting
+73979 -- 21562 Searching for Artifacts
 74258 -- 21612 Enchanting
 74519 -- 21620 Herb Gathering
 74517 -- 21621 Mining
 74522 -- 21622 Skinning
 75156 -- 21650 Tailoring
 76666 -- 21832 Blacksmithing
+78670 -- 21894 Archaeology
 80731 -- 22022 Alchemy
+80451 -- 22025 Survey
 81199 -- 22073 Leatherworking
 82774 -- 22172 Engineering
 86008 -- 22540 Inscription
 88053 -- 22946 Cooking
+88868 -- 23376 Fishing
+88961 -- 23385 Archaeology
+89718 -- 23459 Archaeology
+89719 -- 23460 Archaeology
+89720 -- 23461 Archaeology
+89721 -- 23462 Archaeology
+89722 -- 23463 Archaeology
+92806 -- 23758 Survey Mastery
+92807 -- 23759 Survey Mastery
+92808 -- 23760 Survey Mastery
+92809 -- 23761 Survey Mastery
+92810 -- 23762 Survey Mastery
+92811 -- 23763 Survey Mastery
+92812 -- 23764 Survey Mastery
+74268 -- 23765 Track Archaeology Chests
 82207 -- 24065 Explosive Bolts
 102161 -- 24587 Mining
 102216 -- 24602 Skinning
 104115 -- 24786 Release Fire Spirit
 104381 -- 24813 Cooking
 105206 -- 24824 Alchemy
+110393 -- 25375 Archaeology
 110396 -- 25376 Blacksmithing
 110400 -- 25377 Enchanting
 110403 -- 25378 Engineering
+110410 -- 25388 Fishing
 110413 -- 25389 Herb Gathering
 110417 -- 25391 Inscription
 110420 -- 25395 Jewelcrafting
 110423 -- 25396 Leatherworking
 110426 -- 25397 Tailoring
+113968 -- 26063 Pandaren Tea Set
+113971 -- 26064 Pandaren Game Board
+113972 -- 26065 Twin Stein Set of Brewfather Quan Tou Kuo
+113973 -- 26066 Walking Cane of Brewfather Ren Yun
+113974 -- 26067 Empty Keg of Brewfather Xin Wo Yin
+113975 -- 26068 Carved Bronze Mirror
+113976 -- 26069 Gold-Inlaid Porcelain Funerary Figurine
+113977 -- 26070 Apothecary Tins
+113978 -- 26071 Pearl of Yu'lon
+113979 -- 26072 Standard of Niuzao
+113982 -- 26075 Manacles of Rebellion
+113983 -- 26076 Cracked Mogu Runestone
+113984 -- 26077 Terracotta Arm
+113985 -- 26078 Petrified Bone Whip
+113986 -- 26079 Thunder King Insignia
+113987 -- 26080 Edicts of the Thunder King
+113988 -- 26081 Iron Amulet
+113989 -- 26082 Warlord's Branding Iron
+113990 -- 26083 Mogu Coin
+113991 -- 26084 Worn Monument Ledger
 122605 -- 26409 Spells removed
 122603 -- 26418 Spells removed
 122606 -- 26419 Spells removed
@@ -120,12 +168,9 @@
 122601 -- 26436 Spells removed
 122600 -- 26452 Spells removed
 122602 -- 26453 Spells removed
-125589 -- 27085 Way of the Brew
-124694 -- 27086 Way of the Grill
-125588 -- 27087 Way of the Oven
-125586 -- 27088 Way of the Pot
-125587 -- 27089 Way of the Steamer
-125584 -- 27090 Way of the Wok
+131474 -- 27481 Fishing
+131476 -- 27501 Fishing
+131490 -- 27502 Fishing
 153605 -- 32213 Spells removed
 153606 -- 32214 Spells removed
 153607 -- 32215 Spells removed
@@ -170,9 +215,11 @@
 156592 -- 32313 Alchemical Catalyst - Orchid
 156593 -- 32314 Alchemical Catalyst - Lotus
 156606 -- 32341 Alchemy
+158762 -- 32415 Archaeology
 158737 -- 32416 Blacksmithing
 158716 -- 32418 Enchanting
 158739 -- 32419 Engineering
+158743 -- 32421 Fishing
 158745 -- 32422 Herb Gathering
 158748 -- 32423 Inscription
 158750 -- 32424 Jewelcrafting
@@ -186,6 +233,52 @@
 169699 -- 33226 Spells removed
 173415 -- 33574 Spells removed
 177355 -- 33741 Remove Illusion
+168290 -- 33798 Fang-Scarred Frostwolf Axe
+168291 -- 33799 Frostwolf Ancestry Scrimshaw
+168292 -- 33800 Wolfskin Snowshoes
+168293 -- 33801 Warsinger's Drums
+168294 -- 33802 Screaming Bullroarer
+168295 -- 33803 Warsong Ceremonial Pike
+168296 -- 33804 Metalworker's Hammer
+168297 -- 33805 Elemental Bellows
+168298 -- 33806 Blackrock Razor
+168299 -- 33807 Weighted Chopping Axe
+168300 -- 33808 Hooked Dagger
+168301 -- 33809 Barbed Fishing Hook
+168302 -- 33810 Calcified Eye In a Jar
+168303 -- 33811 Ceremonial Tattoo Needles
+168304 -- 33812 Cracked Ivory Idol
+168305 -- 33813 Ancestral Talisman
+168306 -- 33814 Flask of Blazegrease
+168307 -- 33815 Gronn-Tooth Necklace
+168308 -- 33816 Doomsday Prophecy
+168309 -- 33817 Stonemaul Succession Stone
+168310 -- 33818 Stone Manacles
+168311 -- 33819 Ogre Figurine
+168312 -- 33820 Pictogram Carving
+168313 -- 33821 Gladiator's Shield
+168314 -- 33822 Mortar and Pestle
+168315 -- 33823 Eye of Har'gunn the Blind
+168316 -- 33824 Stone Dentures
+168317 -- 33825 Rylak Riding Harness
+168318 -- 33826 Imperial Decree Stele
+168321 -- 33827 Dreamcatcher
+168322 -- 33828 Burial Urn
+168323 -- 33829 Decree Scrolls
+168324 -- 33830 Solar Orb
+168325 -- 33831 Sundial
+168326 -- 33832 Talonpriest Mask
+168327 -- 33833 Outcast Dreamcatcher
+168328 -- 33834 Apexis Crystal
+168329 -- 33835 Apexis Hieroglyph
+168330 -- 33836 Apexis Scroll
+168302 -- 33837 Calcified Eye In a Jar
+168319 -- 33838 Sorcerer-King Toe Ring
+168320 -- 33839 Warmaul of the Warmaul Chieftain
+168331 -- 33840 Beakbreaker of Terokk
+172459 -- 33841 Headdress of the First Shaman
+172460 -- 33842 Ancient Nest Guardian
+172466 -- 33843 Ancient Frostwolf Fang
 184454 -- 34150 Leystone Deposit
 184456 -- 34151 Leystone Deposit
 184457 -- 34152 Leystone Deposit
@@ -241,6 +334,7 @@
 194174 -- 34830 Skinning Journal
 194203 -- 34831 Legion Gutting
 195095 -- 35034 Alchemy
+195127 -- 35035 Archaeology
 195097 -- 35036 Blacksmithing
 195096 -- 35037 Enchanting
 195112 -- 35038 Engineering
@@ -252,6 +346,21 @@
 195125 -- 35045 Skinning
 195126 -- 35046 Tailoring
 195128 -- 35047 Cooking
+196470 -- 35073 Violetglass Vessel
+196471 -- 35074 Inert Leystone Charm
+196472 -- 35075 Quietwine Vial
+196473 -- 35076 Pre-War Highborne Tapestry
+196474 -- 35077 Nobleman's Letter Opener
+196475 -- 35078 Trailhead Drum
+196476 -- 35079 Moosebone Fish-Hook
+196477 -- 35080 Hand-Smoothed Pyrestone
+196478 -- 35081 Drogbar Gem-Roller
+196479 -- 35082 Stonewood Bow
+196480 -- 35083 Imp's Cup
+196481 -- 35084 Flayed-Skin Chronicle
+196482 -- 35085 Malformed Abyssal
+196483 -- 35086 Orb of Inner Chaos
+196484 -- 35087 Houndstooth Hauberk
 205243 -- 35274 Skinning
 247812 -- 36651 Astral Glory
 247813 -- 36652 Astral Glory
@@ -265,9 +374,6 @@
 247842 -- 36684 Fiendish Leather
 247843 -- 36685 Fiendish Leather
 247844 -- 36686 Fiendish Leather
-258965 -- 39112 (TEST) Legion Blacksmithing
-264160 -- 39114 (TEST) Legion Engineering
-264191 -- 39115 (TEST) Pandaria Engineering
 264255 -- 39122 Kul Tiran Alchemy
 264243 -- 39123 Cataclysm Alchemy
 264211 -- 39124 Alchemy
@@ -421,6 +527,18 @@
 265867 -- 39325 Skinning
 265869 -- 39326 Skinning
 265871 -- 39327 Skinning
+271677 -- 39582 Zandalari Fishing
+271675 -- 39583 Kul Tiran Fishing
+271660 -- 39584 Cataclysm Fishing
+271616 -- 39585 Fishing
+271664 -- 39586 Draenor Fishing
+271672 -- 39587 Legion Fishing
+271658 -- 39588 Northrend Fishing
+271656 -- 39589 Outland Fishing
+271662 -- 39590 Pandaria Fishing
+271990 -- 39591 Fishing Journal
+272011 -- 39662 Fishing
+278910 -- 39853 Archaeology
 259665 -- 40353 Blood Contract: Sacrifice
 292320 -- 40377 Blood Contract: Bloodguard
 292012 -- 40378 Blood Contract: Bloodshed
@@ -457,101 +575,13 @@
 309832 -- 42688 Shadowlands Enchanting
 309835 -- 42689 Mining
 310542 -- 42768 Shadowlands Engineering
+310675 -- 42776 Shadowlands Fishing
 310949 -- 42791 Shadowlands Tailoring
 309805 -- 42870 Shadowlands Inscription
 311967 -- 42964 Shadowlands Jewelcrafting
-317398 -- 43344 Spells removed
-317427 -- 43345 Spells removed
-317708 -- 43367 Spells removed
-317751 -- 43374 Spells removed
-317756 -- 43375 Spells removed
-317761 -- 43376 Spells removed
-317799 -- 43377 Spells removed
-317797 -- 43378 Spells removed
-317798 -- 43379 Spells removed
-317800 -- 43380 Spells removed
-317802 -- 43381 Spells removed
-317801 -- 43382 Spells removed
-317825 -- 43383 Spells removed
-317841 -- 43385 Spells removed
-317843 -- 43386 Spells removed
-317850 -- 43388 Spells removed
-317852 -- 43389 Spells removed
-317900 -- 43395 Spells removed
-317902 -- 43396 Spells removed
-319235 -- 43429 Spells removed
 324750 -- 44657 Disenchant
-325284 -- 44723 Construct Body: "Chordy"
-325451 -- 44725 Construct Body: "Roseboil"
-325453 -- 44726 Construct Body: "Flytrap"
-325452 -- 44727 Construct Body: "Marz"
-325454 -- 44728 Construct Body: "Atticus"
-325458 -- 44729 Construct Body: "Miru"
-326379 -- 44773 Construct Body: "Neena"
-326406 -- 44775 Construct Body: "Professor"
-326380 -- 44776 Construct Body: "Gas Bag"
-326408 -- 44777 Construct Body: "Mama Tomalin"
-326407 -- 44778 Construct Body: "Toothpick"
-326379 -- 44853 Construct Body: "Neena"
-325451 -- 44854 Construct Body: "Roseboil"
-325453 -- 44855 Construct Body: "Flytrap"
-325452 -- 44856 Construct Body: "Marz"
-325454 -- 44857 Construct Body: "Atticus"
-325458 -- 44858 Construct Body: "Miru"
-325284 -- 44859 Construct Body: "Chordy"
-326406 -- 44860 Construct Body: "Professor"
-326380 -- 44861 Construct Body: "Gas Bag"
-326408 -- 44862 Construct Body: "Mama Tomalin"
-326407 -- 44863 Construct Body: "Toothpick"
-335287 -- 45422 Spells removed
-335286 -- 45423 Spells removed
-335284 -- 45424 Spells removed
-335279 -- 45425 Spells removed
-335278 -- 45426 Spells removed
-337535 -- 45463 Dapper Top Hat
-337540 -- 45464 Outlaw Flag
-337554 -- 45465 Trustworthy Doll
-338037 -- 45477 Construct Body: "Iron Phillip"
-338040 -- 45479 Construct Body: "Sabrina"
-338043 -- 45480 Construct Body: "Naxx"
-338039 -- 45481 Construct Body: "Guillotine"
-338383 -- 45580 Holiday Hat
 340534 -- 45654 Interact
-342417 -- 45699 Vestigial Wings
-342418 -- 45700 Engineering Pack
-342421 -- 45701 Operational Instructions
-342447 -- 45702 Flower Crown
-342448 -- 45703 Halo of Purity
-342455 -- 45704 Red Eye Lens
-342454 -- 45705 Skull Protector
-342468 -- 45706 Happiness Bird
-342483 -- 45707 Six-League Pack
-342851 -- 45720 Magician's Hat
-342850 -- 45721 Plague Pack
-342849 -- 45722 Armor Plating
-342846 -- 45723 Butterflies
-342845 -- 45724 Sticky Cat
-342843 -- 45725 Faction Flag
-342842 -- 45726 Safe Fall Pack
-342841 -- 45727 Collector Kash's Pack
-342895 -- 45730 Intellectuals Monocle
-342899 -- 45731 Spare Weapon
 343634 -- 45766 Shadowlands Cloth Scavenging
-344100 -- 45830 Chef Hat
-344095 -- 45831 Dundae's Hat
-344101 -- 45832 Egg Hat
-344766 -- 45833 Skull Fungus
-344765 -- 45834 Pumpkin Head
-344769 -- 45835 Pirate Hat
-344770 -- 45836 Unworthy Crown
-344796 -- 45838 Back Mushrooms
-344110 -- 45839 Barrel O' Fish
-344797 -- 45840 Underpowered Gravity Pack
-344798 -- 45841 Shoulder Sprouts
-342902 -- 45842 Hitchhiker
-344097 -- 45843 Trained Corpselice
-344096 -- 45844 Lovely Candle Display
-345894 -- 45890 Medallion of Service
 343681 -- 46088 Spells removed
 343687 -- 46090 Spells removed
 365677 -- 46620 Dragon Isles Blacksmithing
@@ -559,6 +589,7 @@
 366256 -- 46633 Dragon Isles Cooking
 366255 -- 46634 Dragon Isles Enchanting
 366254 -- 46635 Dragon Isles Engineering
+366253 -- 46636 Dragon Isles Fishing
 366251 -- 46637 Dragon Isles Inscription
 366250 -- 46638 Dragon Isles Jewelcrafting
 366249 -- 46639 Dragon Isles Leatherworking
@@ -644,6 +675,16 @@
 392440 -- 47891 Leather Skinning
 392445 -- 47892 Scale Skinning
 392888 -- 47903 Disenchant
+393059 -- 47906 Thousandbite Piranha Swarm
+393060 -- 47907 Cerulean Spinefish School
+393061 -- 47908 Aileron Seamoth School
+393062 -- 47909 Temporal Dragonhead School
+393065 -- 47910 Shimmering Treasure Pool
+393064 -- 47911 Islefin Dorado Pool
+393063 -- 47912 Scalebelly Mackerel
+393066 -- 47913 Rimefin Tuna Pool
+393067 -- 47914 Magma Thresher Pool
+393068 -- 47915 Prismatic Leaper School
 395269 -- 47961 Iridescent Ore
 395275 -- 47962 Dreambloom
 395282 -- 47963 Curious Hide
@@ -724,16 +765,6 @@
 421244 -- 49086 Spells ptr
 422293 -- 49089 Spells ptr
 422809 -- 49094 Spells ptr
-424529 -- 49147 Spells ptr
-424538 -- 49150 Spells ptr
-424694 -- 49162 Spells ptr
-424695 -- 49163 Spells ptr
-424736 -- 49164 Spells ptr
-424810 -- 49165 Spells ptr
-424823 -- 49166 Spells ptr
-424881 -- 49167 Spells ptr
-424876 -- 49168 Spells ptr
-424899 -- 49169 Spells ptr
 425263 -- 49191 Spells ptr
 425954 -- 49223 Spells ptr
 425958 -- 49224 Spells ptr
@@ -741,5 +772,3 @@
 425959 -- 49226 Spells ptr
 426332 -- 49240 Spells ptr
 426434 -- 49244 Spells ptr
-427109 -- 49268 Spells ptr
-427111 -- 49269 Spells ptr

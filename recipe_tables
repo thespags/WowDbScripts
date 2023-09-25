@@ -1,0 +1,12 @@
+SkillLine
+SkillLineAbility
+SpellItemEnchantment
+SpellEffect
+SpellReagents
+CraftingData
+CraftingDataItemQuality
+CraftingDataEnchantQuality
+CraftingReagentQuality
+MCRSlotXMCRCategory
+ModifiedCraftingReagentSlot
+ModifiedCraftingSpellSlot
