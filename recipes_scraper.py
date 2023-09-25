@@ -48,12 +48,12 @@ def join_list(strings):
     new_string = ""
     for string in strings:
         if string.isspace():
-            if len(new_string) > 0:
+            if len(new_string):
                 new_strings.append(new_string)
                 new_string = ""
         else:
             new_string = new_string + string
-    if len(new_string) > 0:
+    if len(new_string):
         new_strings.append(new_string)
     return new_strings
 
@@ -110,16 +110,22 @@ def read_skill_lines(args):
             if (include_skill_line or skill_id == 755) and skill_id != 1945:
                 name = row["DisplayName_lang"]
                 logging.debug("%s %s %s", skill_id, name, str(flags))
-                skill_lines[skill_id] = {"name": name, "category": category}
+                skill_lines[skill_id] = {"name": name, "category": category, "spells": []}
 
     with open(f'{args.version}/SkillLineAbility.csv') as f:
         for row in csv.DictReader(f, delimiter=','):
             skill_line = int(row['SkillLine'])
+            flags = int(row['Flags'])
             supercedes_spell_id = int(row['SupercedesSpell'])
-            min_skill_line_rank = int(row['MinSkillLineRank'])
-            if skill_line in skill_lines and min_skill_line_rank == 1 and supercedes_spell_id != 0:
-                prev_spell_id: int | float = skill_lines[skill_line].get("spell", math.inf)
-                skill_lines[skill_line]["spell"] = int(min(supercedes_spell_id, prev_spell_id))
+            # Seeds the first supercede then we only add spells that supercede that chain.
+            # Assumes ordering is consistent, i.e. supercede chain appears in order in the DB.
+            if skill_line in skill_lines and flags == 0 and supercedes_spell_id != 0:
+                spells = skill_lines[skill_line]["spells"]
+                if not len(spells):
+                    spells.append(supercedes_spell_id)
+                if supercedes_spell_id == spells[-1]:
+                    spell_id = int(row['Spell'])
+                    skill_lines[skill_line]["spells"].append(spell_id)
     return skill_lines
 
 
@@ -127,7 +133,7 @@ def write_skill_lines(version, skill_lines):
     with open(f'recipes/{version}/skill_lines.lua', 'w') as file:
         file.write(LIB_LINE)
         for k, v in skill_lines.items():
-            file.write(f'\nlib:AddSkillLine({k}, "{v["name"]}", {v["category"]}, {v["spell"]})')
+            file.write(f'\nlib:AddSkillLine({k}, "{v["name"]}", {v["category"]}, {{{",".join(map(str, v["spells"]))}}})')
     resort(f'recipes/{version}/skill_lines.lua', r'lib:\w+\((\d+), .*', LIB_LINE)
 
 
@@ -224,7 +230,7 @@ def read_skills(args):
     spell_ids = read_spells(args.version, "items.lua", r'lib:\w+\(\d+, (?:\d+|nil), (\d+)')
     ignored_ids = read_spells(args.version, "ignored", r'(\d+) --')
     skill_ids = read_spells(args.version, "items.lua", r'lib:\w+\([\w, ]+\) -- (\d+) [\w: ]+')
-    if len(skill_ids) == 0:
+    if not len(skill_ids):
         f.write(LIB_LINE)
     #
     # print(f'Scraping Effects: {time.time() - start_time:.2f}')

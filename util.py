@@ -87,7 +87,7 @@ def key_string(v):
 # Other things we don't want sorted like encounter order.
 def to_string(v, level=0, ignore=False, sort=True):
     if type(v) is dict:
-        if len(v) == 0:
+        if not len(v):
             return "{}"
         newline = level == 0 or level == 1
         indent = "\n" + "    " * (level + 1) if newline else " "
@@ -110,7 +110,7 @@ def to_string(v, level=0, ignore=False, sort=True):
     elif type(v) is set:
         return to_string(list(v), sort=sort)
     elif type(v) is list:
-        if len(v) == 0:
+        if not len(v):
             return "{}"
         if sort:
             v.sort()
