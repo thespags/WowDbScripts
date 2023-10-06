@@ -98,7 +98,6 @@ def get_effect(url, tree):
 
 def read_skill_lines(args):
     skill_lines = {}
-    update_files(args, table_names=["SkillLine"])
     with open(f'{args.version}/SkillLine.csv') as file:
         categories = {9, 11}
         row: dict[str, str]
@@ -305,7 +304,9 @@ def scrape():
             Path(f'recipes/{args.version}/ignored').unlink()
             Path(f'recipes/{args.version}/items.lua').unlink()
 
-        update_files(args, file_name="recipe_tables")
+        # Downloads the 4 main tables plus additional tables from the file.
+        # Currently, the additional tables aren't use to create reagents yet.
+        update_files(args, file_name=f'{args.version}/recipe_tables', table_names=["SkillLine", "SkillLineAbility", "SpellItemEnchantment", "SpellEffect"])
         Path(f'recipes/{args.version}').mkdir(parents=True, exist_ok=True)
         read_spell_item_enchantment(args.version)
         read_skills(args)

@@ -26,10 +26,11 @@ def get_latest_version(major):
 
 
 def read_file_value(file_name, default):
-    try:
-        with open(file_name) as file:
+    path = Path(file_name)
+    if path.exists():
+        with path.open() as file:
             return file.read()
-    except FileNotFoundError:
+    else:
         print(f'No {file_name} using default.')
         return default
 
@@ -40,9 +41,10 @@ def write_file_value(file_name, value):
 
 
 def update_files(args, file_name: str = None, table_names: [str] = None):
-    if file_name:
+    table_names = table_names if table_names else []
+    if file_name and Path(file_name).exists():
         with open(file_name) as file:
-            table_names = file.read().splitlines()
+            table_names.extend(file.read().splitlines())
 
     version_file = f'{args.version}/versions'
     if not args.download:
