@@ -2853,7 +2853,7 @@ lib:AddRecipe(202, nil, 56468, 44951, nil, nil) -- 19563 Box of Bombs
 lib:AddRecipe(202, nil, 56470, 41146, 55076, 3607) -- 19564 Sun Scope
 lib:AddRecipe(202, nil, 56472, 40768, 54710, nil) -- 19565 MOLL-E
 lib:AddRecipe(202, nil, 56514, 42641, 56488, nil) -- 19566 Global Thermal Sapper Charge
-lib:AddRecipe(202, nil, 56473, 40895, nil, nil) -- 19567 Gnomish X-Ray Specs
+lib:AddRecipe(202, nil, 56473, 40895, 54844, nil) -- 19567 Gnomish X-Ray Specs
 lib:AddRecipe(202, nil, 56474, 41164, nil, nil) -- 19568 Mammoth Cutters
 lib:AddRecipe(202, nil, 56475, 41165, nil, nil) -- 19569 Saronite Razorheads
 lib:AddRecipe(202, nil, 56462, 40772, 54732, nil) -- 19570 Gnomish Army Knife

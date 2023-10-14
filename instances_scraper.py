@@ -78,7 +78,7 @@ def read_group_finder_activity():
     activity_id_lookups = {
         0: {5: [285], 10: [290], 20: [290], 40: [290]},
         1: {5: [286, 288], 10: [291], 25: [291]},
-        2: {5: [287, 289, 311, 312, 314], 10: [292], 25: [293]},
+        2: {5: [287, 289, 311, 312, 314], 10: [292, 320], 25: [293, 321]},
     }
     ignore_lfg_category = {116, 118, 120}
     ignore_names = {"Trial of the Grand Crusader"}
@@ -87,7 +87,7 @@ def read_group_finder_activity():
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
             category = int(row["GroupFinderCategoryID"])
-            name = row["FullName_lang"]
+            name = row["ShortName_lang"]
             group = int(row["GroupFinderActivityGrpID"])
             # Ignore outdoor zones, pvp, and customer
             if category in ignore_lfg_category or name in ignore_names:

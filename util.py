@@ -8,7 +8,7 @@ from packaging.version import parse as parse_version
 from os.path import exists
 from pathlib import Path
 
-ignored_zones = {631, 632, 658, 668, 724}
+ignored_zones = {}
 ignored_sort = {"encounters", "activities"}
 expansions = {1: "classic", 2: "tbc", 3: "wotlk"}
 
