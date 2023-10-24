@@ -16,6 +16,9 @@ def read_dungeons():
             if key not in infos:
                 infos[key] = {"sizes": set(), "resets": {}, "encounters": OrderedDict(), "activities": {}}
             infos[key]["expansion"] = int(row["ExpansionLevel"])
+            group_id = int(row["Group_ID"])
+            activity_id = int(row["ID"])
+            infos[key]["activities"][group_id] = activity_id
         infos[249]["legacy"] = {"expansion": 0, "size": 40}
 
 
@@ -74,46 +77,11 @@ def read_map_difficulty():
             infos[key]["sizes"].add(max_players)
 
 
-def read_group_finder_activity():
-    activity_id_lookups = {
-        0: {5: [285], 10: [290], 20: [290], 40: [290]},
-        1: {5: [286, 288], 10: [291], 25: [291]},
-        2: {5: [287, 289, 311, 312, 314], 10: [292, 320], 25: [293, 321]},
-    }
-    ignore_lfg_category = {116, 118, 120}
-    ignore_names = {"Trial of the Grand Crusader"}
-    with open("3/GroupFinderActivity.csv") as file:
-        instance_last_seen = {}
+def read_dungeon_groups():
+    with open("3/LFGDungeonGroup.csv") as file:
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
-            category = int(row["GroupFinderCategoryID"])
-            name = row["ShortName_lang"]
-            group = int(row["GroupFinderActivityGrpID"])
-            # Ignore outdoor zones, pvp, and customer
-            if category in ignore_lfg_category or name in ignore_names:
-                continue
-            if group == 294:
-                # Ignoring holiday dungeons for now.
-                continue
-            key = int(row["MapID"])
-            if key not in infos:
-                print("Missing Id: " + to_string(key))
-                continue
-            # difficulty = int(row["Field_3_4_0_43659_004"])
-            max_players = int(row["MaxPlayers"])
-            activities = infos[key]["activities"]
-            if max_players not in activities:
-                activities[max_players] = []
-            # Dungeons released later than old Titan Rune dungeons don't get an id.
-            if key in instance_last_seen:
-                expected_groups = activity_id_lookups[infos[key]["expansion"]][max_players]
-                index = expected_groups.index(group)
-                expected = max_players in activities and len(activities[max_players]) or 0
-                while expected < index:
-                    expected += 1
-                    activities[max_players].append("nil")
-            instance_last_seen[key] = group
-            activities[max_players].append(int(row["ID"]))
+            groups[int(row["ID"])] = row["Name_lang"]
 
 
 parser = argparse.ArgumentParser()
@@ -123,20 +91,22 @@ args = parser.parse_args()
 args.version = 1
 update_files(args, table_names=["DungeonEncounter"])
 args.version = 3
-update_files(args, table_names=["DungeonEncounter", "GroupFinderActivity", "LFGDungeons", "MapDifficulty"])
+update_files(args, table_names=["DungeonEncounter", "GroupFinderActivity", "LFGDungeons", "LFGDungeonGroup", "MapDifficulty"])
 name_to_difficulty = {}
 infos = {}
+groups = {}
 read_dungeons()
 # For whatever reason these instances aren't in the db for Wotlk but do exist...
 read_dungeon_encounter(1, ids={34, 289})
 read_dungeon_encounter(3)
 sort_encounters()
 read_map_difficulty()
-read_group_finder_activity()
+read_dungeon_groups()
 
 Path("instances").mkdir(parents=True, exist_ok=True)
 f = open("instances/instances.lua", "w")
-f.write("infos = " + to_string(infos))
+f.write("groups = " + to_string(groups))
+f.write("\n\ninfos = " + to_string(infos))
 f.write("""
 
 for k, v in pairs(infos) do
