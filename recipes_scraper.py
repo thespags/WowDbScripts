@@ -1,6 +1,5 @@
 import csv
 import time
-
 import argparse
 from util import *
 from threading import *
