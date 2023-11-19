@@ -1270,3 +1270,11 @@ lib:AddRecipe(197, 22772, 28482, 22758, nil, nil) -- 13951 Sylvan Shoulders
 lib:AddRecipe(197, 22774, 28480, 22756, nil, nil) -- 13952 Sylvan Vest
 lib:AddRecipe(129, 23689, 30021, 23684, nil, nil) -- 14274 Crystal Infused Bandage
 lib:AddRecipe(185, 23690, 30047, 23683, nil, nil) -- 14280 Crystal Throat Lozenge
+lib:AddRecipe(171, 210709, 426607, 210708, 426606, nil) -- 49255 Elixir of Coalesced Regret
+lib:AddRecipe(164, nil, 429348, 210794, nil, nil) -- 49324 Shifting Silver Breastplate
+lib:AddRecipe(197, nil, 429351, 210795, 428489, nil) -- 49325 Extraplanar Spidersilk Boots
+lib:AddRecipe(165, nil, 429354, 211423, 429867, nil) -- 49326 Void-Touched Leather Gloves
+lib:AddRecipe(202, nil, 424641, 210147, 424788, nil) -- 49329 Shredder Autosalvage Unit
+lib:AddRecipe(165, nil, 429869, 211502, 429868, nil) -- 49330 Void-Touched Leather Gauntlets
+lib:AddRecipe(164, nil, 430397, 211845, 430392, 7098) -- 49376 Blackfathom Sharpening Stone
+lib:AddRecipe(333, nil, 430409, 211848, 430585, 7099) -- 49377 Blackfathom Mana Oil

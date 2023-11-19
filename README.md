@@ -15,7 +15,7 @@ Updates any new information in classic Wow.
 `python3 instances_scraper.py -d`
 
 Force download tables. (Sometimes Blizzard updates tables without version changes)
-`python3 instances_scraper.py -d -f`
+`python3 instances_scraper.py -d -fd`
 
 Creates trade skill recipe, spell, item information for a public library.
 `python3 recipes_scraper.py`
@@ -32,7 +32,7 @@ Updates expansion information in classic Wow.
 `python3 recipes_scraper.py -e -d`
 
 Force download tables. (Sometimes Blizzard updates tables without version changes)
-`python3 recipes_scraper.py -v 1 -d -f`
+`python3 recipes_scraper.py -v 1 -d -fd`
 
 
 ## Utility
