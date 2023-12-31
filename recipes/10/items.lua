@@ -9358,3 +9358,6 @@ lib:AddRecipe(165, 206772, 414565, 206646, 414098, nil) -- 48953 Languished Leat
 lib:AddRecipe(165, 206773, 414566, 206647, 414099, nil) -- 48954 Scourged Scales
 lib:AddRecipe(164, 206774, 414567, 206648, 414100, nil) -- 48955 Undeath Metal
 lib:AddRecipe(197, 206771, 414564, 206645, 414097, nil) -- 48956 Cursed Cloth
+lib:AddRecipe(773, nil, 422337, 209998, nil, nil) -- 49090 Lydiara's Binding Rune
+lib:AddRecipe(333, nil, 422338, 210003, nil, nil) -- 49091 Shalasar's Sophic Vellum
+lib:AddRecipe(165, nil, 422330, 209351, nil, nil) -- 49092 Erden's Glowspore Grip
