@@ -133,8 +133,9 @@ def get_wow_head_spell_as_tree(expansion, spell_id):
 
 
 # If we did an update and the ids are out of order, fix them.
-def resort(name, regex, prefix):
+def resort(name, regex):
     id_to_lines = OrderedDict()
+    prefix = []
     with open(name) as file:
         for line in file.readlines():
             match = re.match(regex, line)
@@ -144,9 +145,11 @@ def resort(name, regex, prefix):
                     id_to_lines[line_id] = []
                 # Strip to handle any new lines consistently.
                 id_to_lines[line_id].append(line.strip())
+            else:
+                prefix.append(line)
 
     with open(name, "w") as file:
-        file.write(prefix)
+        file.write("".join(prefix).strip())
         for _, lines in sorted(id_to_lines.items()):
             for line in lines:
                 file.write("\n" + line)

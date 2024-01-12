@@ -1,5 +1,8 @@
 local lib = LibStub("LibTradeSkillRecipes-1")
 
+if 9 ~= LE_EXPANSION_LEVEL_CURRENT then
+	return
+end
 lib:AddSkillLine(164, "Blacksmithing", 11, {2018,3100,3538,9785,29844,51300,76666,110396,158737,195097})
 lib:AddSkillLine(165, "Leatherworking", 11, {2108,3104,3811,10662,32549,51302,81199,110423,158752,195119})
 lib:AddSkillLine(171, "Alchemy", 11, {3101,3464,11611,28596,51304,80731,105206,156606,195095})

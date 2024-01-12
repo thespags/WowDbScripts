@@ -4,8 +4,8 @@ from util import *
 from collections import OrderedDict
 
 
-def read_dungeons():
-    with open("3/LFGDungeons.csv") as file:
+def read_dungeons(version):
+    with open(f"{version}/LFGDungeons.csv") as file:
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
             difficulty = int(row["DifficultyID"])
@@ -59,9 +59,9 @@ def sort_encounters():
         infos[k]["lastBossIndex"] = index + 1
 
 
-def read_map_difficulty():
+def read_map_difficulty(version):
     reset_intervals = {1: 1, 2: 7, 3: 3, 4: 5}
-    with open("3/MapDifficulty.csv") as file:
+    with open(f"{version}/MapDifficulty.csv") as file:
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
             reset = int(row["ResetInterval"])
@@ -77,8 +77,8 @@ def read_map_difficulty():
             infos[key]["sizes"].add(max_players)
 
 
-def read_dungeon_groups():
-    with open("3/LFGDungeonGroup.csv") as file:
+def read_dungeon_groups(version):
+    with open(f"{version}/LFGDungeonGroup.csv") as file:
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
             groups[int(row["ID"])] = row["Name_lang"]
@@ -86,22 +86,22 @@ def read_dungeon_groups():
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--download", default=False, action=argparse.BooleanOptionalAction)
-parser.add_argument("-fd", "--force_download", default=False, action=argparse.BooleanOptionalAction)
+parser.add_argument("-fd", "--force-download", default=False, action=argparse.BooleanOptionalAction)
 args = parser.parse_args()
 args.version = 1
 update_files(args, table_names=["DungeonEncounter"])
 args.version = 3
-update_files(args, table_names=["DungeonEncounter", "GroupFinderActivity", "LFGDungeons", "LFGDungeonGroup", "MapDifficulty"])
+update_files(args, table_names=["DungeonEncounter", "LFGDungeons", "LFGDungeonGroup", "MapDifficulty"])
 name_to_difficulty = {}
 infos = {}
 groups = {}
-read_dungeons()
+read_dungeons(args.version)
 # For whatever reason these instances aren't in the db for Wotlk but do exist...
 read_dungeon_encounter(1, ids={34, 289})
-read_dungeon_encounter(3)
+read_dungeon_encounter(args.version)
 sort_encounters()
-read_map_difficulty()
-read_dungeon_groups()
+read_map_difficulty(args.version)
+read_dungeon_groups(args.version)
 
 Path("instances").mkdir(parents=True, exist_ok=True)
 f = open("instances/instances.lua", "w")

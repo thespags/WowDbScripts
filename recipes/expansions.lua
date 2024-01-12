@@ -1342,6 +1342,16 @@ lib:AddExpansion(28482, 0) -- 13951
 lib:AddExpansion(28480, 0) -- 13952
 lib:AddExpansion(30021, 0) -- 14274
 lib:AddExpansion(30047, 0) -- 14280
+lib:AddExpansion(426607, 0) -- 49255
+lib:AddExpansion(427061, 0) -- 49260
+lib:AddExpansion(428424, 0) -- 49305
+lib:AddExpansion(429348, 0) -- 49324
+lib:AddExpansion(429351, 0) -- 49325
+lib:AddExpansion(429354, 0) -- 49326
+lib:AddExpansion(424641, 0) -- 49329
+lib:AddExpansion(429869, 0) -- 49330
+lib:AddExpansion(430397, 0) -- 49376
+lib:AddExpansion(430409, 0) -- 49377
 lib:AddExpansion(25229, 1) -- 13166
 lib:AddExpansion(25230, 1) -- 13167
 lib:AddExpansion(25278, 1) -- 13196
@@ -9807,7 +9817,6 @@ lib:AddExpansion(376570, 9) -- 47295
 lib:AddExpansion(376699, 9) -- 47298
 lib:AddExpansion(377280, 9) -- 47311
 lib:AddExpansion(377281, 9) -- 47312
-lib:AddExpansion(381395, 9) -- 47391
 lib:AddExpansion(370748, 9) -- 47314
 lib:AddExpansion(377804, 9) -- 47333
 lib:AddExpansion(377915, 9) -- 47336
@@ -9851,6 +9860,7 @@ lib:AddExpansion(381411, 9) -- 47387
 lib:AddExpansion(381391, 9) -- 47388
 lib:AddExpansion(381392, 9) -- 47389
 lib:AddExpansion(381393, 9) -- 47390
+lib:AddExpansion(381395, 9) -- 47391
 lib:AddExpansion(381396, 9) -- 47392
 lib:AddExpansion(381397, 9) -- 47393
 lib:AddExpansion(381398, 9) -- 47394
@@ -10590,3 +10600,8 @@ lib:AddExpansion(425961, 9) -- 49225
 lib:AddExpansion(425959, 9) -- 49226
 lib:AddExpansion(426332, 9) -- 49240
 lib:AddExpansion(426434, 9) -- 49244
+lib:AddExpansion(427956, 9) -- 49294
+lib:AddExpansion(429149, 9) -- 49309
+lib:AddExpansion(422337, 9) -- 49090
+lib:AddExpansion(422338, 9) -- 49091
+lib:AddExpansion(422330, 9) -- 49092

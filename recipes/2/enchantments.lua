@@ -1,5 +1,8 @@
 local lib = LibStub("LibTradeSkillRecipes-1")
 
+if 1 ~= LE_EXPANSION_LEVEL_CURRENT then
+	return
+end
 lib:AddEnchantment(1, "Rockbiter 3")
 lib:AddEnchantment(2, "Frostbrand 1")
 lib:AddEnchantment(3, "Flametongue 3")

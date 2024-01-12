@@ -1,5 +1,8 @@
 local lib = LibStub("LibTradeSkillRecipes-1")
 
+if 9 ~= LE_EXPANSION_LEVEL_CURRENT then
+	return
+end
 lib:AddEnchantment(13, "Sharpened II")
 lib:AddEnchantment(14, "Sharpened III")
 lib:AddEnchantment(15, "Reinforced (+$k1 Armor)")

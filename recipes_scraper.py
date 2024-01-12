@@ -10,6 +10,7 @@ from operator import countOf
 def read_spell_item_enchantment(version):
     f = open(f'recipes/{version}/enchantments.lua', "w")
     f.write(LIB_LINE)
+    f.write(f"\nif {version - 1} ~= LE_EXPANSION_LEVEL_CURRENT then\n\treturn\nend")
     with open(f'{version}/SpellItemEnchantment.csv') as file:
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
@@ -133,9 +134,10 @@ def read_skill_lines(args):
 def write_skill_lines(version, skill_lines):
     with open(f'recipes/{version}/skill_lines.lua', 'w') as file:
         file.write(LIB_LINE)
+        file.write(f"\nif {version - 1} ~= LE_EXPANSION_LEVEL_CURRENT then\n\treturn\nend")
         for k, v in skill_lines.items():
             file.write(f'\nlib:AddSkillLine({k}, "{v["name"]}", {v["category"]}, {{{",".join(map(str, v["spells"]))}}})')
-    resort(f'recipes/{version}/skill_lines.lua', r'lib:\w+\((\d+), .*', LIB_LINE)
+    resort(f'recipes/{version}/skill_lines.lua', r'lib:\w+\((\d+), .*')
 
 
 def read_spells(version, file_name, regex):
@@ -169,13 +171,6 @@ def read_skill(args, row, skill_lines, spell_ids, ignored_ids, f, ignored_file):
     name = get_or_none(tree.xpath('//head/meta[@property="twitter:title"]/@content'))
     comment = f'-- {skill_id} {name}'
     recipes, item_id = get_recipes_and_item(tree)
-    # expectedId = spell_to_items.get(spell_id, None)
-    # # if expectedId != item_id:
-    # #     print("hmm ... {0} {1} {2}".format(spell_id, expectedId, item_id))
-    # # else:
-    # #     spell_to_items.pop(spell_id, "")
-    # # if len(recipes) >= 2:
-    # #     print("Double recipe_tables: {0} {1}".format(spell_id, comment))
     if not item_id:
         values = get_effect(url, tree)
         if values["enchant_id"]:
@@ -233,6 +228,7 @@ def read_skills(args):
     skill_ids = read_spells(args.version, "items.lua", r'lib:\w+\([\w, ]+\) -- (\d+) [\w: ]+')
     if not len(skill_ids):
         f.write(LIB_LINE)
+        f.write(f"\nif {args.version - 1} ~= LE_EXPANSION_LEVEL_CURRENT then\n\treturn\nend")
     #
     # print(f'Scraping Effects: {time.time() - start_time:.2f}')
     # # Update spell_ids.
@@ -311,8 +307,8 @@ def scrape():
         read_skills(args)
 
         # Post scrape, fix sorting by db id.
-        resort(f'recipes/{args.version}/ignored', r'\w+ -- (\w+) .*', "")
-        resort(f'recipes/{args.version}/items.lua', r'lib:\w+\([\w, ]+\) -- (\w+) .*', LIB_LINE)
+        resort(f'recipes/{args.version}/ignored', r'\w+ -- (\w+) .*')
+        resort(f'recipes/{args.version}/items.lua', r'lib:\w+\([\w, ]+\) -- (\w+) .*')
         print(f'Finished sorting {time.time() - start_time:.2f}...')
 
 

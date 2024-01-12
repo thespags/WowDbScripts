@@ -1,5 +1,8 @@
 local lib = LibStub("LibTradeSkillRecipes-1")
 
+if 0 ~= LE_EXPANSION_LEVEL_CURRENT then
+	return
+end
 lib:AddRecipe(165, nil, 2149, 2302, nil, nil) -- 1353 Handstitched Leather Boots
 lib:AddRecipe(165, nil, 2153, 2303, nil, nil) -- 1355 Handstitched Leather Pants
 lib:AddRecipe(165, nil, 2152, 2304, 2831, 15) -- 1356 Light Armor Kit
