@@ -1281,3 +1281,53 @@ lib:AddRecipe(202, nil, 424641, 210147, 424788, nil) -- 49329 Shredder Autosalva
 lib:AddRecipe(165, nil, 429869, 211502, 429868, nil) -- 49330 Void-Touched Leather Gauntlets
 lib:AddRecipe(164, nil, 430397, 211845, 430392, 7098) -- 49376 Blackfathom Sharpening Stone
 lib:AddRecipe(333, nil, 430409, 211848, 430585, 7099) -- 49377 Blackfathom Mana Oil
+lib:AddRecipe(202, 212230, 431362, 211427, nil, nil) -- 49656 Soul Vessel
+lib:AddEnchantmentRecipe(333, 215129, 435481, 7210) -- 49816 Enchant Weapon - Dismantle
+lib:AddRecipe(197, 215368, 435827, 213379, nil, nil) -- 49817 Hyperconductive Arcano-Filament
+lib:AddRecipe(197, 215370, 435848, 215365, nil, nil) -- 49818 Invoker's Mantle
+lib:AddRecipe(197, 215369, 435841, 215366, nil, nil) -- 49819 Invoker's Cord
+lib:AddEnchantmentRecipe(333, 215138, 435903, 7223) -- 49854 Enchant Chest - Retricutioner
+lib:AddRecipe(197, 215149, 435610, 215111, 437327, nil) -- 49860 Gneuro-Linked Arcano-Filament Monocle
+lib:AddRecipe(165, 215367, 435819, 213369, nil, nil) -- 49861 Faintly Glowing Leather
+lib:AddRecipe(164, 215384, 435910, 213376, nil, nil) -- 49862 Low-Background Truesilver Plates
+lib:AddRecipe(171, 215433, 435969, 213372, nil, nil) -- 49863 Insulating Gniodine
+lib:AddRecipe(171, 215434, 435969, 213372, nil, nil) -- 49863 Insulating Gniodine
+lib:AddRecipe(202, 215429, 435956, 213383, nil, nil) -- 49864 Polished Truesilver Gears
+lib:AddRecipe(165, 215424, 435953, 215382, 437340, nil) -- 49865 Rad-Resistant Scale Hood
+lib:AddRecipe(165, 215152, 435904, 215166, 437349, nil) -- 49866 Glowing Gneuro-Linked Cowl
+lib:AddRecipe(165, 215423, 435951, 215381, 437357, nil) -- 49867 Gneuro-Conductive Channeler's Hood
+lib:AddRecipe(165, 215422, 435949, 215114, 437362, nil) -- 49868 Glowing Hyperconductive Scale Coif
+lib:AddRecipe(202, 215432, 435966, 215168, 435968, nil) -- 49869 Ez-Thro Radiation Bomb
+lib:AddRecipe(202, 215153, 435958, 213390, nil, nil) -- 49870 Whirling Truesilver Gearwall
+lib:AddRecipe(202, 215431, 435964, 215127, 435963, nil) -- 49871 High-Yield Radiation Bomb
+lib:AddRecipe(202, 215156, 435960, 215115, 437368, nil) -- 49872 Hyperconductive Goldwap
+lib:AddRecipe(164, 215155, 435908, 215161, 437377, nil) -- 49873 Tempered Interference-Negating Helmet
+lib:AddRecipe(164, 215383, 435906, 215167, 437382, nil) -- 49874 Reflective Truesilver Braincage
+lib:AddRecipe(171, 215163, 435971, 215162, 435973, nil) -- 49876 Mildly Irradiated Rejuvenation Potion
+lib:AddRecipe(197, 217244, 439085, 217245, nil, nil) -- 49945 Crimson Silk Robe
+lib:AddRecipe(197, nil, 439086, 217246, nil, nil) -- 49946 Black Mageweave Vest
+lib:AddRecipe(197, nil, 439088, 217247, nil, nil) -- 49947 Black Mageweave Leggings
+lib:AddRecipe(197, 217249, 439091, 217248, nil, nil) -- 49948 Earthen Silk Belt
+lib:AddRecipe(197, 217251, 439093, 217250, nil, nil) -- 49949 Crimson Silk Shoulders
+lib:AddRecipe(197, nil, 439094, 217252, nil, nil) -- 49950 Long Silken Cloak
+lib:AddRecipe(197, 217254, 439097, 217253, nil, nil) -- 49951 Boots of the Enchanter
+lib:AddRecipe(197, nil, 439098, 217255, nil, nil) -- 49952 Crimson Silk Belt
+lib:AddRecipe(197, nil, 439100, 217256, nil, nil) -- 49953 Earthen Vest
+lib:AddRecipe(197, 217258, 439102, 217257, nil, nil) -- 49954 Enchanter's Cowl
+lib:AddRecipe(165, 217260, 439105, 217259, nil, nil) -- 49955 Big Voodoo Mask
+lib:AddRecipe(165, 217262, 439108, 217261, nil, nil) -- 49956 Big Voodoo Robe
+lib:AddRecipe(165, 217264, 439110, 217263, nil, nil) -- 49957 Guardian Leather Bracers
+lib:AddRecipe(165, 217266, 439112, 217265, nil, nil) -- 49958 Guardian Belt
+lib:AddRecipe(165, nil, 439114, 217267, nil, nil) -- 49959 Guardian Pants
+lib:AddRecipe(165, nil, 439116, 217268, nil, nil) -- 49960 Turtle Scale Breastplate
+lib:AddRecipe(165, 217271, 439118, 217270, nil, nil) -- 49961 Turtle Scale Gloves
+lib:AddRecipe(164, 217274, 439120, 217273, nil, nil) -- 49962 Golden Scale Gauntlets
+lib:AddRecipe(164, 217276, 439122, 217275, nil, nil) -- 49963 Golden Scale Boots
+lib:AddRecipe(164, 217278, 439124, 217277, nil, nil) -- 49964 Golden Scale Cuirass
+lib:AddRecipe(164, 217280, 439126, 217279, nil, nil) -- 49965 Golden Scale Coif
+lib:AddRecipe(164, 217284, 439130, 217283, nil, nil) -- 49966 Golden Scale Shoulders
+lib:AddRecipe(164, 217286, 439132, 217285, nil, nil) -- 49967 Golden Scale Leggings
+lib:AddRecipe(164, 217282, 439128, 217281, nil, nil) -- 49968 Moonsteel Broadsword
+lib:AddRecipe(333, nil, 439134, 217287, nil, nil) -- 49969 Greater Mystic Wand
+lib:AddRecipe(333, 215141, 439156, 217308, 439155, nil) -- 49970 Sigil of Innovation
+lib:AddRecipe(171, 217399, 439960, 217398, 439959, nil) -- 50023 Lesser Arcane Elixir
