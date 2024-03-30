@@ -17,23 +17,34 @@ Updates any new information in classic Wow.
 Force download tables. (Sometimes Blizzard updates tables without version changes)
 `python3 instances_scraper.py -d -fd`
 
-Creates trade skill recipe, spell, item information for a public library.
-`python3 recipes_scraper.py`
-with a major version from [Wago Db](https://wago.tools/db2/).
+We have a combination of scrapers to create LibTradeSkillRecipes for expansions on [Wago Db](https://wago.tools/db2/).
+* `recipes_scraper.py` 
+  * Creates trade skill recipe, spell, item information
+* `recipe_expansion_scraper.py`
+  * Collects the information was initially added (does not track if it was removed)
+* `enchant_scrapper.py`
+  * Gets the effect and slot information for an enchant across all languages
+  * The Wow API does not provide language support for effects.
+* `all_scrapper.py`
+  * Calls the other three scrapers across all expansions.
 
-Example:  
-Scrapes all classic Wow information with existing files. 
+Example (supports versions 1, 2, 3, and 10):  
+
+Scrapes all classic Wow information with existing files (offline mode)
 `python3 recipes_scraper.py -v 1`  
 
 Updates any new information in classic Wow.
 `python3 recipes_scraper.py -v 1 -d`
 
-Updates expansion information in classic Wow.
-`python3 recipes_scraper.py -e -d`
-
 Force download tables. (Sometimes Blizzard updates tables without version changes)
 `python3 recipes_scraper.py -v 1 -d -fd`
 
+By default, we overwrite any output. `items.lua` and `ignored` are not unless `-fd` is provided 
+as these are most intensive to collect so by default appends.
+
+For `all_scraper.py`, this does not use version but will accept `d` and `-fd` for downloading.
+
+e.g. `python3 all_scrapper.py -d` will update all files when updating LibTradeSkillRecipes.
 
 ## Utility
 Provides some utility in [util.py](util.py).

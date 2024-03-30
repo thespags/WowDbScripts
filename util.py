@@ -2,15 +2,24 @@ import requests
 import json
 import re
 import logging
+import argparse
 from lxml import html
 from collections import OrderedDict
 from packaging.version import parse as parse_version
 from os.path import exists
 from pathlib import Path
-
+from concurrent.futures import ThreadPoolExecutor
+logging.basicConfig(format='%(message)s', level=logging.INFO)
 ignored_zones = {}
 ignored_sort = {"encounters", "activities"}
 expansions = {1: "classic", 2: "tbc", 3: "wotlk"}
+languages = ["enUS", "deDE", "esES", "esMX", "frFR", "itIT", "koKR", "ptBR", "ruRU", "zhCN", "zhTW"]
+
+
+def write_header(file, version=None):
+    file.write('local lib = LibStub("LibTradeSkillRecipes-1")\n')
+    if version:
+        file.write(f"\nif {version - 1} ~= LE_EXPANSION_LEVEL_CURRENT then\n\treturn\nend")
 
 
 def get_latest_version(major):
@@ -40,12 +49,28 @@ def write_file_value(file_name, value):
         file.write(value)
 
 
-def update_files(args, file_name: str = None, table_names: [str] = None):
-    table_names = table_names if table_names else []
-    if file_name and Path(file_name).exists():
-        with open(file_name) as file:
-            table_names.extend(file.read().splitlines())
+def get_table(version, table_name, language="enUS"):
+    return f"{version}/{table_name}-{language}.csv"
 
+
+def read_table(version, table_name, language="enUS"):
+    return open(get_table(version, table_name, language))
+
+
+def recipes_lua(version, file_name):
+    suffix = ".lua" if file_name not in ("ignored", "") else ""
+    return f"recipes/{version}/{file_name}{suffix}"
+
+
+def update_file(file_name, url):
+    response = requests.get(url)
+    response.raise_for_status()
+    with open(file_name, "wb") as f:
+        f.write(response.content)
+
+
+def update_files(args, table_names: [str] = None, all_languages=False):
+    table_names = table_names if table_names else []
     version_file = f'{args.version}/versions'
     if not args.download:
         logging.info("Download set to false, skipping: %s", table_names)
@@ -58,21 +83,24 @@ def update_files(args, file_name: str = None, table_names: [str] = None):
 
     logging.info(f'Version new: {new_version}, old: {old_version}')
 
-    for table_name in table_names:
-        file_name = f'{args.version}/{table_name}.csv'
-        if new_version == old_version and exists(file_name):
-            if args.force_download:
-                logging.info(f'Versions matched and file exists, forcing download: {file_name}')
-            else:
-                logging.info(f'Versions matched and file exists, skipping download: {file_name}')
-                continue
-        else:
-            logging.info("Missing or out of date file, downloading table: " + file_name)
-        url = f'https://wago.tools/db2/{table_name}/csv?build={new_version}'
-        response = requests.get(url)
-        if response.status_code == 200:
-            with open(file_name, "wb") as f:
-                f.write(response.content)
+    threads = []
+    with ThreadPoolExecutor(max_workers=100) as executor:
+        for table_name in table_names:
+            for language in languages if all_languages else ["enUS"]:
+                file_name = get_table(args.version, table_name, language)
+                if new_version == old_version and exists(file_name):
+                    if args.force_download:
+                        logging.info(f"Versions matched and file exists, forcing download: {file_name}")
+                    else:
+                        logging.info(f"Versions matched and file exists, skipping download: {file_name}")
+                        continue
+                else:
+                    logging.info("Missing or out of date file, downloading table: " + file_name)
+                url = f"https://wago.tools/db2/{table_name}/csv?build={new_version}&locale={language}"
+                future = executor.submit(update_file, file_name, url)
+                threads.append(future)
+    for thread in threads:
+        thread.result()
 
 
 def key_string(v):
@@ -153,3 +181,12 @@ def resort(name, regex):
         for _, lines in sorted(id_to_lines.items()):
             for line in lines:
                 file.write("\n" + line)
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-v", "--version", type=int)
+    parser.add_argument("-d", "--download", default=False, action=argparse.BooleanOptionalAction)
+    parser.add_argument("-fd", "--force-download", default=False, action=argparse.BooleanOptionalAction)
+    parser.add_argument("-f", "--force", default=False, action=argparse.BooleanOptionalAction)
+    return parser.parse_args()

@@ -1,11 +1,10 @@
 import csv
-import argparse
 from util import *
 from collections import OrderedDict
 
 
 def read_dungeons(version):
-    with open(f"{version}/LFGDungeons.csv") as file:
+    with read_table(version, "LFGDungeons") as file:
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
             difficulty = int(row["DifficultyID"])
@@ -23,7 +22,7 @@ def read_dungeons(version):
 
 
 def read_dungeon_encounter(version, ids=None):
-    with open(f'{version}/DungeonEncounter.csv') as file:
+    with read_table(version, "DungeonEncounter") as file:
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
             # Ignore Violet Hold bosses as they are random for the first 2 encounters.
@@ -61,7 +60,7 @@ def sort_encounters():
 
 def read_map_difficulty(version):
     reset_intervals = {1: 1, 2: 7, 3: 3, 4: 5}
-    with open(f"{version}/MapDifficulty.csv") as file:
+    with read_table(version, "MapDifficulty") as file:
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
             reset = int(row["ResetInterval"])
@@ -78,7 +77,7 @@ def read_map_difficulty(version):
 
 
 def read_dungeon_groups(version):
-    with open(f"{version}/LFGDungeonGroup.csv") as file:
+    with read_table(version, "LFGDungeonGroup") as file:
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
             groups[int(row["ID"])] = row["Name_lang"]
@@ -104,14 +103,13 @@ read_map_difficulty(args.version)
 read_dungeon_groups(args.version)
 
 Path("instances").mkdir(parents=True, exist_ok=True)
-f = open("instances/instances.lua", "w")
-f.write("groups = " + to_string(groups))
-f.write("\n\ninfos = " + to_string(infos))
-f.write("""
-
-for k, v in pairs(infos) do
-    infos[k] = Instances:new(v)
-    v.id = k
-end""")
-f.close()
+with open("instances/instances.lua", "w") as f:
+    f.write("groups = " + to_string(groups))
+    f.write("\n\ninfos = " + to_string(infos))
+    f.write("""
+    
+    for k, v in pairs(infos) do
+        infos[k] = Instances:new(v)
+        v.id = k
+    end""")
 print("instances.lua written...")

@@ -9364,3 +9364,48 @@ lib:AddRecipe(197, 206771, 414564, 206645, 414097, nil) -- 48956 Cursed Cloth
 lib:AddRecipe(773, nil, 422337, 209998, nil, nil) -- 49090 Lydiara's Binding Rune
 lib:AddRecipe(333, nil, 422338, 210003, nil, nil) -- 49091 Shalasar's Sophic Vellum
 lib:AddRecipe(165, nil, 422330, 209351, nil, nil) -- 49092 Erden's Glowspore Grip
+lib:AddRecipe(165, 211599, 430066, 211547, nil, nil) -- 49331 Draconic Combatant's Adamant Chainmail
+lib:AddRecipe(165, 211598, 430065, 211548, nil, nil) -- 49332 Draconic Combatant's Adamant Cowl
+lib:AddRecipe(165, 211604, 430071, 211553, nil, nil) -- 49333 Draconic Combatant's Adamant Cuffs
+lib:AddRecipe(165, 211601, 430068, 211549, nil, nil) -- 49334 Draconic Combatant's Adamant Epaulets
+lib:AddRecipe(165, 211603, 430069, 211552, nil, nil) -- 49335 Draconic Combatant's Adamant Gauntlets
+lib:AddRecipe(165, 211605, 430072, 211550, nil, nil) -- 49336 Draconic Combatant's Adamant Girdle
+lib:AddRecipe(165, 211600, 430067, 211551, nil, nil) -- 49337 Draconic Combatant's Adamant Leggings
+lib:AddRecipe(165, 211602, 430070, 211546, nil, nil) -- 49338 Draconic Combatant's Adamant Treads
+lib:AddRecipe(202, 211616, 430093, 211612, nil, nil) -- 49339 Draconic Combatant's Cloth Goggles
+lib:AddRecipe(164, 211586, 430082, 211570, nil, nil) -- 49340 Draconic Combatant's Draconium Armguards
+lib:AddRecipe(164, 211581, 430083, 211563, nil, nil) -- 49341 Draconic Combatant's Draconium Breastplate
+lib:AddRecipe(164, 211584, 430084, 211565, nil, nil) -- 49342 Draconic Combatant's Draconium Gauntlets
+lib:AddRecipe(164, 211582, 430085, 211567, nil, nil) -- 49343 Draconic Combatant's Draconium Greaves
+lib:AddRecipe(164, 211580, 430086, 211566, nil, nil) -- 49344 Draconic Combatant's Draconium Helm
+lib:AddRecipe(164, 211583, 430087, 211568, nil, nil) -- 49345 Draconic Combatant's Draconium Pauldrons
+lib:AddRecipe(164, 211585, 430088, 211564, nil, nil) -- 49346 Draconic Combatant's Draconium Sabatons
+lib:AddRecipe(164, 211587, 430089, 211569, nil, nil) -- 49347 Draconic Combatant's Draconium Waistguard
+lib:AddRecipe(773, 211611, 430092, 211608, 345231, nil) -- 49348 Draconic Combatant's Emblem
+lib:AddRecipe(773, 211610, 430091, 211607, nil, nil) -- 49349 Draconic Combatant's Insignia of Alacrity
+lib:AddRecipe(755, 211588, 430055, 211537, nil, nil) -- 49350 Draconic Combatant's Jeweled Amulet
+lib:AddRecipe(755, 211589, 430056, 211536, nil, nil) -- 49351 Draconic Combatant's Jeweled Signet
+lib:AddRecipe(202, 211617, 430094, 211613, nil, nil) -- 49352 Draconic Combatant's Leather Goggles
+lib:AddRecipe(202, 211618, 430095, 211614, nil, nil) -- 49353 Draconic Combatant's Mail Goggles
+lib:AddRecipe(773, 211609, 430090, 211606, 336126, nil) -- 49354 Draconic Combatant's Medallion
+lib:AddRecipe(202, 211619, 430096, 211615, nil, nil) -- 49355 Draconic Combatant's Plate Goggles
+lib:AddRecipe(165, 211597, 430064, 211542, nil, nil) -- 49356 Draconic Combatant's Resilient Belt
+lib:AddRecipe(165, 211594, 430062, 211538, nil, nil) -- 49357 Draconic Combatant's Resilient Boots
+lib:AddRecipe(165, 211591, 430058, 211539, nil, nil) -- 49358 Draconic Combatant's Resilient Chestpiece
+lib:AddRecipe(165, 211595, 430061, 211544, nil, nil) -- 49359 Draconic Combatant's Resilient Gloves
+lib:AddRecipe(165, 211590, 430057, 211540, nil, nil) -- 49360 Draconic Combatant's Resilient Mask
+lib:AddRecipe(165, 211593, 430060, 211541, nil, nil) -- 49361 Draconic Combatant's Resilient Shoulderpads
+lib:AddRecipe(165, 211592, 430059, 211543, nil, nil) -- 49362 Draconic Combatant's Resilient Trousers
+lib:AddRecipe(165, 211596, 430063, 211545, nil, nil) -- 49363 Draconic Combatant's Resilient Wristwraps
+lib:AddRecipe(197, 211571, 430081, 211557, nil, nil) -- 49364 Draconic Combatant's Wildercloth Bands
+lib:AddRecipe(197, 211572, 430073, 211562, nil, nil) -- 49365 Draconic Combatant's Wildercloth Cloak
+lib:AddRecipe(197, 211573, 430076, 211559, nil, nil) -- 49366 Draconic Combatant's Wildercloth Gloves
+lib:AddRecipe(197, 211574, 430077, 211558, nil, nil) -- 49367 Draconic Combatant's Wildercloth Hood
+lib:AddRecipe(197, 211575, 430078, 211554, nil, nil) -- 49368 Draconic Combatant's Wildercloth Leggings
+lib:AddRecipe(197, 211576, 430080, 211561, nil, nil) -- 49369 Draconic Combatant's Wildercloth Sash
+lib:AddRecipe(197, 211577, 430079, 211555, nil, nil) -- 49370 Draconic Combatant's Wildercloth Shoulderpads
+lib:AddRecipe(197, 211578, 430075, 211556, nil, nil) -- 49371 Draconic Combatant's Wildercloth Treads
+lib:AddRecipe(197, 211579, 430074, 211560, nil, nil) -- 49372 Draconic Combatant's Wildercloth Tunic
+lib:AddRecipe(333, 218269, 429948, 211520, nil, nil) -- 50168 Enchanted Whelpling's Awakened Crest
+lib:AddRecipe(333, 218269, 429945, 211518, nil, nil) -- 50169 Enchanted Wyrm's Awakened Crest
+lib:AddRecipe(333, 218269, 429947, 211519, nil, nil) -- 50170 Enchanted Aspect's Awakened Crest
