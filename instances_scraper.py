@@ -12,6 +12,9 @@ def read_dungeons(version):
             if difficulty == 0:
                 continue
             key = int(row["MapID"])
+            # Skip pre patch zone.
+            if key == 734:
+                continue
             if key not in infos:
                 infos[key] = {"sizes": set(), "resets": {}, "encounters": OrderedDict(), "activities": {}}
             infos[key]["expansion"] = int(row["ExpansionLevel"])
@@ -83,33 +86,43 @@ def read_dungeon_groups(version):
             groups[int(row["ID"])] = row["Name_lang"]
 
 
-parser = argparse.ArgumentParser()
-parser.add_argument("-d", "--download", default=False, action=argparse.BooleanOptionalAction)
-parser.add_argument("-fd", "--force-download", default=False, action=argparse.BooleanOptionalAction)
-args = parser.parse_args()
-args.version = 1
-update_files(args, table_names=["DungeonEncounter"])
-args.version = 3
+args = parse_args()
+# args.version = 1
+# update_files(args, table_names=["DungeonEncounter"])
 update_files(args, table_names=["DungeonEncounter", "LFGDungeons", "LFGDungeonGroup", "MapDifficulty"])
 name_to_difficulty = {}
 infos = {}
-groups = {}
 read_dungeons(args.version)
 # For whatever reason these instances aren't in the db for Wotlk but do exist...
 read_dungeon_encounter(1, ids={34, 289})
 read_dungeon_encounter(args.version)
 sort_encounters()
 read_map_difficulty(args.version)
-read_dungeon_groups(args.version)
 
-Path("instances").mkdir(parents=True, exist_ok=True)
-with open("instances/instances.lua", "w") as f:
-    f.write("groups = " + to_string(groups))
-    f.write("\n\ninfos = " + to_string(infos))
-    f.write("""
-    
-    for k, v in pairs(infos) do
-        infos[k] = Instances:new(v)
-        v.id = k
-    end""")
+Path(f"instances/{args.version}").mkdir(parents=True, exist_ok=True)
+with open(f"instances/{args.version}/instances.lua", "w") as f:
+    f.write(f"""local lib = LibStub("LibInstances")
+
+if {args.version} < LE_EXPANSION_LEVEL_CURRENT 
+    {f"and {args.version} > LE_EXPANSION_LEVEL_CURRENT" if args.version == 4 else ""}
+then
+    return
+end
+""")
+
+    for k, v in infos.items():
+        f.write(f"""
+lib:addInstance(
+    {k},
+    {to_string(v, level=1)}
+)""")
+
+if args.version == 4:
+    groups = {}
+    read_dungeon_groups(args.version)
+    with open(f"instances/groups.lua", "w") as f:
+        f.write('local lib = LibStub("LibInstances")')
+        for k, v in groups.items():
+            f.write(f"\nlib:addGroup({to_string(k)}, {to_string(v)})")
+
 print("instances.lua written...")

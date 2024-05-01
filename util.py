@@ -146,7 +146,7 @@ def to_string(v, level=0, ignore=False, sort=True):
             v.sort()
         return "{ " + ", ".join(map(lambda x: to_string(x, sort=sort), v)) + " }"
     elif type(v) is str:
-        return "nil" if v == "nil" else f'"{v}"'
+        return "nil" if v == "nil" else f'{json.dumps(v)}'
     elif type(v) is bool:
         return "true" if v else "false"
     else:

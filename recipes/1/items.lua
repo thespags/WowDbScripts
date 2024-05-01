@@ -1331,3 +1331,24 @@ lib:AddRecipe(164, 217282, 439128, 217281, nil, nil) -- 49968 Moonsteel Broadswo
 lib:AddRecipe(333, nil, 439134, 217287, nil, nil) -- 49969 Greater Mystic Wand
 lib:AddRecipe(333, 215141, 439156, 217308, 439155, nil) -- 49970 Sigil of Innovation
 lib:AddRecipe(171, 217399, 439960, 217398, 439959, nil) -- 50023 Lesser Arcane Elixir
+lib:AddRecipe(171, nil, 446226, 221024, 446228, nil) -- 50555 Flask of Everlasting Nightmares
+lib:AddRecipe(333, nil, 446243, 221028, 446240, nil) -- 50556 Sigil of Living Dreams
+lib:AddRecipe(164, nil, 446191, 220739, nil, nil) -- 50557 Baleful Pauldrons
+lib:AddRecipe(164, nil, 446188, 220740, nil, nil) -- 50558 Fearmonger's Shoulderguards
+lib:AddRecipe(164, nil, 446179, 220738, nil, nil) -- 50559 Shoulderplates of Dread
+lib:AddRecipe(165, nil, 446186, 220743, nil, nil) -- 50560 Cacophonous Chain Shoulderguards
+lib:AddRecipe(165, nil, 446192, 220745, nil, nil) -- 50561 Membrane of Dark Neurosis
+lib:AddRecipe(165, nil, 446183, 220747, nil, nil) -- 50562 Paranoia Mantle
+lib:AddRecipe(165, nil, 446189, 220748, nil, nil) -- 50563 Shoulderpads of Obsession
+lib:AddRecipe(165, nil, 446185, 220742, nil, nil) -- 50564 Shrieking Spaulders
+lib:AddRecipe(165, nil, 446190, 220744, nil, nil) -- 50565 Wailing Chain Mantle
+lib:AddRecipe(197, nil, 446193, 220750, nil, nil) -- 50566 Fractured Mind Pauldrons
+lib:AddRecipe(197, nil, 446194, 220749, nil, nil) -- 50567 Mantle of Insanity
+lib:AddRecipe(197, nil, 446195, 220751, nil, nil) -- 50568 Shoulderpads of the Deranged
+lib:AddRecipe(202, nil, 446236, 221025, 446382, nil) -- 50569 Void-Powered Invoker's Vambraces
+lib:AddRecipe(202, nil, 446238, 221027, 446382, nil) -- 50570 Void-Powered Protector's Vambraces
+lib:AddRecipe(202, nil, 446237, 221026, 446382, nil) -- 50571 Void-Powered Slayer's Vambraces
+lib:AddRecipe(171, nil, 446851, 221313, nil, nil) -- 50600 Flask of Nightmarish Mojo
+lib:AddRecipe(171, nil, 448085, 222952, 448084, nil) -- 51070 Flask of Restless Dreams
+lib:AddRecipe(333, nil, 448624, 220792, 448381, nil) -- 51075 Scroll of Spatial Mending
+lib:AddRecipe(165, nil, 451706, 220741, nil, nil) -- 51206 Screaming Chain Pauldrons
