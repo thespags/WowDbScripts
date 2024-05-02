@@ -9,12 +9,11 @@
 2580 -- 1568 Find Minerals
 2575 -- 1569 Mining
 2576 -- 1570 Mining
-2656 -- 1597 Mining Journal
+2656 -- 1597 Smelting
 3100 -- 1792 Blacksmithing
 3101 -- 1793 Alchemy
 3102 -- 1794 Cooking
 3104 -- 1795 Leatherworking
-3172 -- 1815 Spells ptr
 3273 -- 1836 First Aid
 3274 -- 1837 First Aid
 3413 -- 1906 Cooking
@@ -32,14 +31,10 @@
 7411 -- 4286 Enchanting
 7412 -- 4287 Enchanting
 7413 -- 4288 Enchanting
-7454 -- 4300 Spells ptr
 7620 -- 4344 Fishing
 7731 -- 4345 Fishing
 7732 -- 4346 Fishing
 7738 -- 4348 Fishing Poles
-7795 -- 4370 Spells ptr
-7818 -- 4390 Spells ptr
-7861 -- 4401 Spells ptr
 7924 -- 4416 First Aid
 8388 -- 4682 Find Minerals
 8613 -- 4766 Skinning
@@ -50,46 +45,22 @@
 10662 -- 5706 Leatherworking
 10768 -- 5746 Skinning
 10846 -- 5766 First Aid
-11453 -- 6002 Spells ptr
 11611 -- 6056 Alchemy
 11993 -- 6216 Herb Gathering
 12180 -- 6625 Tailoring
 12656 -- 6882 Engineering
-12722 -- 6947 Spells ptr
-12904 -- 7069 Spells ptr
 13262 -- 7316 Disenchant
-13522 -- 7436 Spells ptr
-13628 -- 7502 Spells ptr
-13657 -- 7513 Spells ptr
-13702 -- 7533 Spells ptr
 13920 -- 7656 Enchanting
-13794 -- 7658 Spells ptr
-13933 -- 7677 Spells ptr
-14379 -- 7836 Spells ptr
-14380 -- 7837 Spells ptr
 818 -- 8676 Cooking Fire
-17638 -- 9981 Spells ptr
 18248 -- 10242 Fishing
 18260 -- 10253 Cooking
-19567 -- 11031 Spells ptr
-20014 -- 11375 Spells ptr
-20051 -- 11385 Spells ptr
-20201 -- 11480 Spells ptr
 20222 -- 11491 Goblin Engineer
 20219 -- 11492 Gnomish Engineer
-25081 -- 13127 Spells ptr
-25082 -- 13128 Spells ptr
 25229 -- 13166 Jewelcrafting
 25230 -- 13167 Jewelcrafting
 26790 -- 13541 Tailoring
 27028 -- 13543 First Aid
 28029 -- 13859 Enchanting
-27920 -- 13867 Spells ptr
-27924 -- 13868 Spells ptr
-27926 -- 13869 Spells ptr
-27927 -- 13870 Spells ptr
-27947 -- 13874 Spells ptr
-27962 -- 13883 Spells ptr
 28596 -- 13960 Alchemy
 28677 -- 14007 Elixir Master
 28675 -- 14008 Potion Master
@@ -101,38 +72,14 @@
 29354 -- 14112 Mining
 29844 -- 14248 Blacksmithing
 30350 -- 14347 Engineering
-30549 -- 14393 Spells ptr
-30561 -- 14400 Spells ptr
-30573 -- 14407 Spells ptr
 31252 -- 14606 Prospecting
 32549 -- 14888 Leatherworking
 32605 -- 14898 Herb Gathering
 32606 -- 14899 Mining
-32655 -- 14900 Spells ptr
-32656 -- 14901 Spells ptr
-32657 -- 14902 Spells ptr
-32664 -- 14904 Spells ptr
-32665 -- 14905 Spells ptr
-32667 -- 14906 Spells ptr
 32678 -- 14907 Skinning
 33095 -- 14943 Fishing
 33359 -- 15021 Cooking
-34005 -- 15135 Spells ptr
-34006 -- 15136 Spells ptr
-34979 -- 15348 Spells ptr
-34981 -- 15349 Spells ptr
-34982 -- 15350 Spells ptr
-34983 -- 15351 Spells ptr
-42613 -- 15897 Spells ptr
-42736 -- 15903 Spells ptr
 43308 -- 16032 Find Fish
-44483 -- 16085 Spells ptr
-44494 -- 16091 Spells ptr
-44556 -- 16105 Spells ptr
-44590 -- 16115 Spells ptr
-44596 -- 16122 Spells ptr
-44645 -- 16136 Spells ptr
-44636 -- 16138 Spells ptr
 45357 -- 16187 Inscription
 45358 -- 16188 Inscription
 45359 -- 16189 Inscription
@@ -154,536 +101,53 @@
 51311 -- 17596 Jewelcrafting
 51302 -- 17597 Leatherworking
 51309 -- 17598 Tailoring
-52738 -- 17895 Spells ptr
-53040 -- 17984 Spells ptr
-53120 -- 17987 Spells ptr
-53121 -- 17988 Spells ptr
-53122 -- 17989 Spells ptr
-53123 -- 17990 Spells ptr
-53124 -- 17991 Spells ptr
-53125 -- 17993 Spells ptr
-53662 -- 18277 Spells ptr
-53663 -- 18278 Spells ptr
-53664 -- 18279 Spells ptr
-53665 -- 18280 Spells ptr
-53666 -- 18281 Spells ptr
+53040 -- 17984 Toughness
+53120 -- 17987 Toughness
+53121 -- 17988 Toughness
+53122 -- 17989 Toughness
+53123 -- 17990 Toughness
+53124 -- 17991 Toughness
+53125 -- 17993 Master of Anatomy
+53662 -- 18277 Master of Anatomy
+53663 -- 18278 Master of Anatomy
+53664 -- 18279 Master of Anatomy
+53665 -- 18280 Master of Anatomy
+53666 -- 18281 Master of Anatomy
 10846 -- 19181 First Aid
-55202 -- 19243 Spells ptr
-55428 -- 19355 Spells ptr
-55480 -- 19356 Spells ptr
-55500 -- 19357 Spells ptr
-55501 -- 19358 Spells ptr
-55502 -- 19359 Spells ptr
-55503 -- 19360 Spells ptr
-55628 -- 19376 Spells ptr
-55641 -- 19378 Spells ptr
-55642 -- 19379 Spells ptr
-55732 -- 19403 Spells ptr
-55769 -- 19411 Spells ptr
-55777 -- 19412 Spells ptr
-56048 -- 19488 Spells ptr
-54998 -- 19541 Spells ptr
-54999 -- 19542 Spells ptr
-57207 -- 19675 Spells ptr
-57208 -- 19676 Spells ptr
-57210 -- 19678 Spells ptr
-57211 -- 19679 Spells ptr
-57213 -- 19681 Spells ptr
-57214 -- 19682 Spells ptr
-57215 -- 19683 Spells ptr
-57216 -- 19684 Spells ptr
-57217 -- 19685 Spells ptr
-57219 -- 19687 Spells ptr
-57220 -- 19688 Spells ptr
-57221 -- 19689 Spells ptr
-57222 -- 19690 Spells ptr
-57223 -- 19691 Spells ptr
-57225 -- 19693 Spells ptr
-57226 -- 19694 Spells ptr
-57227 -- 19695 Spells ptr
-57228 -- 19696 Spells ptr
-57229 -- 19697 Spells ptr
-57230 -- 19698 Spells ptr
-57683 -- 19767 Spells ptr
-57699 -- 19768 Spells ptr
-57691 -- 19770 Spells ptr
-57694 -- 19771 Spells ptr
-57692 -- 19772 Spells ptr
-57690 -- 19773 Spells ptr
-57701 -- 19774 Spells ptr
-57696 -- 19775 Spells ptr
-56955 -- 19794 Spells ptr
-56963 -- 19795 Spells ptr
-56961 -- 19796 Spells ptr
-48121 -- 19797 Spells ptr
-56945 -- 19798 Spells ptr
-56951 -- 19799 Spells ptr
-56953 -- 19801 Spells ptr
-56956 -- 19802 Spells ptr
-56959 -- 19803 Spells ptr
-56957 -- 19804 Spells ptr
-56952 -- 19805 Spells ptr
-56943 -- 19806 Spells ptr
-56946 -- 19807 Spells ptr
-56947 -- 19808 Spells ptr
-56960 -- 19809 Spells ptr
-56950 -- 19810 Spells ptr
-56944 -- 19811 Spells ptr
-56954 -- 19812 Spells ptr
-56958 -- 19813 Spells ptr
-56949 -- 19814 Spells ptr
-57004 -- 19815 Spells ptr
-57009 -- 19816 Spells ptr
-56995 -- 19817 Spells ptr
-56997 -- 19818 Spells ptr
-57005 -- 19819 Spells ptr
-57007 -- 19820 Spells ptr
-56994 -- 19821 Spells ptr
-57000 -- 19822 Spells ptr
-57001 -- 19823 Spells ptr
-57002 -- 19824 Spells ptr
-57008 -- 19825 Spells ptr
-57003 -- 19826 Spells ptr
-56996 -- 19827 Spells ptr
-56999 -- 19828 Spells ptr
-57012 -- 19829 Spells ptr
-57006 -- 19831 Spells ptr
-57011 -- 19832 Spells ptr
-56998 -- 19833 Spells ptr
-57010 -- 19834 Spells ptr
-56976 -- 19835 Spells ptr
-56978 -- 19836 Spells ptr
-56971 -- 19838 Spells ptr
-56973 -- 19839 Spells ptr
-56974 -- 19840 Spells ptr
-56981 -- 19841 Spells ptr
-56979 -- 19843 Spells ptr
-56972 -- 19846 Spells ptr
-56989 -- 19847 Spells ptr
-56980 -- 19849 Spells ptr
-56983 -- 19850 Spells ptr
-56975 -- 19852 Spells ptr
-56977 -- 19853 Spells ptr
-56987 -- 19854 Spells ptr
-56988 -- 19855 Spells ptr
-57022 -- 19856 Spells ptr
-57027 -- 19857 Spells ptr
-57029 -- 19858 Spells ptr
-57030 -- 19859 Spells ptr
-57031 -- 19860 Spells ptr
-57020 -- 19862 Spells ptr
-57023 -- 19863 Spells ptr
-57024 -- 19864 Spells ptr
-57025 -- 19865 Spells ptr
-57026 -- 19866 Spells ptr
-57033 -- 19867 Spells ptr
-57036 -- 19868 Spells ptr
-57034 -- 19869 Spells ptr
-57035 -- 19870 Spells ptr
-57021 -- 19871 Spells ptr
-57028 -- 19872 Spells ptr
-57019 -- 19873 Spells ptr
-57194 -- 19874 Spells ptr
-57196 -- 19875 Spells ptr
-57184 -- 19876 Spells ptr
-57186 -- 19877 Spells ptr
-57188 -- 19878 Spells ptr
-57197 -- 19879 Spells ptr
-57200 -- 19880 Spells ptr
-57201 -- 19881 Spells ptr
-57183 -- 19882 Spells ptr
-57185 -- 19883 Spells ptr
-57187 -- 19884 Spells ptr
-57192 -- 19885 Spells ptr
-57193 -- 19886 Spells ptr
-57198 -- 19887 Spells ptr
-57191 -- 19888 Spells ptr
-57195 -- 19889 Spells ptr
-57202 -- 19890 Spells ptr
-57189 -- 19891 Spells ptr
-57181 -- 19892 Spells ptr
-57199 -- 19893 Spells ptr
-57190 -- 19894 Spells ptr
-57114 -- 19895 Spells ptr
-57119 -- 19896 Spells ptr
-57120 -- 19897 Spells ptr
-57121 -- 19898 Spells ptr
-57123 -- 19899 Spells ptr
-57125 -- 19900 Spells ptr
-57129 -- 19901 Spells ptr
-57131 -- 19902 Spells ptr
-57132 -- 19903 Spells ptr
-57133 -- 19904 Spells ptr
-57122 -- 19905 Spells ptr
-57113 -- 19906 Spells ptr
-57116 -- 19907 Spells ptr
-57124 -- 19908 Spells ptr
-57128 -- 19909 Spells ptr
-57115 -- 19910 Spells ptr
-57126 -- 19911 Spells ptr
-57127 -- 19912 Spells ptr
-57112 -- 19913 Spells ptr
-57117 -- 19914 Spells ptr
-57130 -- 19915 Spells ptr
-57239 -- 19916 Spells ptr
-57246 -- 19917 Spells ptr
-57238 -- 19918 Spells ptr
-57240 -- 19919 Spells ptr
-57245 -- 19920 Spells ptr
-57249 -- 19921 Spells ptr
-57241 -- 19922 Spells ptr
-57242 -- 19923 Spells ptr
-57244 -- 19924 Spells ptr
-57251 -- 19925 Spells ptr
-57236 -- 19926 Spells ptr
-57252 -- 19927 Spells ptr
-57233 -- 19928 Spells ptr
-57232 -- 19929 Spells ptr
-57247 -- 19930 Spells ptr
-57248 -- 19931 Spells ptr
-57235 -- 19932 Spells ptr
-57243 -- 19933 Spells ptr
-57250 -- 19934 Spells ptr
-57234 -- 19935 Spells ptr
-57237 -- 19936 Spells ptr
-57259 -- 19937 Spells ptr
-57266 -- 19938 Spells ptr
-57265 -- 19939 Spells ptr
-57262 -- 19940 Spells ptr
-57269 -- 19941 Spells ptr
-57271 -- 19942 Spells ptr
-57277 -- 19943 Spells ptr
-57270 -- 19944 Spells ptr
-57274 -- 19945 Spells ptr
-57272 -- 19946 Spells ptr
-57275 -- 19947 Spells ptr
-57257 -- 19948 Spells ptr
-57264 -- 19949 Spells ptr
-57258 -- 19951 Spells ptr
-57267 -- 19952 Spells ptr
-57260 -- 19953 Spells ptr
-57268 -- 19954 Spells ptr
-57261 -- 19955 Spells ptr
-57276 -- 19957 Spells ptr
-59390 -- 20150 Cloth Scavenging
-60583 -- 20284 Spells ptr
-60584 -- 20285 Spells ptr
-59636 -- 20432 Spells ptr
-60619 -- 20436 Spells ptr
-61177 -- 20463 Spells ptr
-61288 -- 20506 Spells ptr
-58296 -- 20514 Spells ptr
-58289 -- 20515 Spells ptr
-58299 -- 20516 Spells ptr
-58298 -- 20518 Spells ptr
-58303 -- 20520 Spells ptr
-58306 -- 20521 Spells ptr
-58310 -- 20523 Spells ptr
-58308 -- 20524 Spells ptr
-58314 -- 20525 Spells ptr
-58313 -- 20526 Spells ptr
-58318 -- 20528 Spells ptr
-58317 -- 20529 Spells ptr
-58326 -- 20530 Spells ptr
-58323 -- 20531 Spells ptr
-58337 -- 20532 Spells ptr
-58342 -- 20533 Spells ptr
-58344 -- 20534 Spells ptr
-58346 -- 20535 Spells ptr
-58343 -- 20536 Spells ptr
-58286 -- 20537 Spells ptr
-58288 -- 20538 Spells ptr
-58311 -- 20540 Spells ptr
-58315 -- 20541 Spells ptr
-58325 -- 20543 Spells ptr
-59326 -- 20545 Spells ptr
-58336 -- 20546 Spells ptr
-58307 -- 20548 Spells ptr
-58324 -- 20549 Spells ptr
-58328 -- 20550 Spells ptr
-58331 -- 20551 Spells ptr
-58340 -- 20552 Spells ptr
-59315 -- 20553 Spells ptr
-58302 -- 20555 Spells ptr
-58321 -- 20557 Spells ptr
-58333 -- 20558 Spells ptr
-58329 -- 20559 Spells ptr
-58330 -- 20560 Spells ptr
-58338 -- 20561 Spells ptr
-58339 -- 20562 Spells ptr
-58319 -- 20563 Spells ptr
-58297 -- 20564 Spells ptr
-58327 -- 20565 Spells ptr
-58322 -- 20567 Spells ptr
-57162 -- 20569 Spells ptr
-57158 -- 20570 Spells ptr
-57163 -- 20573 Spells ptr
-57157 -- 20574 Spells ptr
-57167 -- 20575 Spells ptr
-57161 -- 20578 Spells ptr
-57165 -- 20579 Spells ptr
-57154 -- 20587 Spells ptr
-57156 -- 20590 Spells ptr
-59338 -- 20593 Spells ptr
-57168 -- 20594 Spells ptr
-59339 -- 20595 Spells ptr
-59340 -- 20596 Spells ptr
-57172 -- 20597 Spells ptr
-57159 -- 20603 Spells ptr
-57170 -- 20604 Spells ptr
-57152 -- 20605 Spells ptr
-57160 -- 20607 Spells ptr
-59559 -- 20609 Spells ptr
-57155 -- 20610 Spells ptr
-59561 -- 20611 Spells ptr
-57153 -- 20612 Spells ptr
-57164 -- 20614 Spells ptr
-59560 -- 20615 Spells ptr
-57014 -- 20660 Spells ptr
-61677 -- 20669 Spells ptr
-56990 -- 20744 Spells ptr
-57253 -- 20745 Spells ptr
-62162 -- 20749 Spells ptr
-62213 -- 20753 Spells ptr
-56991 -- 20761 Spells ptr
-63770 -- 20882 Spells ptr
-64248 -- 20924 Spells ptr
-64246 -- 20925 Spells ptr
-64247 -- 20926 Spells ptr
-64249 -- 20927 Spells ptr
-64251 -- 20929 Spells ptr
-64252 -- 20930 Spells ptr
-64253 -- 20931 Spells ptr
-64254 -- 20932 Spells ptr
-64255 -- 20933 Spells ptr
-64256 -- 20934 Spells ptr
-64257 -- 20935 Spells ptr
-64261 -- 20936 Spells ptr
-64258 -- 20937 Spells ptr
-64259 -- 20939 Spells ptr
-64262 -- 20940 Spells ptr
-64266 -- 20941 Spells ptr
-64276 -- 20943 Spells ptr
-64277 -- 20944 Spells ptr
-64268 -- 20945 Spells ptr
-64295 -- 20946 Spells ptr
-64294 -- 20947 Spells ptr
-64271 -- 20948 Spells ptr
-64297 -- 20949 Spells ptr
-64274 -- 20950 Spells ptr
-64280 -- 20951 Spells ptr
-64279 -- 20952 Spells ptr
-64273 -- 20953 Spells ptr
-64288 -- 20954 Spells ptr
-64281 -- 20955 Spells ptr
-64278 -- 20956 Spells ptr
-64291 -- 20957 Spells ptr
-64300 -- 20958 Spells ptr
-64284 -- 20959 Spells ptr
-64298 -- 20960 Spells ptr
-64283 -- 20961 Spells ptr
-64285 -- 20962 Spells ptr
-64275 -- 20963 Spells ptr
-64318 -- 20964 Spells ptr
-64282 -- 20965 Spells ptr
-64289 -- 20966 Spells ptr
-64286 -- 20967 Spells ptr
-64296 -- 20968 Spells ptr
-64287 -- 20969 Spells ptr
-64270 -- 20971 Spells ptr
-64302 -- 20973 Spells ptr
-64303 -- 20974 Spells ptr
-64305 -- 20975 Spells ptr
-64304 -- 20976 Spells ptr
-64312 -- 20977 Spells ptr
-64309 -- 20978 Spells ptr
-64307 -- 20979 Spells ptr
-64311 -- 20980 Spells ptr
-64308 -- 20981 Spells ptr
-64310 -- 20982 Spells ptr
-64317 -- 20983 Spells ptr
-64315 -- 20984 Spells ptr
-64316 -- 20985 Spells ptr
-64314 -- 20986 Spells ptr
-64313 -- 20987 Spells ptr
-66587 -- 21173 Spells ptr
-67025 -- 21196 Spells ptr
-67600 -- 21246 Spells ptr
-71101 -- 21377 Spells ptr
-71102 -- 21378 Spells ptr
+55428 -- 19355 Lifeblood
+55480 -- 19356 Lifeblood
+55500 -- 19357 Lifeblood
+55501 -- 19358 Lifeblood
+55502 -- 19359 Lifeblood
+55503 -- 19360 Lifeblood
+59390 -- 20150 Northern Cloth Scavenging
 73318 -- 21437 Jewelcrafting
 73979 -- 21562 Searching for Artifacts
-74215 -- 21581 Spells ptr
-74216 -- 21582 Spells ptr
-74217 -- 21583 Spells ptr
-74218 -- 21584 Spells ptr
 74258 -- 21612 Enchanting
-74495 -- 21617 Spells ptr
-74496 -- 21618 Spells ptr
-74497 -- 21619 Spells ptr
+74495 -- 21617 Master of Anatomy
+74496 -- 21618 Toughness
+74497 -- 21619 Lifeblood
 74519 -- 21620 Herb Gathering
 74517 -- 21621 Mining
 74522 -- 21622 Skinning
 74559 -- 21630 First Aid
 75156 -- 21650 Tailoring
-75175 -- 21719 Spells ptr
-75172 -- 21720 Spells ptr
-75178 -- 21721 Spells ptr
-76249 -- 21735 Weapon Skills
-76250 -- 21736 Armor Skills
-76292 -- 21738 Weapon Skills
-76282 -- 21739 Armor Skills
-76297 -- 21740 Weapon Skills
-76273 -- 21741 Armor Skills
-76275 -- 21742 Armor Skills
-76300 -- 21743 Weapon Skills
-76298 -- 21744 Weapon Skills
-76276 -- 21745 Armor Skills
-76271 -- 21746 Armor Skills
-76294 -- 21747 Weapon Skills
-76296 -- 21748 Weapon Skills
-76272 -- 21749 Armor Skills
-76299 -- 21750 Weapon Skills
-76277 -- 21751 Armor Skills
-76268 -- 21752 Armor Skills
-76290 -- 21753 Weapon Skills
 76666 -- 21832 Blacksmithing
-77442 -- 21835 Focus
-76301 -- 21855 Weapon Skills
-76279 -- 21856 Armor Skills
 78670 -- 21894 Archaeology
-80724 -- 21991 Spells ptr
 80731 -- 22022 Alchemy
 80451 -- 22025 Survey
 81199 -- 22073 Leatherworking
-81708 -- 22119 Spells ptr
+81708 -- 22119 Lifeblood
 82774 -- 22172 Engineering
-82201 -- 22277 Spells ptr
-82180 -- 22279 Spells ptr
-82177 -- 22280 Spells ptr
-82175 -- 22281 Spells ptr
-85007 -- 22332 Spells ptr
-85008 -- 22333 Spells ptr
-85009 -- 22334 Spells ptr
-85010 -- 22335 Spells ptr
-85067 -- 22427 Spells ptr
-85068 -- 22428 Spells ptr
-85801 -- 22528 DPS Caster Crit Damage Bonus
-85801 -- 22529 DPS Caster Crit Damage Bonus
 86008 -- 22540 Inscription
-86039 -- 22557 Spells removed
-86038 -- 22558 Spells removed
-86093 -- 22564 Leather Specialization
-86103 -- 22567 Plate Specialization
-86102 -- 22568 Plate Specialization
-86092 -- 22570 Leather Specialization
-86099 -- 22571 Mail Specialization
-86100 -- 22572 Mail Specialization
-86091 -- 22573 Nethermancy
-86101 -- 22575 Plate Specialization
-86113 -- 22576 Plate Specialization
-86104 -- 22577 Leather Specialization
-86108 -- 22578 Mail Specialization
-86110 -- 22579 Plate Specialization
-86096 -- 22580 Leather Specialization
-86097 -- 22581 Leather Specialization
-86471 -- 22642 Spells ptr
-86470 -- 22643 Spells ptr
-86472 -- 22644 Spells ptr
-86473 -- 22645 Spells ptr
-86474 -- 22646 Spells ptr
-86475 -- 22647 Spells ptr
-86476 -- 22648 Spells ptr
-86477 -- 22649 Spells ptr
-86478 -- 22650 Spells ptr
-86479 -- 22651 Spells ptr
-86537 -- 22652 Plate Specialization
-86536 -- 22653 Plate Specialization
-86530 -- 22654 Spells ptr
-86524 -- 22655 Spells ptr
-86538 -- 22656 Mail Specialization
-86528 -- 22657 Spells ptr
-86539 -- 22659 Plate Specialization
-86525 -- 22660 Spells ptr
-86531 -- 22661 Spells ptr
-86529 -- 22662 Spells ptr
-86535 -- 22664 Plate Specialization
-86526 -- 22665 Spells ptr
-77495 -- 22729 Mastery: Harmony
-77492 -- 22730 Spells ptr
-77493 -- 22731 Mastery: Razor Claws
-77494 -- 22732 Spells ptr
-77513 -- 22739 Mastery: Blood Shield
-77515 -- 22740 Mastery: Dreadblade
-77514 -- 22741 Mastery: Frozen Heart
-76657 -- 22744 Mastery: Master of Beasts
-76659 -- 22745 Spells ptr
-76658 -- 22746 Spells ptr
-76547 -- 22748 Spells ptr
-76595 -- 22749 Spells ptr
-76613 -- 22750 Mastery: Icicles
-76669 -- 22755 Spells ptr
-76671 -- 22756 Mastery: Divine Bulwark
-76672 -- 22757 Spells ptr
-77484 -- 22765 Spells ptr
-77485 -- 22766 Mastery: Echo of Light
-77486 -- 22767 Mastery: Madness
-76803 -- 22772 Mastery: Potent Assassin
-76806 -- 22773 Mastery: Main Gauche
-76808 -- 22774 Mastery: Executioner
-77222 -- 22777 Spells ptr
-77223 -- 22778 Mastery: Enhanced Elements
-77226 -- 22779 Mastery: Deep Healing
-77215 -- 22784 Mastery: Potent Afflictions
-77219 -- 22785 Mastery: Master Demonologist
-77220 -- 22786 Mastery: Chaotic Energies
-76838 -- 22788 Spells ptr
-76856 -- 22789 Mastery: Unshackled Fury
-76857 -- 22790 Mastery: Critical Block
-87492 -- 22806 Spells ptr
-87510 -- 22808 Spells ptr
-87491 -- 22809 Spells ptr
-87505 -- 22810 Spells ptr
-87493 -- 22811 Spells ptr
-87506 -- 22812 Spells ptr
-86467 -- 22813 Spells ptr
-87494 -- 22815 Spells ptr
-87511 -- 22816 Spells ptr
-87495 -- 22817 Spells ptr
-87496 -- 22819 Spells ptr
-87504 -- 22820 Spells ptr
-87497 -- 22821 Spells ptr
-87507 -- 22822 Spells ptr
-87498 -- 22823 Spells ptr
-87500 -- 22825 Spells ptr
-87509 -- 22826 Spells ptr
-87816 -- 22879 Spells ptr
 88053 -- 22946 Cooking
-88163 -- 22966 Attack
 88868 -- 23376 Fishing
 88961 -- 23385 Archaeology
-86647 -- 23411 Spells ptr
-86650 -- 23414 Spells ptr
-89367 -- 23422 Spells ptr
-84734 -- 23437 Spells ptr
-84733 -- 23439 Spells ptr
-84738 -- 23440 Spells ptr
-84736 -- 23441 Spells ptr
-87324 -- 23442 Spells ptr
-87330 -- 23443 Spells ptr
 89718 -- 23459 Archaeology
 89719 -- 23460 Archaeology
 89720 -- 23461 Archaeology
 89721 -- 23462 Archaeology
 89722 -- 23463 Archaeology
-89744 -- 23469 Wizardry
-89745 -- 23470 Mysticism
-89815 -- 23480 Spells ptr
-89920 -- 23491 Spells ptr
-92027 -- 23722 Spells ptr
-92370 -- 23736 Spells ptr
-92375 -- 23737 Spells ptr
-92579 -- 23743 Spells ptr
 92806 -- 23758 Survey Mastery
 92807 -- 23759 Survey Mastery
 92808 -- 23760 Survey Mastery
@@ -692,39 +156,13 @@
 92811 -- 23763 Survey Mastery
 92812 -- 23764 Survey Mastery
 74268 -- 23765 Track Archaeology Chests
-94000 -- 23829 Spells ptr
-94406 -- 23910 Spells ptr
-94405 -- 23911 Spells ptr
-94404 -- 23912 Spells ptr
-94403 -- 23913 Spells ptr
-94402 -- 23914 Spells ptr
-94401 -- 23915 Spells ptr
-94711 -- 24008 Spells ptr
-95215 -- 24044 Spells ptr
-56984 -- 24048 Spells ptr
 82207 -- 24065 Explosive Bolts
-95710 -- 24066 Spells ptr
-95825 -- 24076 Spells ptr
-96284 -- 24150 Spells ptr
-98398 -- 24274 Spells ptr
-99549 -- 24310 Spells ptr
-99548 -- 24311 Spells ptr
-99547 -- 24312 Spells ptr
-101057 -- 24354 Spells ptr
-101600 -- 24488 Spells ptr
-101828 -- 24561 Spells removed
-101827 -- 24562 Spells removed
-101826 -- 24563 Spells removed
-101825 -- 24564 Spells removed
-101824 -- 24565 Spells removed
-101823 -- 24566 Spells removed
-102171 -- 24592 Spells ptr
-87498 -- 25319 Spells ptr
-351766 -- 46055 Spells ptr
-351768 -- 46056 Spells ptr
-351769 -- 46057 Spells ptr
-351770 -- 46058 Spells ptr
-351771 -- 46059 Spells ptr
-405005 -- 48447 Spells ptr
-413897 -- 48777 Spells ptr
-414814 -- 48796 Spells ptr
+101828 -- 24561 Cata Spells removed
+101827 -- 24562 Cata Spells removed
+101826 -- 24563 Cata Spells removed
+101825 -- 24564 Cata Spells removed
+101824 -- 24565 Cata Spells removed
+101823 -- 24566 Cata Spells removed
+405005 -- 48447 Cata Spells ptr
+413897 -- 48777 Cata Spells ptr
+414814 -- 48796 Cata Spells ptr

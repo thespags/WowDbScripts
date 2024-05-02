@@ -293,6 +293,9 @@
 247842 -- 36684 Fiendish Leather
 247843 -- 36685 Fiendish Leather
 247844 -- 36686 Fiendish Leather
+258965 -- 39112 (TEST) Legion Blacksmithing
+264160 -- 39114 (TEST) Legion Engineering
+264191 -- 39115 (TEST) Pandaria Engineering
 264255 -- 39122 Kul Tiran Alchemy
 264243 -- 39123 Cataclysm Alchemy
 264211 -- 39124 Alchemy
@@ -498,9 +501,98 @@
 310949 -- 42791 Shadowlands Tailoring
 309805 -- 42870 Shadowlands Inscription
 311967 -- 42964 Shadowlands Jewelcrafting
+317398 -- 43344 Spells removed
+317427 -- 43345 Spells removed
+317708 -- 43367 Spells removed
+317751 -- 43374 Spells removed
+317756 -- 43375 Spells removed
+317761 -- 43376 Spells removed
+317799 -- 43377 Spells removed
+317797 -- 43378 Spells removed
+317798 -- 43379 Spells removed
+317800 -- 43380 Spells removed
+317802 -- 43381 Spells removed
+317801 -- 43382 Spells removed
+317825 -- 43383 Spells removed
+317841 -- 43385 Spells removed
+317843 -- 43386 Spells removed
+317850 -- 43388 Spells removed
+317852 -- 43389 Spells removed
+317900 -- 43395 Spells removed
+317902 -- 43396 Spells removed
+319235 -- 43429 Spells removed
 324750 -- 44657 Disenchant
+325284 -- 44723 Construct Body: "Chordy"
+325451 -- 44725 Construct Body: "Roseboil"
+325453 -- 44726 Construct Body: "Flytrap"
+325452 -- 44727 Construct Body: "Marz"
+325454 -- 44728 Construct Body: "Atticus"
+325458 -- 44729 Construct Body: "Miru"
+326379 -- 44773 Construct Body: "Neena"
+326406 -- 44775 Construct Body: "Professor"
+326380 -- 44776 Construct Body: "Gas Bag"
+326408 -- 44777 Construct Body: "Mama Tomalin"
+326407 -- 44778 Construct Body: "Toothpick"
+326379 -- 44853 Construct Body: "Neena"
+325451 -- 44854 Construct Body: "Roseboil"
+325453 -- 44855 Construct Body: "Flytrap"
+325452 -- 44856 Construct Body: "Marz"
+325454 -- 44857 Construct Body: "Atticus"
+325458 -- 44858 Construct Body: "Miru"
+325284 -- 44859 Construct Body: "Chordy"
+326406 -- 44860 Construct Body: "Professor"
+326380 -- 44861 Construct Body: "Gas Bag"
+326408 -- 44862 Construct Body: "Mama Tomalin"
+326407 -- 44863 Construct Body: "Toothpick"
+335287 -- 45422 Spells removed
+335286 -- 45423 Spells removed
+335284 -- 45424 Spells removed
+335279 -- 45425 Spells removed
+335278 -- 45426 Spells removed
+337535 -- 45463 Dapper Top Hat
+337540 -- 45464 Outlaw Flag
+337554 -- 45465 Trustworthy Doll
+338037 -- 45477 Construct Body: "Iron Phillip"
+338040 -- 45479 Construct Body: "Sabrina"
+338043 -- 45480 Construct Body: "Naxx"
+338039 -- 45481 Construct Body: "Guillotine"
+338383 -- 45580 Holiday Hat
 340534 -- 45654 Interact
+342417 -- 45699 Vestigial Wings
+342418 -- 45700 Engineering Pack
+342421 -- 45701 Operational Instructions
+342447 -- 45702 Flower Crown
+342448 -- 45703 Halo of Purity
+342455 -- 45704 Red Eye Lens
+342454 -- 45705 Skull Protector
+342468 -- 45706 Happiness Bird
+342483 -- 45707 Six-League Pack
+342851 -- 45720 Magician's Hat
+342850 -- 45721 Plague Pack
+342849 -- 45722 Armor Plating
+342846 -- 45723 Butterflies
+342845 -- 45724 Sticky Cat
+342843 -- 45725 Faction Flag
+342842 -- 45726 Safe Fall Pack
+342841 -- 45727 Collector Kash's Pack
+342895 -- 45730 Intellectuals Monocle
+342899 -- 45731 Spare Weapon
 343634 -- 45766 Shadowlands Cloth Scavenging
+344100 -- 45830 Chef Hat
+344095 -- 45831 Dundae's Hat
+344101 -- 45832 Egg Hat
+344766 -- 45833 Skull Fungus
+344765 -- 45834 Pumpkin Head
+344769 -- 45835 Pirate Hat
+344770 -- 45836 Unworthy Crown
+344796 -- 45838 Back Mushrooms
+344110 -- 45839 Barrel O' Fish
+344797 -- 45840 Underpowered Gravity Pack
+344798 -- 45841 Shoulder Sprouts
+342902 -- 45842 Hitchhiker
+344097 -- 45843 Trained Corpselice
+344096 -- 45844 Lovely Candle Display
+345894 -- 45890 Medallion of Service
 343681 -- 46088 Spells removed
 343687 -- 46090 Spells removed
 365677 -- 46620 Dragon Isles Blacksmithing
@@ -676,6 +768,7 @@
 419023 -- 49011 Spells ptr
 419022 -- 49012 Spells ptr
 420740 -- 49020 Spells ptr
+420775 -- 49022 Spells removed
 421176 -- 49081 Spells ptr
 421224 -- 49082 Spells ptr
 421226 -- 49083 Spells ptr

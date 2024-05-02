@@ -90,7 +90,7 @@ def get_effect(url, tree):
 def read_skill_lines(version):
     skill_lines = {}
     with read_table(version, "SkillLine") as file:
-        categories = {9, 11}
+        secondary_ids = {129, 185, 356, 794}
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
             category = int(row["CategoryID"])
@@ -99,7 +99,7 @@ def read_skill_lines(version):
             # If secondary or primary profession, that appears in the spell book (128), is shown in the ui (not 2),
             # and not automatic (not 16). In case of Jewelcrafting in TBC (755), include because its incorrectly flagged.
             # Ignore logging as well (1945)
-            include_skill_line = category in categories and flags & 128 and flags & 18 == 0
+            include_skill_line = (category == 11 and flags & 128 and flags & 18 == 0) or skill_id in secondary_ids
             if (include_skill_line or skill_id == 755) and skill_id != 1945:
                 name = row["DisplayName_lang"]
                 logging.debug("%s %s %s", skill_id, name, str(flags))

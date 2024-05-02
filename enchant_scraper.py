@@ -42,6 +42,7 @@ def write_effect_names(version, effect_ids):
                     name = row['Name_lang']
                     if language == "enUS":
                         effects[effect_id] = name
+                    name = name.replace('"', '\\\"')
                     out.write(f'\n\tlib:AddEffect({effect_id}, "{name}")')
                     total += 1
         out.write("\nend")

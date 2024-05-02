@@ -12,7 +12,7 @@ from concurrent.futures import ThreadPoolExecutor
 logging.basicConfig(format='%(message)s', level=logging.INFO)
 ignored_zones = {}
 ignored_sort = {"encounters", "activities"}
-expansions = {1: "classic", 2: "tbc", 3: "wotlk"}
+expansions = {1: "classic", 2: "tbc", 3: "wotlk", 4: "cata"}
 languages = ["enUS", "deDE", "esES", "esMX", "frFR", "itIT", "koKR", "ptBR", "ruRU", "zhCN", "zhTW"]
 
 
@@ -155,9 +155,11 @@ def to_string(v, level=0, ignore=False, sort=True):
 
 def get_wow_head_spell_as_tree(expansion, spell_id):
     name = expansions.get(expansion, "")
+
     url = f'https://www.wowhead.com/{name}/spell={spell_id}'
+    print(url)
     response = requests.get(url)
-    return url, html.fromstring(response.content)
+    return html.fromstring(response.content)
 
 
 # If we did an update and the ids are out of order, fix them.
