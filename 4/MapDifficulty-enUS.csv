@@ -112,7 +112,7 @@ ID,Message_lang,ItemContextPickerID,ContentTuningID,ItemContext,DifficultyID,Loc
 146,"Heroic Difficulty requires you to be level 80.",0,0,0,2,0,1,5,0,578
 147,"You must be at least level 65 to enter on Heroic Difficulty.",0,0,0,2,0,1,5,0,585
 148,"Heroic Difficulty requires you to be level 80.",0,0,0,2,0,1,5,0,595
-4858,,0,32,0,3,0,2,10,0,532
+1649,,0,0,0,0,0,0,0,0,861
 150,"Heroic Difficulty requires you to be level 80.",0,0,0,2,0,1,5,0,599
 151,"Heroic Difficulty requires you to be level 80.",0,0,0,2,0,1,5,0,600
 152,"Heroic Difficulty requires you to be level 80.",0,0,0,2,0,1,5,0,601
@@ -206,13 +206,11 @@ ID,Message_lang,ItemContextPickerID,ContentTuningID,ItemContext,DifficultyID,Loc
 819,,0,0,0,0,0,0,0,0,760
 820,,0,0,0,0,0,0,0,0,761
 821,"Heroic Difficulty requires you to be level 85.",0,0,0,2,0,0,5,0,755
-822,,0,0,0,0,0,0,5,0,755
 823,"You must have completed The Bastion of Twilight achievement before attempting Heroic difficulty.",0,0,0,5,28,2,10,0,671
 824,"You must have completed The Bastion of Twilight achievement before attempting Heroic difficulty.",0,0,0,6,29,2,25,0,671
 827,,0,0,0,0,0,0,0,0,762
 828,,0,0,0,0,0,0,0,0,763
 829,"Heroic Difficulty requires you to be level 85.",0,0,0,2,0,0,5,0,36
-830,,0,0,0,0,0,0,0,0,36
 831,"You must have completed the Throne of the Four Winds achievement before attempting Heroic difficulty.",0,0,0,5,36,0,10,0,754
 832,"You must have completed the Throne of the Four Winds achievement before attempting Heroic difficulty.",0,0,0,6,37,0,25,0,754
 835,,0,0,0,0,0,0,0,0,764
@@ -229,7 +227,6 @@ ID,Message_lang,ItemContextPickerID,ContentTuningID,ItemContext,DifficultyID,Loc
 1611,,0,0,0,0,0,0,0,0,309
 1645,"Zul'Gurub is only available as a Heroic Difficulty level 85 dungeon.",0,0,0,1,0,0,5,0,859
 1646,"Heroic Difficulty requires you to be level 85.",0,0,0,2,0,0,5,0,859
-1649,,0,0,0,0,0,0,0,0,861
 1690,"Heroic Difficulty requires level 85 to enter.",0,0,0,2,0,0,5,0,568
 1800,,0,0,0,0,0,0,0,0,930
 1801,,0,0,0,0,0,0,0,0,930
@@ -291,6 +288,7 @@ ID,Message_lang,ItemContextPickerID,ContentTuningID,ItemContext,DifficultyID,Loc
 4848,,0,0,0,176,0,2,25,0,548
 4851,,0,0,0,0,0,2,10,0,568
 4852,"You must be at least level 65 to enter on Heroic Difficulty.",0,0,0,2,0,1,5,0,269
+4858,,0,32,0,3,0,2,10,0,532
 4859,,0,0,0,173,0,0,5,0,540
 4860,,0,0,0,174,0,1,5,0,540
 4861,,0,0,0,173,0,0,5,0,542
@@ -333,3 +331,5 @@ ID,Message_lang,ItemContextPickerID,ContentTuningID,ItemContext,DifficultyID,Loc
 5346,,0,0,0,0,0,0,0,0,597
 5468,,0,0,0,0,0,0,0,0,2755
 5513,,0,0,0,0,0,0,0,0,728
+5521,,0,0,0,0,0,0,0,0,628
+5522,,0,0,0,0,0,0,0,0,607

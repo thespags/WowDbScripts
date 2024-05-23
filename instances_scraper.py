@@ -66,9 +66,9 @@ def read_map_difficulty(version):
     with read_table(version, "MapDifficulty") as file:
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
-            reset = int(row["ResetInterval"])
+            reset = int(row["ResetInterval"]) or (int(row["DifficultyID"]) == 2 and 1)
             # skip instances with no lockout
-            if reset == 0:
+            if not reset:
                 continue
             key = int(row["MapID"])
             if key not in infos:

@@ -46,8 +46,8 @@ lib:addInstance(
         encounters = { "Glubtok", "Helix Gearbreaker", "Foe Reaper 5000", "Admiral Ripsnarl", "\"Captain\" Cookie", "Vanessa VanCleef" },
         expansion = 3,
         lastBossIndex = 6,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -57,8 +57,8 @@ lib:addInstance(
         encounters = { "Baron Ashbury", "Baron Silverlaine", "Commander Springvale", "Lord Walden", "Lord Godfrey" },
         expansion = 3,
         lastBossIndex = 5,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -806,8 +806,8 @@ lib:addInstance(
         encounters = { "Lady Naz'jar", "Commander Ulthok", "Mindbender Ghur'sha", "Ozumat" },
         expansion = 3,
         lastBossIndex = 4,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -817,8 +817,8 @@ lib:addInstance(
         encounters = { "Rom'ogg Bonecrusher", "Corla, Herald of Twilight", "Karsh Steelbender", "Beauty", "Ascendant Lord Obsidius" },
         expansion = 3,
         lastBossIndex = 5,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -828,8 +828,8 @@ lib:addInstance(
         encounters = { "General Umbriss", "Forgemaster Throngus", "Drahga Shadowburner", "Erudax" },
         expansion = 3,
         lastBossIndex = 4,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -839,8 +839,8 @@ lib:addInstance(
         encounters = { "Temple Guardian Anhuur", "Earthrager Ptah", "Anraphet", "Isiset", "Ammunae", "Setesh", "Rajh" },
         expansion = 3,
         lastBossIndex = 7,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -850,8 +850,8 @@ lib:addInstance(
         encounters = { "Corborus", "Slabhide", "Ozruk", "High Priestess Azil" },
         expansion = 3,
         lastBossIndex = 4,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -861,8 +861,8 @@ lib:addInstance(
         encounters = { "Grand Vizier Ertan", "Altairus", "Asaad" },
         expansion = 3,
         lastBossIndex = 3,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -872,8 +872,8 @@ lib:addInstance(
         encounters = { "General Husam", "High Prophet Barim", "Lockmaw", "Siamat" },
         expansion = 3,
         lastBossIndex = 4,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -927,8 +927,8 @@ lib:addInstance(
         encounters = { "High Priest Venoxis", "Bloodlord Mandokir", "Cache of Madness", "High Priestess Kilnara", "Zanzil", "Jin'do the Godbreaker" },
         expansion = 3,
         lastBossIndex = 6,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -938,7 +938,7 @@ lib:addInstance(
         encounters = { "Akil'zon", "Nalorakk", "Jan'alai", "Halazzi", "Hex Lord Malacrass", "Daakara" },
         expansion = 3,
         lastBossIndex = 6,
-        resets = { [5] = 3, [10] = 7, },
+        resets = { [5] = 1, [10] = 7, },
         sizes = { 5, 10 },
     }
 )
@@ -971,8 +971,8 @@ lib:addInstance(
         encounters = { "First Echo", "Second Echo", "Murozond" },
         expansion = 3,
         lastBossIndex = 3,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -982,8 +982,8 @@ lib:addInstance(
         encounters = { "Peroth'arn", "Queen Azshara", "Mannoroth" },
         expansion = 3,
         lastBossIndex = 3,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
 lib:addInstance(
@@ -993,7 +993,7 @@ lib:addInstance(
         encounters = { "Arcurion", "Asira Dawnslayer", "Archbishop Benedictus" },
         expansion = 3,
         lastBossIndex = 3,
-        resets = {},
-        sizes = {},
+        resets = { [5] = 1, },
+        sizes = { 5 },
     }
 )
