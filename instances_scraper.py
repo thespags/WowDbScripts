@@ -17,6 +17,8 @@ def read_dungeons(version):
                 continue
             if key not in infos:
                 infos[key] = {"sizes": set(), "resets": {}, "encounters": OrderedDict(), "activities": {}}
+            infos[key]["minLevel"] = max(infos[key].get("minLevel", 0), int(row["MinLevel"]))
+            infos[key]["maxLevel"] = max(infos[key].get("maxLevel", 0), int(row["MaxLevel"]))
             infos[key]["expansion"] = int(row["ExpansionLevel"])
             group_id = int(row["Group_ID"])
             activity_id = int(row["ID"])

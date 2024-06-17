@@ -1352,3 +1352,4 @@ lib:AddRecipe(171, nil, 446851, 221313, nil, nil) -- 50600 Flask of Nightmarish 
 lib:AddRecipe(171, nil, 448085, 222952, 448084, nil) -- 51070 Flask of Restless Dreams
 lib:AddRecipe(333, nil, 448624, 220792, 448381, nil) -- 51075 Scroll of Spatial Mending
 lib:AddRecipe(165, nil, 451706, 220741, nil, nil) -- 51206 Screaming Chain Pauldrons
+lib:AddRecipe(164, 227727, 460460, 227684, nil, nil) -- 51341 Sulfuron Hammer

@@ -13,6 +13,8 @@ lib:addInstance(
         encounters = { "Lady Anacondra", "Lord Cobrahn", "Kresh", "Lord Pythas", "Skum", "Lord Serpentis", "Verdan the Everliving", "Mutanus the Devourer" },
         expansion = 0,
         lastBossIndex = 8,
+        maxLevel = 25,
+        minLevel = 17,
         resets = {},
         sizes = {},
     }
@@ -24,6 +26,8 @@ lib:addInstance(
         encounters = { "Darkmaster Gandling", "Doctor Theolen Krastinov", "Instructor Malicia", "Jandice Barov", "Kirtonos", "Lady Illucia Barov", "Lord Alexei Barov", "Lorekeeper Polkelt", "Marduk Blackpool", "Ras Frostwhisperer", "Rattlegore", "The Ravenian", "Vectus" },
         expansion = 0,
         lastBossIndex = 13,
+        maxLevel = 65,
+        minLevel = 57,
         resets = {},
         sizes = {},
     }
@@ -35,6 +39,8 @@ lib:addInstance(
         encounters = { "Oggleflint", "Jergosh the Invoker", "Bazzalan", "Taragaman the Hungerer" },
         expansion = 0,
         lastBossIndex = 4,
+        maxLevel = 20,
+        minLevel = 15,
         resets = {},
         sizes = {},
     }
@@ -46,6 +52,8 @@ lib:addInstance(
         encounters = { "Rhahk'zor", "Sneed", "Gilnid", "Mr. Smite", "Cookie", "Captain Greenskin", "Edwin VanCleef" },
         expansion = 0,
         lastBossIndex = 7,
+        maxLevel = 25,
+        minLevel = 17,
         resets = {},
         sizes = {},
     }
@@ -57,6 +65,8 @@ lib:addInstance(
         encounters = { "Rethilgore", "Razorclaw the Butcher", "Baron Silverlaine", "Commander Springvale", "Odo the Blindwatcher", "Fenrus the Devourer", "Wolf Master Nandos", "Archmage Arugal" },
         expansion = 0,
         lastBossIndex = 8,
+        maxLevel = 82,
+        minLevel = 78,
         resets = {},
         sizes = {},
     }
@@ -68,6 +78,8 @@ lib:addInstance(
         encounters = { "Ghamoo-ra", "Lady Sarevess", "Gelihast", "Lorgus Jett", "Old Serra'kis", "Twilight Lord Kelris", "Aku'mai" },
         expansion = 0,
         lastBossIndex = 7,
+        maxLevel = 30,
+        minLevel = 21,
         resets = {},
         sizes = {},
     }
@@ -79,6 +91,8 @@ lib:addInstance(
         encounters = { "Targorr the Dread", "Kam Deepfury", "Hamhock", "Dextren Ward", "Bazil Thredd" },
         expansion = 0,
         lastBossIndex = 5,
+        maxLevel = 30,
+        minLevel = 22,
         resets = {},
         sizes = {},
     }
@@ -90,6 +104,8 @@ lib:addInstance(
         encounters = { "Grubbis", "Viscous Fallout", "Electrocutioner 6000", "Crowd Pummeler 9-60", "Mekgineer Thermaplugg" },
         expansion = 0,
         lastBossIndex = 5,
+        maxLevel = 33,
+        minLevel = 25,
         resets = {},
         sizes = {},
     }
@@ -101,6 +117,8 @@ lib:addInstance(
         encounters = { "Roogug", "Death Speaker Jargba", "Aggem Thorncurse", "Overlord Ramtusk", "Agathelos the Raging", "Charlga Razorflank" },
         expansion = 0,
         lastBossIndex = 6,
+        maxLevel = 32,
+        minLevel = 24,
         resets = {},
         sizes = {},
     }
@@ -112,6 +130,8 @@ lib:addInstance(
         encounters = { "Interrogator Vishas", "Bloodmage Thalnos", "Houndmaster Loksey", "Arcanist Doan", "Herod", "High Inquisitor Fairbanks", "High Inquisitor Whitemane" },
         expansion = 0,
         lastBossIndex = 7,
+        maxLevel = 82,
+        minLevel = 78,
         resets = {},
         sizes = {},
     }
@@ -123,6 +143,8 @@ lib:addInstance(
         encounters = { "Tuten'kash", "Mordresh Fire Eye", "Glutton", "Amnennar the Coldbringer" },
         expansion = 0,
         lastBossIndex = 4,
+        maxLevel = 42,
+        minLevel = 34,
         resets = {},
         sizes = {},
     }
@@ -134,6 +156,8 @@ lib:addInstance(
         encounters = { "Revelosh", "The Lost Dwarves", "Ironaya", "Ancient Stone Keeper", "Galgann Firehammer", "Grimlok", "Archaedas" },
         expansion = 0,
         lastBossIndex = 7,
+        maxLevel = 45,
+        minLevel = 37,
         resets = {},
         sizes = {},
     }
@@ -145,6 +169,8 @@ lib:addInstance(
         encounters = { "Hydromancer Velratha", "Ghaz'rilla", "Antu'sul", "Theka the Martyr", "Witch Doctor Zum'rah", "Nekrum Gutchewer", "Shadowpriest Sezz'ziz", "Chief Ukorz Sandscalp" },
         expansion = 0,
         lastBossIndex = 8,
+        maxLevel = 51,
+        minLevel = 43,
         resets = {},
         sizes = {},
     }
@@ -156,6 +182,8 @@ lib:addInstance(
         encounters = { "Noxxion", "Razorlash", "Tinkerer Gizlock", "Lord Vyletongue", "Celebras the Cursed", "Landslide", "Rotgrip", "Princess Theradras" },
         expansion = 0,
         lastBossIndex = 8,
+        maxLevel = 53,
+        minLevel = 45,
         resets = {},
         sizes = {},
     }
@@ -167,6 +195,8 @@ lib:addInstance(
         encounters = { "Avatar of Hakkar", "Jammal'an the Prophet", "Dreamscythe", "Weaver", "Morphaz", "Hazzas", "Shade of Eranikus" },
         expansion = 0,
         lastBossIndex = 7,
+        maxLevel = 55,
+        minLevel = 47,
         resets = {},
         sizes = {},
     }
@@ -178,6 +208,8 @@ lib:addInstance(
         encounters = { "High Interrogator Gerstahn", "Lord Roccor", "Houndmaster Grebmar", "Ring of Law", "Pyromancer Loregrain", "Lord Incendius", "Warder Stilgiss", "Fineous Darkvire", "Bael'Gar", "General Angerforge", "Golem Lord Argelmach", "Hurley Blackbreath", "Phalanx", "Ribbly Screwspigot", "Plugger Spazzring", "Ambassador Flamelash", "The Seven", "Magmus", "Emperor Dagran Thaurissan" },
         expansion = 0,
         lastBossIndex = 19,
+        maxLevel = 82,
+        minLevel = 78,
         resets = {},
         sizes = {},
     }
@@ -189,6 +221,8 @@ lib:addInstance(
         encounters = { "Highlord Omokk", "Shadow Hunter Vosh'gajin", "War Master Voone", "Mother Smolderweb", "Urok Doomhowl", "Quartermaster Zigris", "Halycon", "Gizrul the Slavener", "Overlord Wyrmthalak", "Pyroguard Emberseer", "Solakar Flamewreath", "Warchief Rend Blackhand", "The Beast", "General Drakkisath" },
         expansion = 0,
         lastBossIndex = 14,
+        maxLevel = 83,
+        minLevel = 57,
         resets = {},
         sizes = {},
     }
@@ -200,6 +234,8 @@ lib:addInstance(
         encounters = { "Zevrim Thornhoof", "Hydrospawn", "Lethtendris", "Alzzin the Wildshaper", "Tendris Warpwood", "Illyanna Ravenoak", "Magister Kalendris", "Immol'thar", "Prince Tortheldrin", "Guard Mol'dar", "Stomper Kreeg", "Guard Fengus", "Guard Slip'kik", "Captain Kromcrush", "Cho'Rush the Observer", "King Gordok" },
         expansion = 0,
         lastBossIndex = 16,
+        maxLevel = 65,
+        minLevel = 58,
         resets = {},
         sizes = {},
     }
@@ -211,6 +247,8 @@ lib:addInstance(
         encounters = { "Hearthsinger Forresten", "Timmy the Cruel", "Commander Malor", "Willey Hopebreaker", "Instructor Galford", "Balnazzar", "The Unforgiven", "Baroness Anastari", "Nerub'enkan", "Maleki the Pallid", "Magistrate Barthilas", "Ramstein the Gorger", "Lord Aurius Rivendare" },
         expansion = 0,
         lastBossIndex = 13,
+        maxLevel = 65,
+        minLevel = 57,
         resets = {},
         sizes = {},
     }
@@ -222,6 +260,8 @@ lib:addInstance(
         encounters = { "High Priestess Jeklik", "High Priest Venoxis", "High Priestess Mar'li", "Bloodlord Mandokir", "Edge of Madness", "High Priest Thekal", "Gahz'ranka", "High Priestess Arlokk", "Jin'do the Hexxer", "Hakkar" },
         expansion = 0,
         lastBossIndex = 10,
+        maxLevel = 83,
+        minLevel = 56,
         resets = { [20] = 3, },
         sizes = { 20 },
     }
@@ -234,6 +274,8 @@ lib:addInstance(
         expansion = 2,
         lastBossIndex = 1,
         legacy = { expansion = 0, size = 40, },
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [10] = 7, [25] = 7, [40] = 5, },
         sizes = { 10, 25, 40 },
     }
@@ -245,6 +287,8 @@ lib:addInstance(
         encounters = { "Lucifron", "Magmadar", "Gehennas", "Garr", "Shazzrah", "Baron Geddon", "Sulfuron Harbinger", "Golemagg the Incinerator", "Majordomo Executus", "Ragnaros" },
         expansion = 0,
         lastBossIndex = 10,
+        maxLevel = 83,
+        minLevel = 60,
         resets = { [40] = 7, },
         sizes = { 40 },
     }
@@ -256,6 +300,8 @@ lib:addInstance(
         encounters = { "Razorgore the Untamed", "Vaelastrasz the Corrupt", "Broodlord Lashlayer", "Firemaw", "Ebonroc", "Flamegor", "Chromaggus", "Nefarian" },
         expansion = 0,
         lastBossIndex = 8,
+        maxLevel = 83,
+        minLevel = 60,
         resets = { [40] = 7, },
         sizes = { 40 },
     }
@@ -267,6 +313,8 @@ lib:addInstance(
         encounters = { "Omor the Unscarred", "Vazruden the Herald", "Watchkeeper Gargolmar" },
         expansion = 1,
         lastBossIndex = 3,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -278,6 +326,8 @@ lib:addInstance(
         encounters = { "The Maker", "Keli'dan the Breaker", "Broggok" },
         expansion = 1,
         lastBossIndex = 3,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -289,6 +339,8 @@ lib:addInstance(
         encounters = { "Blood Guard Porung", "Grand Warlock Nethekurse", "Warbringer O'mrogg", "Warchief Kargath Bladefist" },
         expansion = 1,
         lastBossIndex = 4,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -300,6 +352,8 @@ lib:addInstance(
         encounters = { "Mennu the Betrayer", "Quagmirran", "Rokmar the Crackler" },
         expansion = 1,
         lastBossIndex = 3,
+        maxLevel = 82,
+        minLevel = 78,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -311,6 +365,8 @@ lib:addInstance(
         encounters = { "Ghaz'an", "Hungarfen", "Swamplord Musel'ek", "The Black Stalker" },
         expansion = 1,
         lastBossIndex = 4,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -322,6 +378,8 @@ lib:addInstance(
         encounters = { "Hydromancer Thespia", "Mekgineer Steamrigger", "Warlord Kalithresh" },
         expansion = 1,
         lastBossIndex = 3,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -333,6 +391,8 @@ lib:addInstance(
         encounters = { "Nexus-Prince Shaffar", "Pandemonius", "Yor", "Tavarok" },
         expansion = 1,
         lastBossIndex = 4,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -344,6 +404,8 @@ lib:addInstance(
         encounters = { "Exarch Maladaar", "Shirrak the Dead Watcher" },
         expansion = 1,
         lastBossIndex = 2,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -355,6 +417,8 @@ lib:addInstance(
         encounters = { "Talon King Ikiss", "Darkweaver Syth", "Anzu" },
         expansion = 1,
         lastBossIndex = 3,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -366,6 +430,8 @@ lib:addInstance(
         encounters = { "Ambassador Hellmaw", "Blackheart the Inciter", "Murmur", "Grandmaster Vorpil" },
         expansion = 1,
         lastBossIndex = 4,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -377,6 +443,8 @@ lib:addInstance(
         encounters = { "Anub'Rekhan", "Grand Widow Faerlina", "Maexxna", "Noth the Plaguebringer", "Heigan the Unclean", "Loatheb", "Instructor Razuvious", "Gothik the Harvester", "The Four Horsemen", "Patchwerk", "Grobbulus", "Gluth", "Thaddius", "Sapphiron", "Kel'Thuzad" },
         expansion = 2,
         lastBossIndex = 15,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [10] = 7, [25] = 7, },
         sizes = { 10, 25 },
     }
@@ -388,6 +456,8 @@ lib:addInstance(
         encounters = { "Kurinnaxx", "General Rajaxx", "Moam", "Buru the Gorger", "Ayamiss the Hunter", "Ossirian the Unscarred" },
         expansion = 0,
         lastBossIndex = 6,
+        maxLevel = 83,
+        minLevel = 60,
         resets = { [20] = 3, },
         sizes = { 20 },
     }
@@ -399,6 +469,8 @@ lib:addInstance(
         encounters = { "The Prophet Skeram", "Silithid Royalty", "Battleguard Sartura", "Fankriss the Unyielding", "Viscidus", "Princess Huhuran", "Twin Emperors", "Ouro", "C'thun" },
         expansion = 0,
         lastBossIndex = 9,
+        maxLevel = 83,
+        minLevel = 60,
         resets = { [40] = 7, },
         sizes = { 40 },
     }
@@ -410,6 +482,8 @@ lib:addInstance(
         encounters = { "Lieutenant Drake", "Epoch Hunter", "Captain Skarloc" },
         expansion = 1,
         lastBossIndex = 3,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -421,6 +495,8 @@ lib:addInstance(
         encounters = { "Aeonus", "Chrono Lord Deja", "Temporus" },
         expansion = 1,
         lastBossIndex = 3,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -432,6 +508,8 @@ lib:addInstance(
         encounters = { "Nethermancer Sepethrea", "Pathaleon the Calculator", "Mechano-Lord Capacitus", "Gatewatcher Gyro-Kill", "Gatewatcher Iron-Hand" },
         expansion = 1,
         lastBossIndex = 5,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -443,6 +521,8 @@ lib:addInstance(
         encounters = { "Commander Sarannis", "High Botanist Freywinn", "Laj", "Thorngrin the Tender", "Warp Splinter" },
         expansion = 1,
         lastBossIndex = 5,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -454,6 +534,8 @@ lib:addInstance(
         encounters = { "Dalliah the Doomsayer", "Harbinger Skyriss", "Wrath-Scryer Soccothrates", "Zereketh the Unbound" },
         expansion = 1,
         lastBossIndex = 4,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -465,6 +547,8 @@ lib:addInstance(
         encounters = { "Attumen the Huntsman", "Moroes", "Maiden of Virtue", "Opera Hall", "The Curator", "Terestian Illhoof", "Shade of Aran", "Netherspite", "Chess Event", "Prince Malchezaar", "Nightbane" },
         expansion = 1,
         lastBossIndex = 11,
+        maxLevel = 83,
+        minLevel = 70,
         resets = { [10] = 7, },
         sizes = { 10 },
     }
@@ -476,6 +560,8 @@ lib:addInstance(
         encounters = { "Magtheridon" },
         expansion = 1,
         lastBossIndex = 1,
+        maxLevel = 83,
+        minLevel = 70,
         resets = { [25] = 7, },
         sizes = { 25 },
     }
@@ -487,6 +573,8 @@ lib:addInstance(
         encounters = { "High King Maulgar", "Gruul the Dragonkiller" },
         expansion = 1,
         lastBossIndex = 2,
+        maxLevel = 83,
+        minLevel = 70,
         resets = { [25] = 7, },
         sizes = { 25 },
     }
@@ -498,6 +586,8 @@ lib:addInstance(
         encounters = { "Al'ar", "Void Reaver", "High Astromancer Solarian", "Kael'thas Sunstrider" },
         expansion = 1,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 70,
         resets = { [25] = 7, },
         sizes = { 25 },
     }
@@ -509,6 +599,8 @@ lib:addInstance(
         encounters = { "Hydross the Unstable", "The Lurker Below", "Leotheras the Blind", "Fathom-Lord Karathress", "Morogrim Tidewalker", "Lady Vashj" },
         expansion = 1,
         lastBossIndex = 6,
+        maxLevel = 83,
+        minLevel = 70,
         resets = { [25] = 7, },
         sizes = { 25 },
     }
@@ -520,6 +612,8 @@ lib:addInstance(
         encounters = { "Rage Winterchill", "Anetheron", "Kaz'rogal", "Azgalor", "Archimonde" },
         expansion = 1,
         lastBossIndex = 5,
+        maxLevel = 83,
+        minLevel = 70,
         resets = { [25] = 7, },
         sizes = { 25 },
     }
@@ -531,6 +625,8 @@ lib:addInstance(
         encounters = { "High Warlord Naj'entus", "Supremus", "Shade of Akama", "Teron Gorefiend", "Gurtogg Bloodboil", "Reliquary of Souls", "Mother Shahraz", "The Illidari Council", "Illidan Stormrage" },
         expansion = 1,
         lastBossIndex = 9,
+        maxLevel = 83,
+        minLevel = 70,
         resets = { [25] = 7, },
         sizes = { 25 },
     }
@@ -542,6 +638,8 @@ lib:addInstance(
         encounters = { "Akil'zon", "Nalorakk", "Jan'alai", "Halazzi", "Hex Lord Malacrass", "Zul'jin" },
         expansion = 1,
         lastBossIndex = 6,
+        maxLevel = 83,
+        minLevel = 70,
         resets = { [10] = 7, },
         sizes = { 10 },
     }
@@ -553,6 +651,8 @@ lib:addInstance(
         encounters = { "Kael'thas Sunstrider", "Priestess Delrissa", "Selin Fireheart", "Vexallus" },
         expansion = 1,
         lastBossIndex = 4,
+        maxLevel = 75,
+        minLevel = 70,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -564,6 +664,8 @@ lib:addInstance(
         encounters = { "Kalecgos", "Brutallus", "Felmyst", "Eredar Twins", "M'uru", "Kil'jaeden" },
         expansion = 1,
         lastBossIndex = 6,
+        maxLevel = 83,
+        minLevel = 70,
         resets = { [25] = 7, },
         sizes = { 25 },
     }
@@ -575,6 +677,8 @@ lib:addInstance(
         encounters = { "Prince Keleseth", "Skarvold & Dalronn", "Ingvar the Plunderer" },
         expansion = 2,
         lastBossIndex = 3,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -586,6 +690,8 @@ lib:addInstance(
         encounters = { "Svala Sorrowgrave", "Gortok Palehoof", "Skadi the Ruthless", "King Ymiron" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -597,6 +703,8 @@ lib:addInstance(
         encounters = { "Krik'thir the Gatewatcher", "Hadronox", "Anub'arak" },
         expansion = 2,
         lastBossIndex = 3,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -608,6 +716,8 @@ lib:addInstance(
         encounters = { "Drakos the Interrogator", "Varos Cloudstrider", "Mage-Lord Urom", "Ley-Guardian Eregos" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -619,6 +729,8 @@ lib:addInstance(
         encounters = { "General Bjarngrim", "Volkhan", "Ionar", "Loken" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -630,6 +742,8 @@ lib:addInstance(
         encounters = { "Krystallus", "Maiden of Grief", "Tribunal of Ages", "Sjonnir the Ironshaper" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -641,6 +755,8 @@ lib:addInstance(
         encounters = { "Meathook", "Salram the Fleshcrafter", "Chrono-Lord Epoch", "Mal'ganis" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -652,6 +768,8 @@ lib:addInstance(
         encounters = { "Trollgore", "Novos the Summoner", "King Dred", "The Prophet Tharon'ja" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -663,6 +781,8 @@ lib:addInstance(
         encounters = { "Slad'ran", "Drakkari Colossus", "Moorabi", "Gal'darah", "Eck the Ferocious" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -674,6 +794,8 @@ lib:addInstance(
         encounters = { "Elder Nadox", "Prince Taldaram", "Jedoga Shadowseeker", "Herald Volazj", "Amanitar" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -685,6 +807,8 @@ lib:addInstance(
         encounters = { "First Prisoner", "Second Prisoner", "Cyanigosa" },
         expansion = 2,
         lastBossIndex = 3,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -696,6 +820,8 @@ lib:addInstance(
         encounters = { "Malygos" },
         expansion = 2,
         lastBossIndex = 1,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [10] = 7, [25] = 7, },
         sizes = { 10, 25 },
     }
@@ -707,6 +833,8 @@ lib:addInstance(
         encounters = { "Vesperon", "Tenebron", "Shadron", "Sartharion" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [10] = 7, [25] = 7, },
         sizes = { 10, 25 },
     }
@@ -718,6 +846,8 @@ lib:addInstance(
         encounters = { "Grand Magus Telestra", "Anomalus", "Ormorok the Tree-Shaper", "Keristrasza" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -729,6 +859,8 @@ lib:addInstance(
         encounters = { "Archavon the Stone Watcher", "Emalon the Storm Watcher", "Koralon the Flame Watcher", "Toravon the Ice Watcher" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [10] = 7, [25] = 7, },
         sizes = { 10, 25 },
     }
@@ -740,6 +872,8 @@ lib:addInstance(
         encounters = { "Flame Leviathan", "Ignis the Furnace Master", "Razorscale", "XT-002 Deconstructor", "The Iron Council", "Kologarn", "Auriaya", "Hodir", "Thorim", "Freya", "Mimiron", "General Vezax", "Yogg-Saron", "Algalon the Observer" },
         expansion = 2,
         lastBossIndex = 14,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [10] = 7, [25] = 7, },
         sizes = { 10, 25 },
     }
@@ -751,6 +885,8 @@ lib:addInstance(
         encounters = { "Grand Champions", "Argent Champion", "The Black Knight" },
         expansion = 2,
         lastBossIndex = 3,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -762,6 +898,8 @@ lib:addInstance(
         encounters = { "Northrend Beasts", "Lord Jaraxxus", "Faction Champions", "Val'kyr Twins", "Anub'arak" },
         expansion = 2,
         lastBossIndex = 5,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [10] = 7, [25] = 7, },
         sizes = { 10, 25 },
     }
@@ -773,6 +911,8 @@ lib:addInstance(
         encounters = { "Bronjahm", "Devourer of Souls" },
         expansion = 2,
         lastBossIndex = 2,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -784,6 +924,8 @@ lib:addInstance(
         encounters = { "Forgemaster Garfrost", "Krick", "Overlrod Tyrannus" },
         expansion = 2,
         lastBossIndex = 3,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -795,6 +937,8 @@ lib:addInstance(
         encounters = { "Falric", "Marwyn", "Escaped from Arthas" },
         expansion = 2,
         lastBossIndex = 3,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [5] = 1, },
         sizes = { 5 },
     }
@@ -806,6 +950,8 @@ lib:addInstance(
         encounters = { "Lord Marrowgar", "Lady Deathwhisper", "Icecrown Gunship Battle", "Deathbringer Saurfang", "Festergut", "Rotface", "Professor Putricide", "Blood Council", "Queen Lana'thel", "Valithria Dreamwalker", "Sindragosa", "The Lich King" },
         expansion = 2,
         lastBossIndex = 12,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [10] = 7, [25] = 7, },
         sizes = { 10, 25 },
     }
@@ -817,6 +963,8 @@ lib:addInstance(
         encounters = { "Baltharus the Warborn", "Saviana Ragefire", "General Zarithrian", "Halion" },
         expansion = 2,
         lastBossIndex = 4,
+        maxLevel = 83,
+        minLevel = 80,
         resets = { [10] = 7, [25] = 7, },
         sizes = { 10, 25 },
     }

@@ -1422,6 +1422,7 @@ lib:AddExpansion(446851, 0) -- 50600
 lib:AddExpansion(448085, 0) -- 51070
 lib:AddExpansion(448624, 0) -- 51075
 lib:AddExpansion(451706, 0) -- 51206
+lib:AddExpansion(460460, 0) -- 51341
 lib:AddExpansion(25229, 1) -- 13166
 lib:AddExpansion(25230, 1) -- 13167
 lib:AddExpansion(25278, 1) -- 13196
