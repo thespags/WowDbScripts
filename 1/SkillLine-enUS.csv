@@ -120,10 +120,11 @@ Lockpicking,,,,,633,7,136235,0,0,0,128,0
 "Racial - Troll",,,,,733,9,0,0,0,0,146,0
 "Racial - Gnome",,,,,753,9,0,0,0,0,146,0
 "Racial - Human",,,,,754,9,0,0,0,0,146,0
-"Pet - Event - Remote Control",,,,,758,-1,0,0,0,0,0,0
+"Pet - Event - Remote Control",,,,,758,0,0,0,0,0,0,0
 Engraving,,"Higher engraving skill allows you to learn higher level runes and apply them to your armor and weapons.  Runes can be found hidden throughout the world.",,,2851,7,136235,0,0,0,146,0
 Runes,,,,,2853,7,134419,0,0,0,16,0
 Meditation,,,,,2885,7,135944,0,0,0,130,0
 "Pet - Felguard",,,,,2887,7,0,0,0,0,0,0
 "Pet - Core Hound",,,,,2897,7,136235,0,0,0,0,0
 "Explorer Imp",,,,,2898,7,237559,0,0,0,130,0
+"Astral Perfect Victory",,,,,2904,12,0,0,0,0,0,0

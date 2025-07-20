@@ -4518,3 +4518,143 @@ lib:AddRecipe(165, 185924, 351769, 185850, 351358, nil) -- 46057 Greater Drums o
 lib:AddRecipe(165, 187048, 351769, 185850, 351358, nil) -- 46057 Greater Drums of Restoration
 lib:AddRecipe(165, 185925, 351770, 185849, 351357, nil) -- 46058 Greater Drums of Panic
 lib:AddRecipe(165, 185926, 351771, 185848, 351355, nil) -- 46059 Greater Drums of Battle
+lib:AddRecipe(773, nil, 1216290, 70078, nil, nil) -- 51743 Bloodthirsty Eyeball of Dominance
+lib:AddRecipe(773, nil, 1216316, 70077, nil, nil) -- 51744 Bloodthirsty Charm of Triumph
+lib:AddRecipe(773, nil, 1216317, 70079, nil, nil) -- 51745 Bloodthirsty Jawbone of Conquest
+lib:AddRecipe(755, nil, 1216321, 70075, nil, nil) -- 51746 Bloodthirsty Amberjewel Pendant
+lib:AddRecipe(755, nil, 1216323, 70071, nil, nil) -- 51747 Bloodthirsty Sapphire Ring
+lib:AddRecipe(755, nil, 1216328, 70072, nil, nil) -- 51748 Bloodthirsty Amberjewel Band
+lib:AddRecipe(755, nil, 1216329, 70073, nil, nil) -- 51749 Bloodthirsty Ruby Signet
+lib:AddRecipe(755, nil, 1216330, 70074, nil, nil) -- 51750 Bloodthirsty Sapphire Necklace
+lib:AddRecipe(755, nil, 1216331, 70076, nil, nil) -- 51751 Bloodthirsty Ruby Choker
+lib:AddRecipe(165, nil, 1216335, 70068, nil, nil) -- 51752 Bloodthirsty Fur Cloak
+lib:AddRecipe(165, nil, 1216336, 70069, nil, nil) -- 51753 Bloodthirsty Hide Cloak
+lib:AddRecipe(197, nil, 1216338, 70070, nil, nil) -- 51754 Bloodthirsty Embersilk Cape
+lib:AddRecipe(165, 238103, 1224138, 75083, nil, nil) -- 52268 Vicious Charscale Belt
+lib:AddRecipe(165, 238102, 1224139, 75092, nil, nil) -- 52269 Vicious Charscale Boots
+lib:AddRecipe(165, 238094, 1224140, 75094, nil, nil) -- 52270 Vicious Charscale Bracers
+lib:AddRecipe(165, 238118, 1224141, 75084, nil, nil) -- 52271 Vicious Charscale Chest
+lib:AddRecipe(165, 238095, 1224142, 75085, nil, nil) -- 52272 Vicious Charscale Gloves
+lib:AddRecipe(165, 238119, 1224143, 75090, nil, nil) -- 52273 Vicious Charscale Helm
+lib:AddRecipe(165, 238111, 1224144, 75097, nil, nil) -- 52274 Vicious Charscale Legs
+lib:AddRecipe(165, 238110, 1224145, 75061, nil, nil) -- 52275 Vicious Charscale Shoulders
+lib:AddRecipe(165, 238112, 1224146, 75100, nil, nil) -- 52276 Vicious Dragonscale Belt
+lib:AddRecipe(165, 238104, 1224147, 75110, nil, nil) -- 52277 Vicious Dragonscale Boots
+lib:AddRecipe(165, 238096, 1224148, 75114, nil, nil) -- 52278 Vicious Dragonscale Bracers
+lib:AddRecipe(165, 238121, 1224149, 75115, nil, nil) -- 52279 Vicious Dragonscale Chest
+lib:AddRecipe(165, 238105, 1224150, 75081, nil, nil) -- 52280 Vicious Dragonscale Gloves
+lib:AddRecipe(165, 238113, 1224151, 75102, nil, nil) -- 52281 Vicious Dragonscale Helm
+lib:AddRecipe(165, 238120, 1224152, 75108, nil, nil) -- 52282 Vicious Dragonscale Legs
+lib:AddRecipe(165, 238097, 1224153, 75116, nil, nil) -- 52283 Vicious Dragonscale Shoulders
+lib:AddRecipe(165, 238108, 1224170, 75127, nil, nil) -- 52284 Vicious Leather Belt
+lib:AddRecipe(165, 238100, 1224171, 75130, nil, nil) -- 52285 Vicious Leather Boots
+lib:AddRecipe(165, 238092, 1224172, 75131, nil, nil) -- 52286 Vicious Leather Bracers
+lib:AddRecipe(165, 238116, 1224173, 75103, nil, nil) -- 52287 Vicious Leather Chest
+lib:AddRecipe(165, 238093, 1224174, 75104, nil, nil) -- 52288 Vicious Leather Gloves
+lib:AddRecipe(165, 238109, 1224175, 75105, nil, nil) -- 52289 Vicious Leather Helm
+lib:AddRecipe(165, 238117, 1224176, 75112, nil, nil) -- 52290 Vicious Leather Legs
+lib:AddRecipe(165, 238101, 1224177, 75113, nil, nil) -- 52291 Vicious Leather Shoulders
+lib:AddRecipe(165, 238091, 1224194, 75117, nil, nil) -- 52292 Vicious Wyrmhide Belt
+lib:AddRecipe(165, 238099, 1224195, 75101, nil, nil) -- 52293 Vicious Wyrmhide Boots
+lib:AddRecipe(165, 238090, 1224196, 75106, nil, nil) -- 52294 Vicious Wyrmhide Bracers
+lib:AddRecipe(165, 238107, 1224197, 75107, nil, nil) -- 52295 Vicious Wyrmhide Chest
+lib:AddRecipe(165, 238098, 1224198, 75109, nil, nil) -- 52296 Vicious Wyrmhide Gloves
+lib:AddRecipe(165, 238115, 1224199, 75111, nil, nil) -- 52297 Vicious Wyrmhide Helm
+lib:AddRecipe(165, 238114, 1224200, 75080, nil, nil) -- 52298 Vicious Wyrmhide Legs
+lib:AddRecipe(165, 238106, 1224201, 75099, nil, nil) -- 52299 Vicious Wyrmhide Shoulders
+lib:AddRecipe(164, 238084, 1224178, 75118, nil, nil) -- 52300 Vicious Ornate Pyrium Belt
+lib:AddRecipe(164, 238085, 1224179, 75132, nil, nil) -- 52301 Vicious Ornate Pyrium Boots
+lib:AddRecipe(164, 238082, 1224180, 75125, nil, nil) -- 52302 Vicious Ornate Pyrium Bracers
+lib:AddRecipe(164, 238089, 1224181, 75128, nil, nil) -- 52303 Vicious Ornate Pyrium Breastplate
+lib:AddRecipe(164, 238083, 1224182, 75121, nil, nil) -- 52304 Vicious Ornate Pyrium Gauntlets
+lib:AddRecipe(164, 238088, 1224183, 75129, nil, nil) -- 52305 Vicious Ornate Pyrium Helm
+lib:AddRecipe(164, 238087, 1224184, 75133, nil, nil) -- 52306 Vicious Ornate Pyrium Legguards
+lib:AddRecipe(164, 238086, 1224185, 75134, nil, nil) -- 52307 Vicious Ornate Pyrium Shoulders
+lib:AddRecipe(164, 238076, 1224186, 75123, nil, nil) -- 52308 Vicious Pyrium Belt
+lib:AddRecipe(164, 238077, 1224187, 75120, nil, nil) -- 52309 Vicious Pyrium Boots
+lib:AddRecipe(164, 238074, 1224188, 75124, nil, nil) -- 52310 Vicious Pyrium Bracers
+lib:AddRecipe(164, 238081, 1224189, 75135, nil, nil) -- 52311 Vicious Pyrium Breastplate
+lib:AddRecipe(164, 238075, 1224190, 75122, nil, nil) -- 52312 Vicious Pyrium Gauntlets
+lib:AddRecipe(164, 238080, 1224191, 75126, nil, nil) -- 52313 Vicious Pyrium Helm
+lib:AddRecipe(164, 238079, 1224192, 75136, nil, nil) -- 52314 Vicious Pyrium Legguards
+lib:AddRecipe(164, 238078, 1224193, 75119, nil, nil) -- 52315 Vicious Pyrium Shoulders
+lib:AddRecipe(197, nil, 1224154, 75096, nil, nil) -- 52316 Vicious Embersilk Belt
+lib:AddRecipe(197, nil, 1224155, 75095, nil, nil) -- 52317 Vicious Embersilk Boots
+lib:AddRecipe(197, nil, 1224156, 75098, nil, nil) -- 52318 Vicious Embersilk Bracers
+lib:AddRecipe(197, 238068, 1224157, 75073, nil, nil) -- 52319 Vicious Embersilk Cowl
+lib:AddRecipe(197, nil, 1224158, 75070, nil, nil) -- 52320 Vicious Embersilk Gloves
+lib:AddRecipe(197, 238069, 1224159, 75072, nil, nil) -- 52321 Vicious Embersilk Pants
+lib:AddRecipe(197, 238070, 1224160, 75093, nil, nil) -- 52322 Vicious Embersilk Robe
+lib:AddRecipe(197, nil, 1224161, 75064, nil, nil) -- 52323 Vicious Embersilk Shoulders
+lib:AddRecipe(197, nil, 1224162, 75086, nil, nil) -- 52324 Vicious Fireweave Belt
+lib:AddRecipe(197, nil, 1224163, 75087, nil, nil) -- 52325 Vicious Fireweave Boots
+lib:AddRecipe(197, nil, 1224164, 75089, nil, nil) -- 52326 Vicious Fireweave Bracers
+lib:AddRecipe(197, 238071, 1224165, 75062, nil, nil) -- 52327 Vicious Fireweave Cowl
+lib:AddRecipe(197, nil, 1224166, 75063, nil, nil) -- 52328 Vicious Fireweave Gloves
+lib:AddRecipe(197, 238072, 1224167, 75082, nil, nil) -- 52329 Vicious Fireweave Pants
+lib:AddRecipe(197, 238073, 1224168, 75088, nil, nil) -- 52330 Vicious Fireweave Robe
+lib:AddRecipe(197, nil, 1224169, 75091, nil, nil) -- 52331 Vicious Fireweave Shoulders
+lib:AddRecipe(165, 238167, 1224262, 56546, nil, nil) -- 52825 Bloodied Dragonscale Belt
+lib:AddRecipe(165, 238159, 1224254, 56534, nil, nil) -- 52826 Bloodied Dragonscale Boots
+lib:AddRecipe(165, 238151, 1224246, 56526, nil, nil) -- 52827 Bloodied Dragonscale Bracers
+lib:AddRecipe(165, 238176, 1224271, 56559, nil, nil) -- 52828 Bloodied Dragonscale Chest
+lib:AddRecipe(165, 238160, 1224255, 56535, nil, nil) -- 52829 Bloodied Dragonscale Gloves
+lib:AddRecipe(165, 238168, 1224263, 56547, nil, nil) -- 52830 Bloodied Dragonscale Helm
+lib:AddRecipe(165, 238175, 1224270, 56558, nil, nil) -- 52831 Bloodied Dragonscale Legs
+lib:AddRecipe(165, 238152, 1224247, 56527, nil, nil) -- 52832 Bloodied Dragonscale Shoulders
+lib:AddRecipe(165, 238163, 1224258, 56542, nil, nil) -- 52833 Bloodied Leather Belt
+lib:AddRecipe(165, 238155, 1224250, 56530, nil, nil) -- 52834 Bloodied Leather Boots
+lib:AddRecipe(165, 238147, 1224242, 56522, nil, nil) -- 52835 Bloodied Leather Bracers
+lib:AddRecipe(165, 238171, 1224266, 56554, nil, nil) -- 52836 Bloodied Leather Chest
+lib:AddRecipe(165, 238148, 1224243, 56523, nil, nil) -- 52837 Bloodied Leather Gloves
+lib:AddRecipe(165, 238164, 1224259, 56543, nil, nil) -- 52838 Bloodied Leather Helm
+lib:AddRecipe(165, 238172, 1224267, 56555, nil, nil) -- 52839 Bloodied Leather Legs
+lib:AddRecipe(165, 238156, 1224251, 56531, nil, nil) -- 52840 Bloodied Leather Shoulders
+lib:AddRecipe(165, 238158, 1224253, 56533, nil, nil) -- 52841 Bloodied Scale Belt
+lib:AddRecipe(165, 238157, 1224252, 56532, nil, nil) -- 52842 Bloodied Scale Boots
+lib:AddRecipe(165, 238149, 1224244, 56524, nil, nil) -- 52843 Bloodied Scale Bracers
+lib:AddRecipe(165, 238173, 1224268, 56556, nil, nil) -- 52844 Bloodied Scale Chest
+lib:AddRecipe(165, 238150, 1224245, 56525, nil, nil) -- 52845 Bloodied Scale Gloves
+lib:AddRecipe(165, 238174, 1224269, 56557, nil, nil) -- 52846 Bloodied Scale Helm
+lib:AddRecipe(165, 238166, 1224261, 56545, nil, nil) -- 52847 Bloodied Scale Legs
+lib:AddRecipe(165, 238165, 1224260, 56544, nil, nil) -- 52848 Bloodied Scale Shoulders
+lib:AddRecipe(165, 238146, 1224241, 56521, nil, nil) -- 52849 Bloodied Wyrmhide Belt
+lib:AddRecipe(165, 238154, 1224249, 56529, nil, nil) -- 52850 Bloodied Wyrmhide Boots
+lib:AddRecipe(165, 238145, 1224240, 56520, nil, nil) -- 52851 Bloodied Wyrmhide Bracers
+lib:AddRecipe(165, 238162, 1224257, 56541, nil, nil) -- 52852 Bloodied Wyrmhide Chest
+lib:AddRecipe(165, 238153, 1224248, 56528, nil, nil) -- 52853 Bloodied Wyrmhide Gloves
+lib:AddRecipe(165, 238170, 1224265, 56553, nil, nil) -- 52854 Bloodied Wyrmhide Helm
+lib:AddRecipe(165, 238169, 1224264, 56552, nil, nil) -- 52855 Bloodied Wyrmhide Legs
+lib:AddRecipe(165, 238161, 1224256, 56540, nil, nil) -- 52856 Bloodied Wyrmhide Shoulders
+lib:AddRecipe(164, 238131, 1224226, 55073, nil, nil) -- 52857 Bloodied Pyrium Belt
+lib:AddRecipe(164, 238132, 1224227, 55074, nil, nil) -- 52858 Bloodied Pyrium Boots
+lib:AddRecipe(164, 238129, 1224224, 55071, nil, nil) -- 52859 Bloodied Pyrium Bracers
+lib:AddRecipe(164, 238136, 1224231, 55078, nil, nil) -- 52860 Bloodied Pyrium Breastplate
+lib:AddRecipe(164, 238130, 1224225, 55072, nil, nil) -- 52861 Bloodied Pyrium Gauntlets
+lib:AddRecipe(164, 238135, 1224230, 55077, nil, nil) -- 52862 Bloodied Pyrium Helm
+lib:AddRecipe(164, 238134, 1224229, 55076, nil, nil) -- 52863 Bloodied Pyrium Legguards
+lib:AddRecipe(164, 238133, 1224228, 55075, nil, nil) -- 52864 Bloodied Pyrium Shoulders
+lib:AddRecipe(164, 238139, 1224234, 55081, nil, nil) -- 52865 Ornate Pyrium Belt
+lib:AddRecipe(164, 238140, 1224235, 55082, nil, nil) -- 52866 Ornate Pyrium Boots
+lib:AddRecipe(164, 238137, 1224232, 55079, nil, nil) -- 52867 Ornate Pyrium Bracers
+lib:AddRecipe(164, 238144, 1224239, 55086, nil, nil) -- 52868 Ornate Pyrium Breastplate
+lib:AddRecipe(164, 238138, 1224233, 55080, nil, nil) -- 52869 Ornate Pyrium Gauntlets
+lib:AddRecipe(164, 238143, 1224238, 55085, nil, nil) -- 52870 Ornate Pyrium Helm
+lib:AddRecipe(164, 238142, 1224237, 55084, nil, nil) -- 52871 Ornate Pyrium Legguards
+lib:AddRecipe(164, 238141, 1224236, 55083, nil, nil) -- 52872 Ornate Pyrium Shoulders
+lib:AddRecipe(197, nil, 1224213, 54500, nil, nil) -- 52873 Emberfire Belt
+lib:AddRecipe(197, nil, 1224217, 54499, nil, nil) -- 52874 Emberfire Boots
+lib:AddRecipe(197, nil, 1224209, 54501, nil, nil) -- 52875 Emberfire Bracers
+lib:AddRecipe(197, 238123, 1224222, 54496, nil, nil) -- 52876 Emberfire Cowl
+lib:AddRecipe(197, nil, 1224215, 54497, nil, nil) -- 52877 Emberfire Gloves
+lib:AddRecipe(197, 238124, 1224223, 54498, nil, nil) -- 52878 Emberfire Pants
+lib:AddRecipe(197, 238125, 1224221, 54495, nil, nil) -- 52879 Emberfire Robe
+lib:AddRecipe(197, nil, 1224211, 54502, nil, nil) -- 52880 Emberfire Shoulders
+lib:AddRecipe(197, nil, 1224208, 54489, nil, nil) -- 52881 Fireweave Belt
+lib:AddRecipe(197, nil, 1224214, 54490, nil, nil) -- 52882 Fireweave Boots
+lib:AddRecipe(197, nil, 1224210, 54488, nil, nil) -- 52883 Fireweave Bracers
+lib:AddRecipe(197, 238126, 1224220, 54493, nil, nil) -- 52884 Fireweave Cowl
+lib:AddRecipe(197, nil, 1224216, 54492, nil, nil) -- 52885 Fireweave Gloves
+lib:AddRecipe(197, 238127, 1224218, 54491, nil, nil) -- 52886 Fireweave Pants
+lib:AddRecipe(197, 238128, 1224219, 54494, nil, nil) -- 52887 Fireweave Robe
+lib:AddRecipe(197, nil, 1224212, 54487, nil, nil) -- 52888 Fireweave Shoulders

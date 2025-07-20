@@ -122,7 +122,7 @@ Lockpicking,,,,,633,7,136243,0,0,0,128,0
 "Racial - Human",,,,,754,9,136243,0,0,0,146,0
 Jewelcrafting,Modify,"Higher jewelcrafting skill allows you to learn higher level jewelcrafting plans.  Jewelcrafting plans can be found on trainers around the world as well as from quests and monsters.",,,755,11,134071,1,0,0,128,0
 "Blood Elf Racial",,,,,756,9,0,0,0,0,18,0
-"Pet - Event - Remote Control",,,,,758,-1,136243,0,0,0,0,0
+"Pet - Event - Remote Control",,,,,758,0,136243,0,0,0,0,0
 "Language: Draenei",,,,,759,10,0,0,0,0,128,0
 "Draenei Racial",,,,,760,9,0,0,0,0,2,0
 "Pet - Felguard",,,,,761,7,0,0,0,0,0,0
