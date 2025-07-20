@@ -27,7 +27,7 @@ def get_test_spells(version):
 def write_effect_names(version, effect_ids):
     effects = {}
     total = 0
-    with open(recipes_lua(version, "effects"), "w") as out:
+    with open(recipes_lua(version, "effects"), "w", encoding='utf-8') as out:
         write_header(out, version)
         out.write("\nlocal locale = GetLocale()")
         out.write("\nlocale = locale == \"enGB\" and \"enUS\" or locale\n")

@@ -54,7 +54,7 @@ def get_table(version, table_name, language="enUS"):
 
 
 def read_table(version, table_name, language="enUS"):
-    return open(get_table(version, table_name, language))
+    return open(get_table(version, table_name, language), encoding='utf-8')
 
 
 def recipes_lua(version, file_name):
