@@ -10,7 +10,7 @@ def scrape_expansions(args):
     known_skills = {}
     known_spells = set()
     for expansion in range(1, 11):
-        if 4 < expansion < 7:
+        if 5 < expansion < 7:
             continue
         args.version = expansion
         update_files(args, table_names=["SkillLine", "SkillLineAbility"])

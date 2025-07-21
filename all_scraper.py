@@ -7,7 +7,7 @@ from util import *
 args = parse_args()
 scrape_expansions(args)
 for expansion in range(1, 11):
-    if 4 < expansion < 10:
+    if 5 < expansion < 10:
         continue
     args.version = expansion
     write_enchantments(args)
