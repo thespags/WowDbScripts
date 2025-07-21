@@ -2,3 +2,4 @@
 .idea/
 __python__/
 __pycache__/
+venv/

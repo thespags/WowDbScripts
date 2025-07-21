@@ -3,6 +3,19 @@ Downloads CSV from https://wago.tools/db2/ and scrapes data from https://www.wow
 
 The scripts will aggregate information across multiple CSV's and from WowHead to create Lua files.
 
+## Setup
+This repo is set up for python 3.11.x but may work on other versions of python.
+To configure your environment,
+```bash
+python3 -m venv venv
+source ./venv/bin/activate
+pip install -r requirements.txt
+```
+If you add new python modules, then
+```bash
+pip freeze > requirements.txt
+```
+
 ## Usage
 Creates instance information for a private library.
 `python3 instances_scraper.py`
@@ -28,7 +41,7 @@ We have a combination of scrapers to create LibTradeSkillRecipes for expansions 
 * `all_scrapper.py`
   * Calls the other three scrapers across all expansions.
 
-Example (supports versions 1, 2, 3, and 10):  
+Example (supports versions 1, 2, 3, 4, 5 and 10):  
 
 Scrapes all classic Wow information with existing files (offline mode)
 `python3 recipes_scraper.py -v 1`  
@@ -39,7 +52,7 @@ Updates any new information in classic Wow.
 Force download tables. (Sometimes Blizzard updates tables without version changes)
 `python3 recipes_scraper.py -v 1 -d -fd`
 
-By default, we overwrite any output. `items.lua` and `ignored` are not unless `-fd` is provided 
+By default, we overwrite any output. `items.lua` and `ignored` are not updated unless `-fd` is provided 
 as these are most intensive to collect so by default appends.
 
 For `all_scraper.py`, this does not use version but will accept `d` and `-fd` for downloading.

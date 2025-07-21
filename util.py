@@ -14,6 +14,7 @@ ignored_zones = {}
 ignored_sort = {"encounters", "activities"}
 expansions = {1: "classic", 2: "tbc", 3: "wotlk", 4: "cata", 5: "mop-classic"}
 languages = ["enUS", "deDE", "esES", "esMX", "frFR", "itIT", "koKR", "ptBR", "ruRU", "zhCN", "zhTW"]
+CLASSIC_EXPANSION = 5
 
 
 def write_header(file, version=None):
