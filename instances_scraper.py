@@ -3,26 +3,39 @@ from util import *
 from collections import OrderedDict
 
 
+# MOP table doesn't have column names...
+def get_key(row, named_key, mop_key):
+    if mop_key in row:
+        return mop_key
+    return named_key
+
+
 def read_dungeons(version):
     with read_table(version, "LFGDungeons") as file:
         row: dict[str, str]
         for row in csv.DictReader(file, delimiter=','):
-            difficulty = int(row["DifficultyID"])
-            # skip open world (0) and vanilla dungeons (1) which have no lockout
-            if difficulty == 0:
+            expansion_key = get_key(row, "ExpansionLevel", "Field_1_15_7_59706_010")
+            map_key = get_key(row, "MapID", "Field_1_15_7_59706_011")
+            difficulty_key = get_key(row, "DifficultyID", "Field_1_15_7_59706_012")
+            group_key = get_key(row, "Group_ID", "Field_1_15_7_59706_014")
+            difficulty = int(row[difficulty_key])
+            # skip open world (0) and vanilla dungeons (1) which have no lockout.
+            # remove mop scenarios (11, 12) until I ever get to it if ever.
+            if difficulty == 0 or difficulty == 11 or difficulty == 12:
                 continue
-            key = int(row["MapID"])
-            # Skip pre patch zone.
-            if key == 734:
+            key = int(row[map_key])
+            # Skip pre patch zone, random dungeon...
+            if key == 734 or key == -1 or key == 0:
                 continue
             if key not in infos:
                 infos[key] = {"sizes": set(), "resets": {}, "encounters": OrderedDict(), "activities": {}}
             infos[key]["minLevel"] = max(infos[key].get("minLevel", 0), int(row["MinLevel"]))
             infos[key]["maxLevel"] = max(infos[key].get("maxLevel", 0), int(row["MaxLevel"]))
-            infos[key]["expansion"] = int(row["ExpansionLevel"])
-            group_id = int(row["Group_ID"])
+            infos[key]["expansion"] = int(row[expansion_key])
+            group_id = int(row[group_key])
             activity_id = int(row["ID"])
             infos[key]["activities"][group_id] = activity_id
+        print(infos)
         infos[249]["legacy"] = {"expansion": 0, "size": 40}
 
 
@@ -105,9 +118,7 @@ Path(f"instances/{args.version}").mkdir(parents=True, exist_ok=True)
 with open(f"instances/{args.version}/instances.lua", "w") as f:
     f.write(f"""local lib = LibStub("LibInstances")
 
-if {args.version} < LE_EXPANSION_LEVEL_CURRENT 
-    {f"and {args.version} > LE_EXPANSION_LEVEL_CURRENT" if args.version == 4 else ""}
-then
+if {args.version} {f"<" if args.version == 3 else "~="} LE_EXPANSION_LEVEL_CURRENT then
     return
 end
 """)
@@ -119,7 +130,7 @@ lib:addInstance(
     {to_string(v, level=1)}
 )""")
 
-if args.version == 4:
+if args.version > 3:
     groups = {}
     read_dungeon_groups(args.version)
     with open(f"instances/groups.lua", "w") as f:

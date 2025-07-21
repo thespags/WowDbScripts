@@ -1,8 +1,6 @@
 local lib = LibStub("LibInstances")
 
-if 4 < LE_EXPANSION_LEVEL_CURRENT 
-    and 4 > LE_EXPANSION_LEVEL_CURRENT
-then
+if 4 ~= LE_EXPANSION_LEVEL_CURRENT then
     return
 end
 
