@@ -16,7 +16,10 @@ def get_or_none(value):
 # Viewing the script box seems to be the most consistent on wowhead for getting recieps and any iteams created.
 # Previously I tried things in `Effect` but some pages do not have the item information.
 def get_recipes_and_item(tree):
-    script = str(tree.xpath('//script[@type="text/javascript"]/text()')[-1]).split("\n")
+    scripts = tree.xpath('//script[@type="text/javascript"]/text()')
+    if not scripts:
+        return ["nil"], None
+    script = str(scripts[-1]).split("\n")
     recipes = ["nil"]
     item_id = None
     for line in script:

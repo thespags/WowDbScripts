@@ -15,6 +15,7 @@ ignored_sort = {"encounters", "activities"}
 expansions = {1: "classic", 2: "tbc", 3: "wotlk", 4: "cata", 5: "mop-classic"}
 languages = ["enUS", "deDE", "esES", "esMX", "frFR", "itIT", "koKR", "ptBR", "ruRU", "zhCN", "zhTW"]
 CLASSIC_EXPANSION = 5
+output_dir = ""
 
 
 def write_header(file, version=None):
@@ -51,7 +52,7 @@ def write_file_value(file_name, value):
 
 
 def get_table(version, table_name, language="enUS"):
-    return f"{version}/{table_name}-{language}.csv"
+    return str(Path(output_dir) / f"{version}/{table_name}-{language}.csv")
 
 
 def read_table(version, table_name, language="enUS"):
@@ -60,7 +61,7 @@ def read_table(version, table_name, language="enUS"):
 
 def recipes_lua(version, file_name):
     suffix = ".lua" if file_name not in ("ignored", "") else ""
-    return f"recipes/{version}/{file_name}{suffix}"
+    return str(Path(output_dir) / f"recipes/{version}/{file_name}{suffix}")
 
 
 def update_file(file_name, url):
@@ -72,12 +73,12 @@ def update_file(file_name, url):
 
 def update_files(args, table_names: [str] = None, all_languages=False):
     table_names = table_names if table_names else []
-    version_file = f'{args.version}/versions'
+    version_file = str(Path(output_dir) / f'{args.version}/versions')
     if not args.download:
         logging.info("Download set to false, skipping: %s", table_names)
         return
     new_version = get_latest_version(args.version)
-    Path(str(args.version)).mkdir(parents=True, exist_ok=True)
+    Path(output_dir, str(args.version)).mkdir(parents=True, exist_ok=True)
 
     old_version = read_file_value(version_file, "")
     write_file_value(version_file, new_version)
@@ -160,7 +161,7 @@ def get_wow_head_spell_as_tree(expansion, spell_id):
     url = f'https://www.wowhead.com/{name}/spell={spell_id}'
     print(url)
     response = requests.get(url)
-    return html.fromstring(response.content)
+    return url, html.fromstring(response.content)
 
 
 # If we did an update and the ids are out of order, fix them.
@@ -187,9 +188,15 @@ def resort(name, regex):
 
 
 def parse_args():
+    global output_dir
     parser = argparse.ArgumentParser()
     parser.add_argument("-v", "--version", type=int)
     parser.add_argument("-d", "--download", default=False, action=argparse.BooleanOptionalAction)
     parser.add_argument("-fd", "--force-download", default=False, action=argparse.BooleanOptionalAction)
     parser.add_argument("-f", "--force", default=False, action=argparse.BooleanOptionalAction)
-    return parser.parse_args()
+    parser.add_argument("-o", "--output", type=str, default="", help="Output directory for generated files")
+    args = parser.parse_args()
+    if args.output:
+        output_dir = args.output
+        Path(output_dir).mkdir(parents=True, exist_ok=True)
+    return args
