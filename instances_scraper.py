@@ -114,8 +114,8 @@ read_dungeon_encounter(args.version)
 sort_encounters()
 read_map_difficulty(args.version)
 
-Path(f"instances/{args.version}").mkdir(parents=True, exist_ok=True)
-with open(f"instances/{args.version}/instances.lua", "w") as f:
+Path(output_dir, f"instances/{args.version}").mkdir(parents=True, exist_ok=True)
+with open(str(Path(output_dir) / f"instances/{args.version}/instances.lua"), "w") as f:
     f.write(f"""local lib = LibStub("LibInstances")
 
 if {args.version} {f"<" if args.version == 3 else "~="} LE_EXPANSION_LEVEL_CURRENT then
@@ -133,7 +133,7 @@ lib:addInstance(
 if args.version > 3:
     groups = {}
     read_dungeon_groups(args.version)
-    with open(f"instances/groups.lua", "w") as f:
+    with open(str(Path(output_dir) / "instances/groups.lua"), "w") as f:
         f.write('local lib = LibStub("LibInstances")')
         for k, v in groups.items():
             f.write(f"\nlib:addGroup({to_string(k)}, {to_string(v)})")

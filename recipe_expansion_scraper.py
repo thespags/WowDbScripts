@@ -1,11 +1,13 @@
 import csv
 from util import *
+from pathlib import Path
 from recipes_scraper import read_skill_lines
 
 
 def scrape_expansions(args):
     i = 0
-    f = open("recipes/expansions.lua", "w")
+    f = open(str(Path(output_dir) / "recipes/expansions.lua"), "w")
+    Path(output_dir, "recipes").mkdir(parents=True, exist_ok=True)
     write_header(f)
     known_skills = {}
     known_spells = set()
